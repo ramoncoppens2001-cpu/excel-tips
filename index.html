@@ -1,0 +1,2460 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2343D16A%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23178A3C%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2223%22%20fill%3D%22url%28%23bg%29%22/%3E%3Cg%20transform%3D%22translate%2813%2013%29%20scale%28.74%29%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M18%2014h64a10%2010%200%200%201%2010%2010v52a10%2010%200%200%201-10%2010H18A10%2010%200%200%201%208%2076V24a10%2010%200%200%201%2010-10z%22/%3E%3Cpath%20fill%3D%22%23D9F2E1%22%20d%3D%22M8%2038V24a10%2010%200%200%201%2010-10h64a10%2010%200%200%201%2010%2010v14z%22/%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23178A3C%22%20stroke-opacity%3D%22.32%22%20stroke-width%3D%223%22%20d%3D%22M8%2038h84M8%2062h84M36%2014v72M64%2014v72%22/%3E%3Crect%20x%3D%2236%22%20y%3D%2238%22%20width%3D%2228%22%20height%3D%2224%22%20fill%3D%22none%22%20stroke%3D%22%23178A3C%22%20stroke-width%3D%226%22/%3E%3Crect%20x%3D%2258%22%20y%3D%2256%22%20width%3D%2212%22%20height%3D%2212%22%20rx%3D%221.5%22%20fill%3D%22%23178A3C%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%223%22/%3E%3C/g%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAALDElEQVR4nOyda4xdVRXH1973Tpm202np2DadPoZ2CrQYo6gJjX4A2lKVWq3pV62CiJL6CeULoUaCmEaN0ZIGgg9MLB8wRokWoklLKFRQ2tqiiUPsA6xMsa2FPqal05nO4dyzz2Od+yiUu9a+M3P+v0w2//ufSQbOOuy19jp7nykv23eXMYYConAIgoqOiDX8AvvWkAk/h4oqQ6SJafgF9m1AQfo9aGiurfvs5hNoaK5tOp+43FMRqYZfbN9W5xtiGn6x/crMkeUbaGimSwu+/nECoB6s5iCChua6puaAhk50vuagBnkIfiF9G69ekjVMpuEX3q/pc0BDJxo1BzRdsuYwLN9AQye6dNWdHyMA6pHWHHx0En7R/bTmMJSNxHIP/OL6vM/BR4IPv9TzNdQcoD42nk+ShAMNneqwQ8qyDjQ009FqxbCsAw1t0prjjo8SAPVIao78aGoc+AX0y4kyfAyyn4BfXN9GH1m+yUb4RfdL87+KmgPUx7Yqn8Ef/X6ZktVtlm/yq174hfVtdJolyTeVn0o1/KL70VnZ6N7BiLFqZDWHIWhorqM+RzaTQENnuqrPAQ2d6dK826+nhOh1LnWAX0w/1+cImIYPvzTvto9Edwm/e6ChK7pRzUHw4ZejtlhA1SPBh2/r5xtD8OFbir+XvhUqSGcY+AX3y9FMUnFNPKs4zUdFf/YVH1g7Z/kHpyycaNutMSPuX64J+o4ePHb2hNNLZvbO7OgiTY6e+f8rxw85PXNy15JZvdQc7iKcu3j+H6f3/+GNHf3nj7UkLkHaIXX3S+UnMh1o+3PbZ9296ItdE6am16X5O2Mc4C7CpFL70is/FH6duHDyxwce7z9/1FtcuF92tw0l94sH3VFq/9bV63onzQsId8O70DVh2vev++bBs//duP9XgxcHvcXIaVZzBIEfffeidQsnzcWd8R4JL9TCyXO/vehLPmPkNO9zkAe9YfGdvZPnErhMruno2XDtHeQlRqm2pn7uUdFf6Vm9aPI8Au+LRR3z13av8BmvpM9BrMeuo7vaOpfPuIFAE3x+9k3Ty66EV49Xvs+R3DZ18pCEf8+1X0ad0SThBbxn8To/8YpqDvdb03yTvhtK1G8z5Tntswg0TXgZr7ATtOPFag73meJ8Y1It56/pvhnThgjhZfxc902kHC/n556tJPdR9TP+5v0bZ+DolBif7Pqwdrycn52Vrc5Dorqz3EFAiOmVtrK/PgfLPTraVvY1AxmsMdrxcrrsClXtMVkgAQGS+V89arY232hoQ5g5xHBv+1ONV5CrOfJnJuU1kEU7Xob3OUai+8XpgGkhH8iiHS/n2zjHuB0ftblHyAeyaMfL+TbNNOn+wVQL+kAW7XgF2U6wqDOWLCjin5P2gSza8WrY5+CjjA9k0Y6X1z4HkKU1fQ4+CvpAFu145fsczM332MV8IIt2vHjNwUf5fAZk0Y6XG8u5la6aBrJoxyurOSqKWNZR0EAW7XgF6R5S3o3Q00AW7XilZ2VJe/TAg888vG3/i/mGm/pvDtLB/T4yt1z9iXuXfYOU8RO18dPnuBhcDL+o1QyP+Ph38BO1chAE9U5YC487X9szNDJMmhw9c4JGAccGTuw49BJp0mY9RY2fslcdUZUK4yFqnmqOaRM629yhbTUmlttpFDCx1N49cQZpMhQM+4kanq2MSfzWHJV1rdHTK3qXdpQnkiZb//0sjQLmdM5cdc2NpMnA8Ln79z+qGi+n/f3VBCCLl5qDz1FquoVsXrVhzZLlJM2TfdvXP/UAtQjteDldzn02WrqFWGNLpkTSWOX6+hJ4iJfT1XtIlTS1+A4ZV3iIVxBUv01QdwRSuKvpIWq5PaTxo4LcKOMDWbTj5fzk3Eq2C6hqvSvjA1m042WS3efpU/z07HbVvkIBH8iiHS/nJzUHO9mSG6V8IEi0nNCNV+TH6zF3NjLWLJZSPpBFO17xWdlIkjEs9yhoIIt2vIxJag5yOcYYPQ1k0Y6X0zXPVqheBpLwgSza8YpqDlbdJOvdRMv5QBbteDkdv8E4v95NjprI+QRE0Y5X1ueg+B1Ths0qRtYnIIp2vIJcn0N/BLJ4iJpNH+OkI89DYj6QRTterOYgivONqcpDcj6QRTteFcfTHlIad3xhyYrwi1qEdrySPaS8u27YqlfaB7Jox8vVHEFuvWtYHpLzkVlk0Y5XkNQcSb6hBnlIwicgina8nO/p1CWNI37ft+2urfdf+mfWXrdy86oNpIafqI3/PsdIMNL86ftKdda67eZ18RC17C9S646tY/1TDzR/wGTN4uWPrP4ujR68RK2crwz0RiBI4Cdq9WoOvt4V8rcd/GublT9ZxOk/c4xGJf2nj+773yskx9DIsHa8gtx+DtMg90j5QBL9eEW+peRhfvxblTSQRTtekbbVmaZRPmvWB7JoxyutOXimibofmRbyK+/naJtEmoyS93PUMqdzVvhFcpwZOhvsfUg1XqzPwfcPqmltyrYUfrk50TmCf3VwtDU5SD9e46rP8dCt94Vfe9/oO5IsW66fvaR7ykwal3iJGvocYxQfUcOzlcumtTs5HH6ihj2kYxUPUbPxnB/Hj2lZH8iiHa9otLkahBrUJs37QBbteJlGfQ4FTeMU/twkXBmF6yPygna8Av5sxTTIOlI+AVG042WymsMk8Ys0MS3lA1m04+V89DnGKD6iZtl8YmpGMR/Ioh0vp12fI/19VXlI0geyaMcrqO5zZHcNCftAFu14oeYYy/isOaK9HnoayKIdL6dt3Bxzs4qaPnVhgIAQpwfPaserYZ9DQx8/9yYBIY6ff0s7Xk6zPaR8F6G0PnTqdQJC9J04qB0vp2v7HCp6x+u7CQjxXP8e7Xg57Z6tEF/jaujn4/8e0CzhZXzxyMva8WI1B1vjGqYF/dODA0+/9jyBpnn61ecGhs5px6uq5nBu3EOlbBTzf7DrF4PDFwg0weDFCxt3/dJPvIg9W6EGuUfM7x84ft9fNhFognt3/vTIQGVvvYd4sZojWb2o6t8d2L5p7+ME3hc/3P3YkweeIY/xqpyVzfKNvt709y0bX/q5n2NO44bwcv1o92OPvPyE++QtXjbrcLNZRVX/7J+/Xb/te2eGzhF4D4QXav32Bx/eF90ZvmLkNKs5jPGm//yfF25+4rYt//rjcNMvZBrHhBdnS9/WZb+5/U+v7iTvMaLkrCxb4/rSb54/9Z0XNv9kz6+X9yxdNv+Gns7uGZOmd7VPpWITXpbjb7918OTh7Yf/9uzhXScHT8dzfStiZBY8utLtOXZFSO3JJ/iF9UtXru5lN67rrtcCv4i+zQqR6rUv/KL7pWnRzMHvHGhopyvPVuLqgwgamuto5sD/LND1dFJzRDY0NNdsP0fkQEOnOqo5oqcscb6Bhk50adpnFxIA9ajqc0BDZ7o0dVVl5hjFJTN0yzT6HNANdTxzAFAL73MQ0wY+fH5uJXmRXDSrwIef7SGtGuHDL029dQE5gqhIrQV+UX3W5+CHXPgIv6h+Oc46GDHWjLY262DEGNccnZ9ZQADUg5+VjUeKNfyi+zZ+C3r02Y3RPwg+fJv9HeLKt+J8Q7GGX2jf11+khj8G/bjP4TohyfeytS/8IvvWzSruczqfkMtD8Ivtuz6HSecTY5iGX2y/NOXTVxEA9Yj7HPFEAg3NtE3nkDT3QEM7XVNzQENnNceneijFxPNJNfAL6Sc1R0QwwjT8wvs2XcOEQENzHdUcfI0LDZ3oUsfKHgKgHuhzQDfU6HNAo88Bffm61HHLfAKgHu8AAAD//8XaYscAAAAGSURBVAMAzb1ypUR2fOUAAAAASUVORK5CYII=">
+<meta name="application-name" content="Excel Shortcuts">
+<meta name="apple-mobile-web-app-title" content="Excel Shortcuts">
+<meta name="theme-color" content="#F5F5F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Excel Shortcuts</title>
+<meta name="description" content="Excel Shortcuts: sneltoetsen en VBA-macro's, doorzoekbaar op taak, met uitleg en korte demo's.">
+<style>
+/* Layout: macOS-achtige app. Zwevende zijbalk links, lijst in het midden, inspector rechts op brede schermen; op de telefoon een zwevende tabbalk en details in een sheet. */
+:root{
+  --bg:#F5F5F7;
+  --surface:#FFFFFF;
+  --surface-2:#F9F9FB;
+  --panel:rgba(252,252,253,.78);
+  --glass:rgba(255,255,255,.74);
+  --text:#1D1D1F;
+  --text-2:#6E6E73;
+  --text-3:#8E8E93;
+  --sep:rgba(60,60,67,.14);
+  --sep-2:rgba(60,60,67,.26);
+  --fill:rgba(118,118,128,.12);
+  --fill-2:rgba(118,118,128,.07);
+  --tint:#1A7F37;
+  --tint-press:#146C2E;
+  --on-tint:#FFFFFF;
+  --tint-soft:rgba(26,127,55,.11);
+  --focus:rgba(26,127,55,.45);
+  --on-icon:#FFFFFF;  --star:#E39B00;
+  --warn:#B25000;
+  --warn-soft:rgba(255,149,0,.13);
+  --mark:rgba(255,204,0,.45);
+  --backdrop:rgba(0,0,0,.32);
+  --shadow-1:0 1px 2px rgba(0,0,0,.05),0 1px 1px rgba(0,0,0,.03);
+  --shadow-2:0 8px 28px rgba(0,0,0,.09),0 1px 3px rgba(0,0,0,.05);
+  --shadow-3:0 30px 90px rgba(0,0,0,.28),0 4px 14px rgba(0,0,0,.12);
+  --key-top:#FFFFFF; --key-bot:#F1F1F4; --key-line:rgba(0,0,0,.13); --key-edge:rgba(0,0,0,.2); --key-hi:rgba(255,255,255,.9);
+  --c-start:#1A7F37; --c-fav:#FFB300; --c-recent:#007AFF; --c-guide:#FF3B30;
+  --c-opmaak:#FF9500; --c-formules:#007AFF; --c-navigeren:#5856D6; --c-invoer:#34C759;
+  --c-data:#AF52DE; --c-bladen:#30B0C7; --c-vba:#636366; --c-editor:#8E8E93;
+  --code-bg:#F6F6F8; --code-ink:#1D1D1F; --code-kw:#9B2393; --code-str:#C41A16; --code-cm:#5D6C79;
+  --cell-bg:#FFFFFF; --cell-ink:#1A1F1C; --grid:#E1E5E2; --hdr:#F3F4F3; --hdr-ink:#66706A; --hdr-on:#DCEBE1; --hd-fill:#F4F6F5;
+  --xl:#107C41; --xl-deep:#0B5C30; --on-xl:#FFFFFF; --xl-soft:rgba(16,124,65,.14); --band:#EAF4EE;
+  --ref1:#2563D9; --ref2:#C9382D; --ref3:#8549D0;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI Variable Text","Segoe UI",system-ui,"Helvetica Neue",Arial,sans-serif;
+  --font-display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI Variable Display","Segoe UI",system-ui,"Helvetica Neue",Arial,sans-serif;
+  --font-mono:ui-monospace,"SF Mono",SFMono-Regular,"Cascadia Mono",Consolas,"Liberation Mono",monospace;
+  --font-cell:"Aptos Narrow",Aptos,Calibri,Carlito,"Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#000000; --surface:#1C1C1E; --surface-2:#232325; --panel:rgba(28,28,30,.78); --glass:rgba(36,36,38,.74);
+    --text:#F5F5F7; --text-2:#A1A1A6; --text-3:#6E6E73; --sep:rgba(84,84,88,.55); --sep-2:rgba(120,120,128,.6);
+    --fill:rgba(118,118,128,.24); --fill-2:rgba(118,118,128,.14);
+    --tint:#30D158; --tint-press:#28B84C; --on-tint:#00230C; --tint-soft:rgba(48,209,88,.16); --focus:rgba(48,209,88,.5);
+    --star:#FFD60A; --warn:#FF9F0A; --warn-soft:rgba(255,159,10,.16); --mark:rgba(255,214,10,.34); --backdrop:rgba(0,0,0,.6);
+    --shadow-1:0 1px 2px rgba(0,0,0,.5); --shadow-2:0 10px 30px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.4); --shadow-3:0 30px 90px rgba(0,0,0,.75);
+    --key-top:#3A3A3C; --key-bot:#2C2C2E; --key-line:rgba(255,255,255,.1); --key-edge:rgba(0,0,0,.75); --key-hi:rgba(255,255,255,.07);
+    --c-start:#30D158; --c-fav:#FFD60A; --c-recent:#0A84FF; --c-guide:#FF453A;
+    --c-opmaak:#FF9F0A; --c-formules:#0A84FF; --c-navigeren:#5E5CE6; --c-invoer:#30D158;
+    --c-data:#BF5AF2; --c-bladen:#40C8E0; --c-vba:#636366; --c-editor:#7C7C80;
+    --code-bg:#141416; --code-ink:#E5E5EA; --code-kw:#FF7AB2; --code-str:#FF8170; --code-cm:#7F8C98;
+    --cell-bg:#121614; --cell-ink:#DCE4DF; --grid:#262D29; --hdr:#191E1B; --hdr-ink:#8E9A93; --hdr-on:#1D3A2A; --hd-fill:#1A201C;
+    --xl:#3FBF77; --xl-deep:#2A9B5C; --on-xl:#04150B; --xl-soft:rgba(63,191,119,.2); --band:#17251D;
+    --ref1:#72A3FF; --ref2:#FF8176; --ref3:#BA95FF;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#000000; --surface:#1C1C1E; --surface-2:#232325; --panel:rgba(28,28,30,.78); --glass:rgba(36,36,38,.74);
+  --text:#F5F5F7; --text-2:#A1A1A6; --text-3:#6E6E73; --sep:rgba(84,84,88,.55); --sep-2:rgba(120,120,128,.6);
+  --fill:rgba(118,118,128,.24); --fill-2:rgba(118,118,128,.14);
+  --tint:#30D158; --tint-press:#28B84C; --on-tint:#00230C; --tint-soft:rgba(48,209,88,.16); --focus:rgba(48,209,88,.5);
+  --star:#FFD60A; --warn:#FF9F0A; --warn-soft:rgba(255,159,10,.16); --mark:rgba(255,214,10,.34); --backdrop:rgba(0,0,0,.6);
+  --shadow-1:0 1px 2px rgba(0,0,0,.5); --shadow-2:0 10px 30px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.4); --shadow-3:0 30px 90px rgba(0,0,0,.75);
+  --key-top:#3A3A3C; --key-bot:#2C2C2E; --key-line:rgba(255,255,255,.1); --key-edge:rgba(0,0,0,.75); --key-hi:rgba(255,255,255,.07);
+  --c-start:#30D158; --c-fav:#FFD60A; --c-recent:#0A84FF; --c-guide:#FF453A;
+  --c-opmaak:#FF9F0A; --c-formules:#0A84FF; --c-navigeren:#5E5CE6; --c-invoer:#30D158;
+  --c-data:#BF5AF2; --c-bladen:#40C8E0; --c-vba:#636366; --c-editor:#7C7C80;
+  --code-bg:#141416; --code-ink:#E5E5EA; --code-kw:#FF7AB2; --code-str:#FF8170; --code-cm:#7F8C98;
+  --cell-bg:#121614; --cell-ink:#DCE4DF; --grid:#262D29; --hdr:#191E1B; --hdr-ink:#8E9A93; --hdr-on:#1D3A2A; --hd-fill:#1A201C;
+  --xl:#3FBF77; --xl-deep:#2A9B5C; --on-xl:#04150B; --xl-soft:rgba(63,191,119,.2); --band:#17251D;
+  --ref1:#72A3FF; --ref2:#FF8176; --ref3:#BA95FF;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font:15px/1.47 var(--font);letter-spacing:-.006em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top, 0px);z-index:45;background:var(--bg)}
+button{font:inherit;color:inherit}
+a{color:var(--tint)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+mark{background:var(--mark);color:inherit;border-radius:3px;padding:0 1px}
+
+/* ---------- pictogrammen ---------- */
+svg.i{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ic{display:inline-grid;place-items:center;flex:none;width:28px;height:28px;border-radius:7px;background:var(--c, var(--text-3));color:var(--on-icon)}
+.ic svg.i{width:17px;height:17px;stroke-width:2}
+.ic.sm{width:22px;height:22px;border-radius:6px}
+.ic.sm svg.i{width:14px;height:14px;stroke-width:2.1}
+.ic.md{width:36px;height:36px;border-radius:9px}
+.ic.md svg.i{width:21px;height:21px}
+.ic.lg{width:56px;height:56px;border-radius:14px;box-shadow:var(--shadow-1)}
+.ic.lg svg.i{width:31px;height:31px;stroke-width:1.9}
+
+/* ---------- toetsen ---------- */
+.keys{display:inline-flex;flex-wrap:wrap;align-items:center;gap:3px;min-width:0}
+kbd.k{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;padding:0 6px;border-radius:6px;
+  font:600 11.5px/1 var(--font);letter-spacing:0;color:var(--text);white-space:nowrap;
+  background:linear-gradient(180deg,var(--key-top),var(--key-bot));border:.5px solid var(--key-line);
+  box-shadow:0 1px 0 var(--key-edge),inset 0 1px 0 var(--key-hi);transition:transform .1s,background .1s,color .1s,box-shadow .1s}
+.plus{color:var(--text-3);font:600 11px/1 var(--font);padding:0 1px}
+.then{color:var(--text-3);font:500 15px/1 var(--font);padding:0 2px;transform:translateY(-1px)}
+.k-typed{display:inline-flex;align-items:center;height:24px;font:600 11.5px/1 var(--font-mono);padding:0 7px;border-radius:6px;border:1px dashed var(--sep-2);white-space:nowrap;transition:background .1s,color .1s}
+.k-ui{display:inline-flex;align-items:center;height:24px;font:600 11.5px/1 var(--font);padding:0 9px;border-radius:999px;background:var(--fill);white-space:nowrap;transition:background .1s,color .1s}
+.cb{display:inline-flex;align-items:center;gap:3px}
+.cb.down kbd.k{transform:translateY(1px);background:var(--tint);color:var(--on-tint);border-color:transparent;box-shadow:none}
+.cb.down .k-typed,.cb.down .k-ui{background:var(--tint);color:var(--on-tint);border-color:transparent}
+.keys.lg kbd.k{min-width:30px;height:30px;padding:0 8px;border-radius:7px;font-size:13px}
+.keys.lg .k-typed,.keys.lg .k-ui{height:30px;font-size:13px}
+.keys.xl{gap:5px}
+.keys.xl kbd.k{min-width:46px;height:46px;padding:0 13px;border-radius:11px;font-size:17px;font-weight:600;box-shadow:0 2px 0 var(--key-edge),inset 0 1px 0 var(--key-hi)}
+.keys.xl .plus{font-size:15px;padding:0 3px}
+.keys.xl .then{font-size:22px;padding:0 4px}
+.keys.xl .k-typed,.keys.xl .k-ui{height:46px;font-size:15px;padding:0 14px}
+.ik{display:inline-flex;align-items:center;gap:2px;vertical-align:-1px}
+.ik kbd.k{min-width:20px;height:20px;font-size:10.5px;padding:0 5px;border-radius:5px}
+.ik .k-typed,.ik .k-ui{height:20px;font-size:10.5px}
+.ik .plus{font-size:10px}
+.subname{display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 8px;border-radius:6px;background:var(--fill-2);border:.5px solid var(--sep);font:500 12px/1 var(--font-mono);color:var(--text);white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.subname b{color:var(--code-kw);font-weight:600}
+
+/* ---------- knoppen ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:36px;padding:0 16px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;white-space:nowrap;text-decoration:none;transition:background-color .15s,transform .1s}
+.btn:active{transform:scale(.98)}
+.btn svg.i{width:17px;height:17px}
+.btn-fill{background:var(--tint);color:var(--on-tint)}
+.btn-fill:hover{background:var(--tint-press)}
+.btn-tint{background:var(--tint-soft);color:var(--tint)}
+.btn-gray{background:var(--fill);color:var(--text)}
+.btn-gray:hover{background:var(--sep)}
+.btn.sm{height:30px;padding:0 12px;font-size:13px}
+.ibtn{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;border:0;background:transparent;color:var(--text-2);cursor:pointer;flex:none;padding:0;transition:background-color .15s,color .15s}
+.ibtn:hover{background:var(--fill);color:var(--text)}
+.ibtn:disabled{opacity:.35;cursor:default;background:transparent}
+.ibtn.glass{background:var(--glass);-webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%);box-shadow:var(--shadow-2),inset 0 0 0 .5px var(--sep);color:var(--text)}
+.ibtn.filled{background:var(--fill);color:var(--text)}
+.fav[aria-pressed="true"]{color:var(--star)}
+.fav[aria-pressed="true"] svg.i path{fill:currentColor}
+
+/* ---------- meldingen in de tekst ---------- */
+.note{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:12px;background:var(--fill-2);font-size:14px;line-height:1.5}
+.note > svg.i{color:var(--tint);margin-top:1px}
+.note b{font-weight:600}
+.note.warn{background:var(--warn-soft)}
+.note.warn > svg.i{color:var(--warn)}
+.badge{display:inline-flex;align-items:center;gap:3px;height:18px;padding:0 7px 0 6px;border-radius:999px;background:var(--tint-soft);color:var(--tint);font:600 10.5px/1 var(--font);letter-spacing:.01em;vertical-align:2px;margin-left:7px;white-space:nowrap}
+.badge svg.i{width:9px;height:9px}
+.badge.warn{background:var(--warn-soft);color:var(--warn)}
+
+/* ---------- app-indeling ---------- */
+.app{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;max-width:1720px;margin:0 auto;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));
+  padding-block:0 calc(104px + env(safe-area-inset-bottom, 0px))}
+.sidebar,.inspector{display:none}
+.main{min-width:0;container-type:inline-size;container-name:main}
+.view{min-width:0;padding-bottom:12px}
+
+@media (min-width:760px){
+  .app{grid-template-columns:256px minmax(0,1fr);gap:20px;padding-block:16px 28px}
+  .sidebar{display:flex}
+  .tabbar,.back{display:none!important}
+}
+@media (min-width:1200px){
+  .app.with-inspector{grid-template-columns:256px minmax(0,1fr) minmax(400px,30vw)}
+  .app.with-inspector .inspector{display:block}
+}
+
+/* ---------- zijbalk ---------- */
+.sidebar{position:sticky;top:16px;height:calc(100vh - 32px);flex-direction:column;gap:1px;padding:14px 10px 12px;border-radius:22px;
+  background:var(--panel);-webkit-backdrop-filter:blur(30px) saturate(180%);backdrop-filter:blur(30px) saturate(180%);
+  box-shadow:var(--shadow-1),inset 0 0 0 .5px var(--sep);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.brand{display:flex;align-items:center;gap:11px;padding:2px 8px 14px;border:0;background:none;text-align:left;cursor:pointer;border-radius:12px}
+.brand-t{display:flex;flex-direction:column;gap:2px;min-width:0}
+.brand-t b{font:700 18px/1.2 var(--font-display);letter-spacing:-.02em}
+.brand-t span{font-size:12px;color:var(--text-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-h{font:600 11px/1 var(--font);text-transform:uppercase;letter-spacing:.07em;color:var(--text-2);padding:16px 10px 7px}
+.nav-i{display:flex;align-items:center;gap:10px;width:100%;min-height:36px;padding:4px 8px;border-radius:10px;border:0;background:none;text-align:left;
+  font:500 14px/1.2 var(--font);color:var(--text);cursor:pointer;transition:background-color .12s}
+.nav-i:hover{background:var(--fill-2)}
+.nav-i[aria-current="page"]{background:var(--fill);font-weight:600}
+.nav-i .lbl{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-i .n{font:500 12px/1 var(--font);color:var(--text-2);font-variant-numeric:tabular-nums}
+.side-foot{margin-top:auto;padding:16px 10px 2px;font-size:11.5px;line-height:1.45;color:var(--text-2)}
+
+/* ---------- werkbalk met zoekveld ---------- */
+.toolbar{position:sticky;top:env(safe-area-inset-top, 0px);z-index:20;display:flex;align-items:center;gap:10px;padding-block:12px 14px;margin-bottom:2px;
+  background:linear-gradient(180deg,var(--bg) 62%,transparent)}
+@media (min-width:760px){ .toolbar{padding-top:0;margin-top:0} }
+.search{position:relative;flex:1;min-width:0;max-width:760px;display:flex;align-items:center;gap:9px;height:46px;padding:0 6px 0 15px;border-radius:999px;cursor:text;
+  background:var(--glass);-webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%);
+  box-shadow:var(--shadow-2),inset 0 0 0 .5px var(--sep);color:var(--text-2);transition:box-shadow .15s}
+.search:focus-within{box-shadow:var(--shadow-2),inset 0 0 0 .5px var(--sep),0 0 0 3px var(--focus)}
+.search input{flex:1;min-width:0;height:100%;border:0;background:transparent;font:400 16px/1.2 var(--font);color:var(--text);outline:none;-webkit-appearance:none;appearance:none}
+.search input::placeholder{color:var(--text-2)}
+.search input::-webkit-search-cancel-button{display:none}
+.search input:focus-visible{outline:none}
+.hint{flex:none;font:600 11px/1 var(--font);color:var(--text-2);border:1px solid var(--sep-2);border-radius:6px;padding:4px 6px;margin-right:6px;white-space:nowrap}
+@media (max-width:759px){ .hint{display:none} }
+.search .ibtn{width:32px;height:32px}
+
+/* ---------- tabbalk (telefoon) ---------- */
+.tabbar{position:fixed;z-index:30;left:max(16px, env(safe-area-inset-left, 0px));right:max(16px, env(safe-area-inset-right, 0px));bottom:calc(12px + env(safe-area-inset-bottom, 0px));
+  max-width:460px;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;padding:5px;border-radius:999px;
+  background:var(--glass);-webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%);box-shadow:var(--shadow-2),inset 0 0 0 .5px var(--sep)}
+.tbi{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:50px;padding:5px 2px;border-radius:999px;border:0;background:none;
+  color:var(--text-2);font:600 10.5px/1 var(--font);cursor:pointer;transition:background-color .15s,color .15s}
+.tbi svg.i{width:23px;height:23px}
+.tbi[aria-current="page"]{color:var(--tint);background:var(--fill)}
+.tbi .cnt{position:absolute;top:4px;left:calc(50% + 6px);min-width:16px;height:16px;padding:0 4px;border-radius:8px;background:var(--star);color:var(--on-icon);font:700 10px/16px var(--font);text-align:center}
+
+/* ---------- inspector (brede schermen) ---------- */
+.inspector{position:sticky;top:16px;height:calc(100vh - 32px);overflow-y:auto;overscroll-behavior:contain;border-radius:22px;background:var(--surface);
+  box-shadow:var(--shadow-1),inset 0 0 0 .5px var(--sep);container-type:inline-size;scrollbar-width:thin}
+
+/* ---------- sheet (detail op kleinere schermen) ---------- */
+.sheet-wrap{position:fixed;inset:0;z-index:50;display:flex;align-items:flex-end;justify-content:center}
+.sheet-bd{position:absolute;inset:0;background:var(--backdrop);animation:fadein .22s ease-out}
+.sheet-p{position:relative;width:100%;max-height:calc(100% - 24px - env(safe-area-inset-top, 0px));overflow-y:auto;overscroll-behavior:contain;
+  background:var(--surface);border-radius:20px 20px 0 0;box-shadow:var(--shadow-3);container-type:inline-size;
+  padding-bottom:env(safe-area-inset-bottom, 0px);padding-left:env(safe-area-inset-left, 0px);padding-right:env(safe-area-inset-right, 0px);
+  animation:sheetup .34s cubic-bezier(.2,.85,.25,1)}
+.sheet-p:focus{outline:none}
+.grab{width:38px;height:5px;border-radius:3px;background:var(--sep-2);margin:7px auto -3px}
+@media (min-width:760px){
+  .sheet-wrap{align-items:center;padding:28px}
+  .sheet-p{max-width:720px;max-height:min(900px, calc(100% - 56px));border-radius:22px;padding-bottom:0;animation:sheetpop .28s cubic-bezier(.2,.85,.25,1)}
+  .grab{display:none}
+}
+
+/* ---------- melding onderin ---------- */
+.toast{position:fixed;z-index:60;left:50%;bottom:calc(84px + env(safe-area-inset-bottom, 0px));transform:translateX(-50%);
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;width:max-content;max-width:calc(100vw - 32px);padding:11px 18px;border-radius:999px;
+  background:var(--glass);-webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%);
+  box-shadow:var(--shadow-2),inset 0 0 0 .5px var(--sep);font:600 14px/1.3 var(--font);color:var(--text)}
+.toast svg.i{color:var(--tint);width:18px;height:18px}
+.toast.show{animation:toastin .25s ease-out}
+.toast.wide{border-radius:18px}
+.toast input{flex:1 1 240px;min-width:0;font:12px var(--font-mono);padding:7px 9px;border-radius:8px;border:0;background:var(--fill);color:var(--text)}
+@media (min-width:760px){ .toast{bottom:calc(28px + env(safe-area-inset-bottom, 0px))} }
+
+.foot{padding:22px 4px 8px;margin-top:28px;border-top:.5px solid var(--sep);font-size:12.5px;line-height:1.5;color:var(--text-2);max-width:72ch}
+
+@keyframes fadein{from{opacity:0}}
+@keyframes sheetup{from{transform:translateY(100%)}}
+@keyframes sheetpop{from{opacity:0;transform:translateY(14px) scale(.98)}}
+@keyframes toastin{from{opacity:0;transform:translate(-50%,10px)}}
+@keyframes flashrow{0%,40%{box-shadow:inset 0 0 0 2px var(--tint)}100%{box-shadow:inset 0 0 0 2px transparent}}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+
+/* ---------- kop van een weergave ---------- */
+.vh{display:flex;align-items:flex-start;gap:16px;padding:10px 4px 18px}
+.vh-t{display:flex;flex-direction:column;gap:6px;min-width:0;flex:1}
+.vh h1{font:700 clamp(30px, 5cqi, 40px)/1.08 var(--font-display);letter-spacing:-.028em;margin:0;text-wrap:balance}
+.vh p{margin:0;color:var(--text-2);font-size:16px;line-height:1.45;max-width:62ch}
+.vh .meta{font-size:13px;color:var(--text-2)}
+.vh-act{display:flex;gap:6px;flex:none;padding-top:4px}
+@container main (max-width:560px){ .vh .ic.lg{width:46px;height:46px;border-radius:12px} .vh .ic.lg svg.i{width:26px;height:26px} }
+
+/* ---------- segmenten en springknoppen ---------- */
+.seg-c{display:inline-flex;gap:2px;padding:2px;border-radius:10px;background:var(--fill);margin:0 0 16px 4px;max-width:calc(100% - 4px);overflow-x:auto;scrollbar-width:none}
+.seg-c button{flex:none;height:30px;padding:0 14px;border-radius:8px;border:0;background:none;font:500 13px/1 var(--font);color:var(--text);cursor:pointer;white-space:nowrap}
+.seg-c button[aria-current="page"]{background:var(--surface);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.12),0 0 0 .5px var(--sep)}
+.jump{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:0 4px 4px;margin:-4px -4px 6px}
+.jump::-webkit-scrollbar,.seg-c::-webkit-scrollbar{display:none}
+.pill{flex:none;display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 13px;border-radius:999px;border:0;background:var(--surface);box-shadow:var(--shadow-1),inset 0 0 0 .5px var(--sep);
+  font:500 13px/1 var(--font);color:var(--text);cursor:pointer;white-space:nowrap}
+.pill:hover{background:var(--surface-2)}
+.pill .n{color:var(--text-2);font-variant-numeric:tabular-nums}
+.pill svg.i{width:15px;height:15px;color:var(--text-2)}
+
+/* ---------- gegroepeerde lijsten ---------- */
+.grp{margin-top:22px;scroll-margin-top:84px}
+.grp:first-of-type{margin-top:6px}
+.grp-h{display:flex;align-items:center;gap:8px;padding:0 16px 8px;font:600 12.5px/1.2 var(--font);text-transform:uppercase;letter-spacing:.05em;color:var(--text-2)}
+.grp-h .n{margin-left:auto;font-weight:500;letter-spacing:0;text-transform:none}
+.grp-h .ic{margin-left:-2px}
+.list{list-style:none;margin:0;padding:0;background:var(--surface);border-radius:16px;box-shadow:var(--shadow-1),inset 0 0 0 .5px var(--sep);overflow:hidden}
+.row{position:relative;display:flex;align-items:stretch}
+.row + .row::before{content:"";position:absolute;top:0;left:16px;right:0;height:.5px;background:var(--sep);z-index:1}
+.row-open{flex:1;min-width:0;display:grid;grid-template-columns:minmax(0,1fr) auto 12px;grid-template-areas:"main keys chev";align-items:center;gap:4px 14px;
+  min-height:56px;padding:10px 4px 10px 16px;border:0;background:none;text-align:left;cursor:pointer;color:inherit;transition:background-color .12s}
+.row{transition:background-color .12s}
+.row:hover{background:var(--fill-2)}
+.row-open:focus-visible{outline:none;box-shadow:inset 0 0 0 3px var(--focus)}
+.row.sel,.row.sel:hover{background:var(--tint-soft)}
+.row.flash{animation:flashrow 2s ease-out}
+.row-main{grid-area:main;min-width:0;display:flex;flex-direction:column;gap:2px}
+.row-t{font:500 15px/1.32 var(--font);color:var(--text)}
+.row-s{font-size:13px;line-height:1.38;color:var(--text-2);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.row-keys{grid-area:keys;justify-self:end;display:flex;justify-content:flex-end}
+.chev{grid-area:chev;width:12px;height:12px;color:var(--text-3);stroke-width:2.4}
+.row > .fav{align-self:center;margin:0 6px 0 2px;width:34px;height:34px;color:var(--text-3)}
+.row > .fav svg.i{width:19px;height:19px}
+.row > .fav[aria-pressed="true"]{color:var(--star)}
+@container main (max-width:600px){
+  .row-open{grid-template-columns:minmax(0,1fr) 12px;grid-template-areas:"main chev" "keys chev";padding-right:2px}
+  .row-keys{justify-self:start;margin-top:5px}
+}
+.inspector .row-open,.sheet-p .row-open{grid-template-columns:minmax(0,1fr) 12px;grid-template-areas:"main chev" "keys chev"}
+.inspector .row-keys,.sheet-p .row-keys{justify-self:start;margin-top:5px}
+
+/* ---------- startscherm ---------- */
+.hero{padding:14px 4px 6px}
+.eyebrow{display:flex;align-items:center;gap:7px;font:600 13px/1.2 var(--font);color:var(--tint);margin:0 0 10px}
+.eyebrow svg.i{width:16px;height:16px}
+.hero h1{font:700 clamp(36px, 7.4cqi, 60px)/1.03 var(--font-display);letter-spacing:-.038em;margin:0;text-wrap:balance}
+.hero p{font-size:clamp(16px, 2.2cqi, 20px);line-height:1.42;color:var(--text-2);max-width:54ch;margin:12px 0 0}
+.try{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:18px}
+.try > span{font-size:13px;color:var(--text-2);margin-right:2px}
+.sec{margin-top:36px}
+.sec-t{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:0 4px 12px}
+.sec-t h2{font:700 22px/1.2 var(--font-display);letter-spacing:-.02em;margin:0}
+.sec-t p{margin:4px 0 0;font-size:14px;color:var(--text-2)}
+.lnk{border:0;background:none;padding:4px 2px;font:500 14px/1 var(--font);color:var(--tint);cursor:pointer;white-space:nowrap}
+.lnk:hover{text-decoration:underline}
+
+.today{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:30px;align-items:center;padding:28px;border-radius:26px;background:var(--surface);box-shadow:var(--shadow-2),inset 0 0 0 .5px var(--sep)}
+.today h2{font:700 clamp(24px, 3.2cqi, 30px)/1.14 var(--font-display);letter-spacing:-.026em;margin:14px 0 8px;text-wrap:balance}
+.today p{margin:0;color:var(--text-2);font-size:15px;line-height:1.5}
+.today .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+@container main (max-width:760px){ .today{grid-template-columns:minmax(0,1fr);gap:20px;padding:20px} }
+
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@container main (min-width:560px){ .tiles{grid-template-columns:repeat(3,minmax(0,1fr))} }
+@container main (min-width:860px){ .tiles{grid-template-columns:repeat(4,minmax(0,1fr))} }
+@container main (min-width:700px){ .jump{flex-wrap:wrap;overflow:visible} }
+.tile{display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-height:118px;padding:15px 15px 13px;border-radius:18px;border:0;background:var(--surface);
+  box-shadow:var(--shadow-1),inset 0 0 0 .5px var(--sep);text-align:left;color:inherit;cursor:pointer;transition:box-shadow .2s,transform .2s}
+.tile:hover{box-shadow:var(--shadow-2),inset 0 0 0 .5px var(--sep);transform:translateY(-2px)}
+.tile-t{font:600 15px/1.3 var(--font);text-wrap:balance}
+.tile-c{display:flex;align-items:center;gap:6px;margin-top:auto;font-size:12px;color:var(--text-2)}
+.cdot{width:8px;height:8px;border-radius:50%;background:var(--c);flex:none}
+@container main (max-width:520px){ .tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px} .tile{min-height:112px;padding:13px} .tile .keys kbd.k{min-width:22px;height:22px;font-size:11px;padding:0 5px} }
+
+.cats{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+@container main (min-width:560px){ .cats{grid-template-columns:repeat(2,minmax(0,1fr))} .cats.three{grid-template-columns:repeat(3,minmax(0,1fr))} }
+@container main (min-width:860px){ .cats{grid-template-columns:repeat(3,minmax(0,1fr))} }
+.cat{display:grid;grid-template-columns:auto minmax(0,1fr) 12px;grid-template-areas:"ic name chev" "ic meta chev" "ex ex ex";gap:2px 13px;align-items:center;padding:15px 14px 15px 15px;border-radius:18px;border:0;
+  background:var(--surface);box-shadow:var(--shadow-1),inset 0 0 0 .5px var(--sep);text-align:left;color:inherit;cursor:pointer;transition:box-shadow .2s,transform .2s}
+.cat:hover{box-shadow:var(--shadow-2),inset 0 0 0 .5px var(--sep);transform:translateY(-2px)}
+.cat .ic{grid-area:ic}
+.cat-n{grid-area:name;font:600 16px/1.25 var(--font)}
+.cat-m{grid-area:meta;font-size:12.5px;color:var(--text-2)}
+.cat .chev{grid-area:chev}
+.cat-ex{grid-area:ex;margin-top:10px;padding-top:10px;border-top:.5px solid var(--sep);font-size:13px;line-height:1.5;color:var(--text-2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%, 220px),1fr));gap:12px}
+.lgd{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:15px;border-radius:16px;background:var(--surface);box-shadow:var(--shadow-1),inset 0 0 0 .5px var(--sep)}
+.lgd p{margin:0;font-size:13.5px;line-height:1.45;color:var(--text-2)}
+.lgd b{color:var(--text);font-weight:600}
+
+/* ---------- lege staat ---------- */
+.empty{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:46px 20px;border-radius:20px;background:var(--surface);box-shadow:var(--shadow-1),inset 0 0 0 .5px var(--sep)}
+.empty > svg.i{width:44px;height:44px;color:var(--text-3);stroke-width:1.4}
+.empty h3{font:700 19px/1.25 var(--font-display);margin:2px 0 0}
+.empty p{margin:0;max-width:44ch;color:var(--text-2);font-size:14px;line-height:1.5}
+.empty .try{justify-content:center;margin-top:8px}
+.confirm{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;color:var(--text-2)}
+
+/* ---------- handleiding ---------- */
+.guide{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:16px;align-items:start}
+@container main (max-width:860px){ .guide{grid-template-columns:minmax(0,1fr)} }
+.steps{list-style:none;margin:0;padding:6px 18px;background:var(--surface);border-radius:18px;box-shadow:var(--shadow-1),inset 0 0 0 .5px var(--sep);counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:30px minmax(0,1fr);gap:14px;padding:14px 0;font-size:14.5px;line-height:1.55}
+.steps li + li{border-top:.5px solid var(--sep)}
+.steps li::before{content:counter(s);width:30px;height:30px;border-radius:50%;background:var(--tint);color:var(--on-tint);display:grid;place-items:center;font:700 14px/1 var(--font-display)}
+.steps b{font-weight:600}
+.path{font-weight:600;color:var(--tint)}
+.side{display:flex;flex-direction:column;gap:12px;min-width:0}
+.side h3{font:700 17px/1.3 var(--font-display);margin:6px 0 0}
+.side p{margin:0;font-size:14px;line-height:1.5;color:var(--text-2)}
+
+/* ---------- detail ---------- */
+.det{display:flex;flex-direction:column;gap:18px;padding:0 22px 26px}
+.det-top{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:4px;margin:0 -22px;padding:12px 14px 10px 22px;
+  background:var(--surface);background:color-mix(in srgb, var(--surface) 86%, transparent);-webkit-backdrop-filter:blur(20px) saturate(180%);backdrop-filter:blur(20px) saturate(180%)}
+.crumb{display:inline-flex;align-items:center;gap:8px;min-width:0;flex:1;border:0;background:none;padding:4px 6px 4px 0;font:600 13px/1.2 var(--font);color:var(--text-2);cursor:pointer;text-align:left}
+.crumb .lbl{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.crumb:hover .lbl{color:var(--text)}
+.det-keys{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding-top:4px}
+.det-hint{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text-2)}
+.det-hint svg.i{width:15px;height:15px}
+.det h2{font:700 27px/1.15 var(--font-display);letter-spacing:-.025em;margin:0;text-wrap:balance}
+.det .lead{margin:-6px 0 0;font-size:16px;line-height:1.55;color:var(--text)}
+.alt{display:flex;align-items:center;flex-wrap:wrap;gap:6px 10px;padding:10px 12px;border-radius:12px;background:var(--fill-2);font-size:13px;color:var(--text-2)}
+.blk-h{display:flex;align-items:center;justify-content:space-between;gap:8px;font:600 12.5px/1.2 var(--font);text-transform:uppercase;letter-spacing:.05em;color:var(--text-2);margin:8px 0 -8px}
+.howto{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;counter-reset:h}
+.howto li{counter-increment:h;display:grid;grid-template-columns:26px minmax(0,1fr);gap:12px;align-items:start;font-size:14.5px;line-height:1.45}
+.howto li::before{content:counter(h);width:26px;height:26px;border-radius:50%;background:var(--fill);display:grid;place-items:center;font:600 12.5px/1 var(--font);color:var(--text-2)}
+.howto .keys{margin:2px 0 5px}
+.det .list .row-open{min-height:50px}
+.pn{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin-top:4px}
+.pn button{display:flex;flex-direction:column;gap:3px;min-width:0;padding:11px 13px;border-radius:14px;border:0;background:var(--fill-2);text-align:left;cursor:pointer;color:inherit}
+.pn button:hover{background:var(--fill)}
+.pn button:disabled{visibility:hidden}
+.pn small{font:600 11.5px/1 var(--font);color:var(--text-2);display:flex;align-items:center;gap:3px}
+.pn small svg.i{width:12px;height:12px;stroke-width:2.4}
+.pn span{font:500 14px/1.3 var(--font);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pn .nx{align-items:flex-end;text-align:right}
+.det-acts{display:flex;flex-wrap:wrap;gap:8px}
+.inspector .det-top{border-radius:22px 22px 0 0}
+.insp-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;height:100%;padding:30px;text-align:center;color:var(--text-2)}
+.insp-empty svg.i{width:40px;height:40px;color:var(--text-3);stroke-width:1.4}
+
+/* ---------- code ---------- */
+.code{border-radius:14px;background:var(--code-bg);box-shadow:inset 0 0 0 .5px var(--sep);overflow:hidden;min-width:0}
+.code-h{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 7px 7px 14px;border-bottom:.5px solid var(--sep);font:600 11.5px/1 var(--font);color:var(--text-2);letter-spacing:.02em}
+.code pre{margin:0;padding:13px 15px;overflow-x:auto;font:12.5px/1.65 var(--font-mono);color:var(--code-ink);tab-size:4}
+.code pre:focus-visible{outline:none;box-shadow:inset 0 0 0 3px var(--focus)}
+.code .kw{color:var(--code-kw);font-weight:600}
+.code .st{color:var(--code-str)}
+.code .cm{color:var(--code-cm);font-style:italic}
+
+/* ---------- demo ---------- */
+.demo{display:flex;flex-direction:column;gap:12px;min-width:0}
+.prog{display:flex;gap:4px}
+.seg{position:relative;flex:1;height:4px;padding:0;border:0;border-radius:2px;background:var(--fill);cursor:pointer;transition:background-color .25s}
+.seg::after{content:"";position:absolute;inset:-9px 0}
+.seg.on{background:var(--tint)}
+.demo-row{display:flex;align-items:flex-start;gap:12px}
+.play{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;border:0;background:var(--tint);color:var(--on-tint);cursor:pointer;transition:transform .1s,background-color .15s}
+.play:hover{background:var(--tint-press)}
+.play:active{transform:scale(.95)}
+.play svg.i{width:18px;height:18px}
+.cap{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px;padding-top:2px}
+.cap-l{font:600 11.5px/1.2 var(--font);text-transform:uppercase;letter-spacing:.05em;color:var(--text-2)}
+.cap-k{display:flex;flex-wrap:wrap;align-items:center;gap:3px}
+.cap-k:empty{display:none}
+.cap-t{font-size:14px;line-height:1.45}
+.stepb{display:flex;gap:2px;flex:none}
+.stepb .ibtn{width:34px;height:34px}
+
+/* ---------- mini-werkblad ---------- */
+.sheet{position:relative;background:var(--cell-bg);border-radius:14px;box-shadow:var(--shadow-1),inset 0 0 0 .5px var(--sep);overflow:hidden;font-family:var(--font-cell);color:var(--cell-ink);
+  cursor:pointer;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
+.sheet:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.fx{display:flex;align-items:center;gap:8px;height:30px;padding:0 10px;border-bottom:1px solid var(--grid);font-size:12px}
+.nm{flex:none;width:62px;padding:2px 6px;border-radius:5px;background:var(--hd-fill);font:11px/1.35 var(--font-cell);white-space:nowrap;overflow:hidden}
+.fxl{flex:none;font:italic 600 12.5px/1 Georgia,"Times New Roman",serif;color:var(--hdr-ink)}
+.fxv{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-radius:4px;padding:2px 4px}
+.fxv.flash{animation:fxflash 1.1s ease-out}
+.fxv i,.gi .cell i{font-style:normal}
+.r1{color:var(--ref1)} .r2{color:var(--ref2)} .r3{color:var(--ref3)}
+.gw{position:relative;overflow:hidden}
+.gi{position:absolute;left:0;top:0;transform-origin:0 0}
+.ge{position:absolute;transition:left .45s ease,top .45s ease,width .45s ease,height .45s ease,background-color .3s,box-shadow .3s,border-color .3s,opacity .3s,color .3s}
+.gi .cell{display:flex;align-items:center;padding:0 4px;font-size:12px;white-space:nowrap;overflow:hidden;border-right:1px solid var(--grid);border-bottom:1px solid var(--grid);font-variant-numeric:tabular-nums}
+.gi .cell .v{white-space:pre}
+.gi.nogrid .cell{border-right-color:transparent;border-bottom-color:transparent}
+.gi .hdrc{display:flex;align-items:center;justify-content:center;background:var(--hdr);color:var(--hdr-ink);font:10.5px/1 var(--font);border-right:1px solid var(--grid);border-bottom:1px solid var(--grid);overflow:hidden;white-space:nowrap}
+.gi .hdrc.on{background:var(--hdr-on);color:var(--xl);font-weight:700}
+.gi .hdrc.col.on{box-shadow:inset 0 -2px 0 var(--xl)}
+.gi .hdrc.row.on{box-shadow:inset -2px 0 0 var(--xl)}
+.gi .hdrc.col.hidnext{box-shadow:inset -3px 0 0 var(--hdr-ink)}
+.gi .hdrc.row.hidnext{box-shadow:inset 0 -3px 0 var(--hdr-ink)}
+.gi .hz{padding:0;border-width:0}
+.gi .corner{background:var(--hdr);border-right:1px solid var(--grid);border-bottom:1px solid var(--grid)}
+.gi .corner::after{content:"";position:absolute;right:3px;bottom:3px;border-style:solid;border-width:0 0 7px 7px;border-color:transparent transparent var(--hdr-ink) transparent;opacity:.5}
+.gi .cell.ins{box-shadow:inset 0 0 0 999px var(--xl-soft)}
+.gi .selb{border:2px solid var(--xl);z-index:5;pointer-events:none}
+.gi .selb.multi{border-width:1px}
+.gi .fill::after{content:"";position:absolute;right:-4px;bottom:-4px;width:6px;height:6px;background:var(--xl);outline:1px solid var(--cell-bg)}
+.gi .actb{border:2px solid var(--xl);z-index:6;pointer-events:none}
+.gi .mk{border:2px solid currentColor;z-index:4;background:color-mix(in srgb, currentColor 9%, transparent);pointer-events:none}
+.gi .ants{z-index:6;pointer-events:none;
+  background-image:linear-gradient(90deg,var(--xl) 50%,transparent 50%),linear-gradient(90deg,var(--xl) 50%,transparent 50%),linear-gradient(0deg,var(--xl) 50%,transparent 50%),linear-gradient(0deg,var(--xl) 50%,transparent 50%);
+  background-repeat:repeat-x,repeat-x,repeat-y,repeat-y;background-size:8px 2px,8px 2px,2px 8px,2px 8px;background-position:0 0,0 100%,0 0,100% 0;animation:ants .6s linear infinite}
+.gi .frz{z-index:5;background:var(--hdr-ink);pointer-events:none}
+.gi .spn{display:flex;align-items:center;justify-content:center;z-index:2;pointer-events:none;white-space:nowrap}
+.gi .arr{z-index:7;border-left:2px dashed var(--ref3);pointer-events:none}
+.gi .arr::before{content:"";position:absolute;left:-7px;top:-3px;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:9px solid var(--ref3)}
+.gi .b{font-weight:700} .gi .i{font-style:italic} .gi .mut{color:var(--hdr-ink)}
+.gi .r{justify-content:flex-end} .gi .c{justify-content:center}
+.gi .hd{background:var(--hd-fill);font-weight:600}
+.gi .t{font-size:14px;font-weight:700}
+.gi .th{background:var(--xl);color:var(--on-xl);font-weight:700}
+.gi .tb{background:var(--band)}
+.gi .bt{border-top:1px solid var(--cell-ink)}
+.gi .f{font:11px var(--font-mono)}
+.gi .ov{overflow:visible;z-index:2}
+.gi .flt{padding-right:19px}
+.gi .flt::after{content:"▾";position:absolute;right:2px;top:50%;transform:translateY(-50%);width:14px;height:14px;border:1px solid var(--grid);border-radius:3px;background:var(--cell-bg);color:var(--hdr-ink);font-size:9px;line-height:12px;text-align:center;font-weight:400}
+.gi .wrap-t{align-items:flex-start}
+.gi .wrap-t .v{white-space:pre-line;line-height:1.3;padding-top:3px}
+.gi .new{animation:cellflash 1.3s ease-out}
+.gi .spc{color:var(--ref2);font-weight:700}
+.gi .cell.edit{overflow:visible;z-index:7}
+.gi .cell.edit .v{background:var(--cell-bg);padding-right:2px}
+.caret{display:inline-block;width:1px;height:13px;background:var(--cell-ink);margin-left:1px;vertical-align:-2px;animation:blink 1s steps(1) infinite}
+.pop{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:20;min-width:180px;max-width:90%;background:var(--surface);color:var(--text);border-radius:12px;
+  box-shadow:var(--shadow-3),inset 0 0 0 .5px var(--sep);font:12px/1.35 var(--font);overflow:hidden;animation:popin .2s ease-out}
+.pop-t{padding:7px 11px;font-weight:700;border-bottom:.5px solid var(--sep);background:var(--surface-2)}
+.pop-b{padding:8px 11px;display:flex;flex-direction:column;gap:5px}
+.pop-f{display:flex;align-items:center;gap:8px}
+.pop-in{border:1.5px solid var(--xl);border-radius:5px;padding:2px 6px;min-width:48px;font:11px var(--font-mono);background:var(--cell-bg)}
+.pop-o{display:flex;align-items:center;gap:7px;color:var(--text-2)}
+.pop-o::before{content:"";width:11px;height:11px;border-radius:50%;border:1px solid var(--sep-2);flex:none;box-sizing:border-box}
+.pop-o.on{color:var(--text);font-weight:700}
+.pop-o.on::before{border:3.5px solid var(--xl)}
+.pop-c{display:flex;align-items:center;gap:7px}
+.pop-c .box{width:12px;height:12px;border-radius:3px;background:var(--xl);flex:none;position:relative}
+.pop-c .box::after{content:"";position:absolute;left:4px;top:1.5px;width:3px;height:6px;border:solid var(--on-xl);border-width:0 1.5px 1.5px 0;transform:rotate(45deg)}
+.pop-m{max-width:230px}
+.pop-ok{align-self:flex-end;margin-top:4px;padding:4px 16px;border-radius:999px;background:var(--xl);color:var(--on-xl);font-weight:700}
+.tabs{display:flex;align-items:center;gap:2px;padding:0 8px;height:28px;border-top:1px solid var(--grid);background:var(--hdr);font:11px/1 var(--font);color:var(--hdr-ink);overflow:hidden}
+.tabs .tab{padding:7px 10px;white-space:nowrap;border-radius:0 0 6px 6px}
+.tabs .tab.on{background:var(--cell-bg);color:var(--xl);font-weight:700;box-shadow:inset 0 -2px 0 var(--xl)}
+.tabs .tab.new{animation:tabin .45s ease-out}
+.zoom{margin-left:auto;font-variant-numeric:tabular-nums;white-space:nowrap}
+.zoom.flash{animation:fxflash 1.1s ease-out;border-radius:4px;padding:2px 4px}
+
+@keyframes blink{50%{opacity:0}}
+@keyframes cellflash{0%{background-color:color-mix(in srgb, var(--xl) 34%, transparent)}100%{background-color:transparent}}
+@keyframes fxflash{0%{background-color:var(--tint-soft)}100%{background-color:transparent}}
+@keyframes popin{from{opacity:0;transform:translate(-50%,-44%)}to{opacity:1;transform:translate(-50%,-50%)}}
+@keyframes ants{to{background-position:8px 0,-8px 100%,0 -8px,100% 8px}}
+@keyframes tabin{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="app" id="app">
+  <aside class="sidebar" id="sidebar" aria-label="Onderwerpen"></aside>
+  <main class="main" id="main">
+    <div class="toolbar" id="toolbar">
+      <button class="ibtn glass back" id="back" type="button" aria-label="Terug" hidden></button>
+      <label class="search" for="q">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5l5 5"/></svg>
+        <input id="q" type="search" placeholder="Zoek een taak of toets" autocomplete="off" spellcheck="false" enterkeyhint="search" aria-label="Zoek een sneltoets, taak of macro">
+        <kbd class="hint" id="qhint">Ctrl K</kbd>
+        <button class="ibtn" id="qclear" type="button" aria-label="Zoekveld leegmaken" hidden><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="currentColor" stroke="none" opacity=".28"/><path d="M9 9l6 6M15 9l-6 6"/></svg></button>
+      </label>
+    </div>
+    <div class="view" id="view"></div>
+    <footer class="foot">Voor Excel voor Windows (Microsoft 365). De letters in Alt-reeksen volgen het lint en kunnen per taalversie verschillen: druk op Alt om ze te zien. Favorieten en recent bekeken onderdelen worden alleen in jouw eigen browser bewaard. Excel is een merk van Microsoft; deze pagina is daar niet aan verbonden.</footer>
+  </main>
+  <aside class="inspector" id="inspector" aria-label="Details"></aside>
+</div>
+<nav class="tabbar" id="tabbar" aria-label="Hoofdmenu"></nav>
+<div class="sheet-wrap" id="sheet" hidden>
+  <div class="sheet-bd" data-close></div>
+  <section class="sheet-p" id="sheetp" role="dialog" aria-modal="true" aria-labelledby="det-title" tabindex="-1"></section>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script>
+/* ===== gedeelde voorbeelddata ===== */
+const NU = new Date();
+const DATUM = NU.getDate() + '-' + (NU.getMonth() + 1) + '-' + NU.getFullYear();
+const TIJD = String(NU.getHours()).padStart(2, '0') + ':' + String(NU.getMinutes()).padStart(2, '0');
+
+const BEST = {
+  A1:'Product|hd', B1:'Aantal|hd r', C1:'Prijs|hd r', D1:'Totaal|hd r',
+  A2:'Koffie', B2:'3|r', C2:'2,80|r', D2:'8,40|r',
+  A3:'Thee',   B3:'5|r', C3:'2,40|r', D3:'12,00|r',
+  A4:'Taart',  B4:'2|r', C4:'4,25|r', D4:'8,50|r',
+  A5:'Soep',   B5:'4|r', C5:'6,50|r', D5:'26,00|r',
+  A6:'Totaal|b', D6:'54,90|b r'
+};
+const W4 = [62, 50, 50, 58];
+const LIJST = Object.assign({}, BEST, {
+  A6:'Broodje', B6:'6|r', C6:'3,90|r', D6:'23,40|r',
+  A7:'Sap',     B7:'3|r', C7:'2,95|r', D7:'8,85|r',
+  A8:'Water',   B8:'8|r', C8:'1,80|r', D8:'14,40|r'
+});
+function zonder(obj, keys){ const o = Object.assign({}, obj); keys.forEach(k => { delete o[k]; }); return o; }
+
+const CATS = [
+  { id:'opmaak',    chip:'Opmaak',   h:'Opmaak', p:'Rijen, kolommen, rasterlijnen en getalnotatie.' },
+  { id:'formules',  chip:'Formules', h:'Formules nalopen', p:'Zien waar een getal vandaan komt, en waar het naartoe gaat.' },
+  { id:'navigeren', chip:'Springen', h:'Springen en selecteren', p:'Snel door grote bladen, zonder scrollen of slepen.' },
+  { id:'invoer',    chip:'Invoeren', h:'Invoeren en bewerken', p:'Minder typen, minder kopiëren en plakken.' },
+  { id:'data',      chip:'Lijsten',  h:'Lijsten, tabellen en filters', p:'Exports en rommelige lijsten in een paar toetsen netjes, plus grafieken en groeperen.' },
+  { id:'bladen',    chip:'Bladen',   h:'Bladen, bestanden en weergave', p:'Tabbladen, zoomen, titels blokkeren, opslaan en afdrukken.' },
+  { id:'vba',       chip:'VBA',      h:'VBA die je altijd bij de hand wilt hebben', p:'Kopieer een macro met de knop en plak hem in je persoonlijke macrowerkmap (onderaan staat hoe). Daarna werkt hij in elk bestand. Eronder de sneltoetsen voor de VBA-editor.' }
+];
+
+/* ===== sneltoetsen met demo ===== */
+const SNEL = [
+  /* ---------- opmaak ---------- */
+  { cat:'opmaak', keys:'Alt › H › O › H', t:'Alle rijen even hoog',
+    d:'Opent het venster Rijhoogte. Vul een hoogte in en elke geselecteerde rij krijgt precies die hoogte.',
+    tip:'Selecteer eerst met ⟨Ctrl+A⟩ het hele blok of blad. 15 punten is 20 pixels.',
+    demo:{ cols:'ABC', w:[76,62,62], h:[20,36,14,28,20], act:'A1', sel:['A1'], c0:'Rijen met allemaal een andere hoogte',
+      cells:{ A1:'Maand|hd', B1:'Omzet|hd r', C1:'Kosten|hd r', A2:'Januari', B2:'12.400|r', C2:'8.150|r', A3:'Februari', B3:'11.900|r', C3:'7.980|r', A4:'Maart', B4:'13.250|r', C4:'8.420|r', A5:'April', B5:'12.870|r', C5:'8.300|r' } },
+    steps:[
+      { k:'Ctrl+A', c:'Alles selecteren', p:{ sel:['A1:C5'] } },
+      { k:'Alt › H › O › H', c:'Het venster Rijhoogte: typ 15', p:{ pop:{ t:'Rijhoogte', f:[['Rijhoogte:', '15']] } } },
+      { k:'Enter', c:'Elke rij is nu even hoog', p:{ pop:null, h:20 } }
+    ] },
+
+  { cat:'opmaak', keys:'Alt › W › V › G', alt:'Alt › V › Q › W', t:'Rasterlijnen aan of uit',
+    d:'Haalt de grijze hulplijnen weg, of zet ze terug. Je eigen randen en opmaak blijven staan, dus een rapport oogt meteen rustiger.',
+    tip:'Ook via Pagina-indeling: ⟨Alt › P › V › G⟩. De letters na Alt volgen het lint en kunnen per versie verschillen; druk op ⟨Alt⟩ en volg de lettertjes die je ziet.',
+    demo:{ cols:'ABC', w:[84,64,52], act:'A1', sel:['A1'], c0:'Klein rapport met rasterlijnen',
+      cells:{ A1:'Resultaat Q3|t ov', A3:'Omzet', B3:'38.150|r', C3:'+6%|r mut', A4:'Kosten', B4:'24.550|r', C4:'+2%|r mut', A5:'Resultaat|b', B5:'13.600|b r', C5:'+14%|b r' },
+      fmt:[['A5:C5', 'bt']] },
+    steps:[
+      { k:'Alt › W › V › G', c:'Rasterlijnen weg: alleen je eigen opmaak blijft over', p:{ grid:false } },
+      { k:'Alt › W › V › G', c:'Nog een keer: ze zijn er weer', p:{ grid:true } }
+    ] },
+
+  { cat:'opmaak', keys:'Alt › H › O › I', t:'Kolommen passend maken',
+    d:'Maakt de geselecteerde kolommen precies breed genoeg voor hun langste inhoud. Weg met afgekapte tekst en ####.',
+    tip:'Rijhoogte automatisch passend maken gaat met ⟨Alt › H › O › A⟩.',
+    demo:{ cols:'ABC', w:[46,42,52], act:'A1', sel:['A1'], c0:'Afgekapte tekst en #### in te smalle kolommen',
+      cells:{ A1:'Omschrijving|hd', B1:'Bedrag|hd r', C1:'Status|hd', A2:'Licentiekosten', B2:'####|r', C2:'Betaald', A3:'Advieskosten', B3:'####|r', C3:'Open', A4:'Reiskosten', B4:'####|r', C4:'Betaald' } },
+    steps:[
+      { k:'Ctrl+A', c:'Alles selecteren', p:{ sel:['A1:C4'] } },
+      { k:'Alt › H › O › I', c:'Elke kolom past nu precies', p:{ w:[100,64,58], cells:{ B2:'1.250,00|r', B3:'3.480,00|r', B4:'386,50|r' } } }
+    ] },
+
+  { cat:'opmaak', keys:'Ctrl+Shift+!', t:'Getallen en procenten netjes',
+    d:'⟨Ctrl+Shift+!⟩ zet duizendtallen en twee decimalen, ⟨Ctrl+Shift+%⟩ maakt er procenten van. De waarde zelf blijft gelijk; alleen de weergave verandert.',
+    tip:'⟨Ctrl+Shift+$⟩ geeft valuta, ⟨Ctrl+1⟩ opent alle notaties.',
+    demo:{ cols:'AB', w:[86,72], act:'A2', sel:['A2:A4'], fx:'1234,5', c0:'Kale getallen zonder opmaak',
+      cells:{ A1:'Bedrag|hd r', B1:'Aandeel|hd r', A2:'1234,5|r', A3:'980|r', A4:'-45,2|r', B2:'0,25|r', B3:'0,1|r', B4:'0,075|r' } },
+    steps:[
+      { k:'Ctrl+Shift+!', c:'Duizendtallen en twee decimalen. In de formulebalk staat nog steeds 1234,5', p:{ cells:{ A2:'1.234,50|r', A3:'980,00|r', A4:'-45,20|r' } } },
+      { k:'[B2:B4 selecteren]', c:'Nu de kolom met verhoudingen', p:{ sel:['B2:B4'], act:'B2', fx:'0,25' } },
+      { k:'Ctrl+Shift+%', c:'Procenten zonder decimalen; de waarde blijft 0,25', p:{ cells:{ B2:'25%|r', B3:'10%|r', B4:'8%|r' } } }
+    ] },
+
+  /* ---------- formules ---------- */
+  { cat:'formules', keys:'Ctrl+[', t:'Waar haalt deze formule zijn getallen vandaan?',
+    d:'Selecteert de cellen waar de formule in de actieve cel naar verwijst: de bronnen. Daarna brengt ⟨F5 › Enter⟩ je terug.',
+    tip:'Verwijst de formule naar één ander tabblad, dan springt Excel daarheen; ook dan brengt F5 › Enter je terug. ⟨Ctrl+Shift+{⟩ pakt ook de bronnen van de bronnen.',
+    demo:{ cols:'ABCD', w:W4, cells:BEST, act:'D2', sel:['D2'], fx:'=B2*C2', c0:'D2 bevat de formule =B2*C2' },
+    steps:[
+      { k:'Ctrl+[', c:'B2 en C2 worden geselecteerd: daar rekent D2 mee', p:{ sel:['B2:C2'], act:'B2', fx:null } },
+      { k:'F5 › Enter', c:'Ga naar onthoudt waar je was: je staat weer in D2', p:{ sel:['D2'], act:'D2', fx:'=B2*C2' } }
+    ] },
+
+  { cat:'formules', keys:'Ctrl+]', t:'Welke cellen rekenen met deze cel?',
+    d:'Selecteert de formules die naar de actieve cel verwijzen: de afhankelijke cellen. Handig voordat je een getal aanpast of weggooit.',
+    tip:'Kijkt alleen binnen hetzelfde tabblad. ⟨Ctrl+Shift+}⟩ pakt in één keer alle niveaus.',
+    demo:{ cols:'ABCD', w:W4, cells:BEST, act:'C2', sel:['C2'], fx:'2,8', c0:'C2 is de prijs van koffie' },
+    steps:[
+      { k:'Ctrl+]', c:'D2 rekent met C2', p:{ sel:['D2'], act:'D2', fx:'=B2*C2' } },
+      { k:'Ctrl+]', c:'Nog een keer: het totaal in D6 telt D2 mee, dus ook dat verandert', p:{ sel:['D6'], act:'D6', fx:'=SOM(D2:D5)' } }
+    ] },
+
+  { cat:'formules', keys:'Ctrl+`', t:'Formules tonen in plaats van uitkomsten',
+    d:'Wisselt het hele blad tussen de uitkomsten en de formules zelf. Nog een keer drukken zet alles terug zoals het was.',
+    tip:'De ` zit links van de 1, onder Esc.',
+    demo:{ cols:'ABCD', w:W4, cells:BEST, act:'D2', sel:['D2'], fx:'=B2*C2', c0:'Normale weergave: je ziet uitkomsten' },
+    steps:[
+      { k:'Ctrl+`', c:'Overal staat nu de formule, en getallen zonder opmaak', p:{ w:[62,50,50,104], cells:{ B2:'3', B3:'5', B4:'2', B5:'4', C2:'2,8', C3:'2,4', C4:'4,25', C5:'6,5', D2:'=B2*C2|f', D3:'=B3*C3|f', D4:'=B4*C4|f', D5:'=B5*C5|f', D6:'=SOM(D2:D5)|f b' } } },
+      { k:'Ctrl+`', c:'Nog een keer: terug naar de uitkomsten', p:{ w:W4, C:BEST } }
+    ] },
+
+  { cat:'formules', keys:'F2', t:'Formule bekijken met gekleurde kaders',
+    d:'Zet de cel in bewerkmodus. Elke verwijzing krijgt een eigen kleur, met een kader in dezelfde kleur om de cel waar hij naar wijst.',
+    tip:'Met ⟨Esc⟩ stop je zonder iets te veranderen.',
+    demo:{ cols:'ABCD', w:W4, cells:BEST, act:'D2', sel:['D2'], fx:'=B2*C2', c0:'D2 toont alleen de uitkomst' },
+    steps:[
+      { k:'F2', c:'B2 blauw, C2 rood: je ziet meteen waar de formule naar kijkt', p:{ edit:'D2', fxh:'=<i class="r1">B2</i>*<i class="r2">C2</i>', mk:{ B2:'r1', C2:'r2' } } },
+      { k:'Esc', c:'Terug, er is niets veranderd', p:{ edit:null, fxh:null, mk:null } }
+    ] },
+
+  { cat:'formules', keys:'F4', t:'Dollartekens wisselen',
+    d:'Tijdens het bewerken van een formule zet F4 de verwijzing bij je cursor vast: eerst rij en kolom, dan alleen de rij, dan alleen de kolom, dan weer los.',
+    tip:'Ben je niet aan het bewerken, dan herhaalt F4 je laatste actie, zoals een opvulkleur of een ingevoegde rij.',
+    demo:{ cols:'ABC', w:[62,58,58], act:'C4', sel:['C4'], edit:'C4', fxh:'=<i class="r1">B4</i>*<i class="r2">B1</i>', mk:{ B4:'r1', B1:'r2' }, c0:'C4 rekent de btw uit; je cursor staat achter B1',
+      cells:{ A1:'Btw|b', B1:'21%|r', A3:'Product|hd', B3:'Excl.|hd r', C3:'Btw|hd r', A4:'Koffie', B4:'8,40|r', C4:'=B4*B1', A5:'Thee', B5:'12,00|r', A6:'Taart', B6:'8,50|r' } },
+    steps:[
+      { k:'F4', c:'$B$1: rij én kolom vast. Kopieer je omlaag, dan blijft het B1', p:{ fxh:'=<i class="r1">B4</i>*<i class="r2">$B$1</i>' } },
+      { k:'F4', c:'B$1: alleen de rij vast', p:{ fxh:'=<i class="r1">B4</i>*<i class="r2">B$1</i>' } },
+      { k:'F4', c:'$B1: alleen de kolom vast', p:{ fxh:'=<i class="r1">B4</i>*<i class="r2">$B1</i>' } },
+      { k:'F4', c:'B1: weer helemaal los', p:{ fxh:'=<i class="r1">B4</i>*<i class="r2">B1</i>' } }
+    ] },
+
+  { cat:'formules', keys:'Alt+=', t:'AutoSom in één keer',
+    d:'Zet een SOM-formule onder of naast je getallen en kiest zelf het bereik. Controleer de stippellijn en druk Enter.',
+    tip:'Selecteer een blok getallen plus de lege rij eronder: dan vult ⟨Alt+=⟩ alle totalen tegelijk in.',
+    demo:{ cols:'ABCD', w:W4, rows:[1,2,3,4,5,6,7], cells:zonder(BEST, ['D6']), act:'D6', sel:['D6'], c0:'D6 is nog leeg' },
+    steps:[
+      { k:'Alt+=', c:'Excel stelt =SOM(D2:D5) voor', p:{ edit:'D6', fxh:'=SOM(<i class="r1">D2:D5</i>)', ants:'D2:D5', cells:{ D6:'=SOM(D2:D5)' } } },
+      { k:'Enter', c:'Het totaal staat erin', p:{ edit:null, fxh:null, ants:null, cells:{ D6:'54,90|b r new' }, act:'D7', sel:['D7'] } }
+    ] },
+
+  /* ---------- springen en selecteren ---------- */
+  { cat:'navigeren', keys:'Ctrl+↓', t:'Naar het einde van je data springen',
+    d:'Ctrl met een pijltje springt naar de laatste gevulde cel in die richting. Ideaal in lange lijsten.',
+    tip:'Staat er halverwege een lege cel, dan stopt Excel daar. Nog een keer drukken springt verder.',
+    demo:{ cols:'ABCD', w:W4, cells:LIJST, act:'A2', sel:['A2'], c0:'Je staat bovenaan in A2' },
+    steps:[
+      { k:'Ctrl+↓', c:'In één keer naar de laatste rij', p:{ act:'A8', sel:['A8'] } },
+      { k:'Ctrl+→', c:'En naar de laatste kolom', p:{ act:'D8', sel:['D8'] } },
+      { k:'Ctrl+Home', c:'Terug naar A1', p:{ act:'A1', sel:['A1'] } }
+    ] },
+
+  { cat:'navigeren', keys:'Ctrl+Shift+↓', t:'Selecteren tot het einde van je data',
+    d:'Werkt als Ctrl met een pijltje, maar selecteert alles onderweg mee.',
+    tip:'In een aaneengesloten blok pakt ⟨Ctrl+A⟩ meteen alles.',
+    demo:{ cols:'ABCD', w:W4, cells:LIJST, act:'A2', sel:['A2'], c0:'Start in A2' },
+    steps:[
+      { k:'Ctrl+Shift+↓', c:'A2 tot en met A8 geselecteerd', p:{ sel:['A2:A8'] } },
+      { k:'Ctrl+Shift+→', c:'Uitgebreid tot en met kolom D', p:{ sel:['A2:D8'] } }
+    ] },
+
+  { cat:'navigeren', keys:'Shift+Spatie', t:'Hele rij of kolom selecteren',
+    d:'Shift met spatie selecteert de rij, Ctrl met spatie de kolom. Daarna kun je meteen invoegen, verwijderen of opmaken.',
+    tip:'Werkt niet terwijl je in een cel typt: druk eerst Enter of Esc.',
+    demo:{ cols:'ABCD', w:W4, cells:BEST, act:'B3', sel:['B3'], c0:'Je staat in B3' },
+    steps:[
+      { k:'Shift+Spatie', c:'Rij 3 is geselecteerd', p:{ sel:['A3:D3'] } },
+      { k:'[klik in B3]', c:'Terug naar één cel', p:{ sel:['B3'] } },
+      { k:'Ctrl+Spatie', c:'Kolom B is geselecteerd', p:{ sel:['B1:B6'] } }
+    ] },
+
+  /* ---------- invoeren en bewerken ---------- */
+  { cat:'invoer', keys:'Ctrl+Enter', t:'Eén waarde in alle geselecteerde cellen',
+    d:'Typ iets en druk Ctrl met Enter in plaats van alleen Enter: elke geselecteerde cel krijgt dezelfde inhoud. Werkt ook met formules.',
+    tip:'Samen met F5 › Speciaal › Lege cellen vul je zo alleen de gaten in een lijst (zie Lijsten opschonen).',
+    demo:{ cols:'AB', w:[100,58], act:'B2', sel:['B2:B5'], c0:'B2 tot en met B5 geselecteerd',
+      cells:{ A1:'Taak|hd', B1:'Klaar?|hd', A2:'Offerte sturen', A3:'Factuur maken', A4:'Klant bellen', A5:'Archiveren' } },
+    steps:[
+      { k:'"Ja"', c:'Typ Ja', p:{ edit:'B2', cells:{ B2:'Ja' } } },
+      { k:'Ctrl+Enter', c:'Alle vier de cellen krijgen Ja', p:{ edit:null, cells:{ B2:'Ja|new', B3:'Ja|new', B4:'Ja|new', B5:'Ja|new' } } }
+    ] },
+
+  { cat:'invoer', keys:'Ctrl+D', t:'Formule omlaag kopiëren',
+    d:'Kopieert de bovenste cel van je selectie naar alle cellen eronder, inclusief formule en opmaak.',
+    tip:'⟨Ctrl+R⟩ doet hetzelfde naar rechts.',
+    demo:{ cols:'ABCD', w:W4, rows:[1,2,3,4,5], cells:zonder(BEST, ['D3','D4','D5','A6','D6']), act:'D2', sel:['D2:D5'], fx:'=B2*C2', c0:'Alleen D2 heeft de formule' },
+    steps:[
+      { k:'Ctrl+D', c:'D3 tot en met D5 rekenen nu ook', p:{ cells:{ D3:'12,00|r new', D4:'8,50|r new', D5:'26,00|r new' } } }
+    ] },
+
+  { cat:'invoer', keys:'Alt+Enter', t:'Nieuwe regel binnen een cel',
+    d:'Tijdens het typen begint Alt met Enter een nieuwe regel in dezelfde cel, in plaats van naar de volgende cel te gaan.',
+    tip:'Excel zet voor die cel vanzelf Terugloop aan.',
+    demo:{ cols:'AB', w:[124,56], rows:[1,2,3], act:'A2', sel:['A2'], edit:'A2', c0:'Je typt een adres in A2',
+      cells:{ A1:'Adres|hd', B1:'Klant|hd', A2:'Dorpsstraat 12', B2:'Bakker', B3:'Visser' } },
+    steps:[
+      { k:'Alt+Enter', c:'Nieuwe regel, je blijft in dezelfde cel', p:{ cells:{ A2:'Dorpsstraat 12\n|wrap-t' }, h:[20,34,20] } },
+      { k:'"3511 AB Utrecht"', c:'Typ de tweede regel', p:{ cells:{ A2:'Dorpsstraat 12\n3511 AB Utrecht|wrap-t' } } },
+      { k:'Enter', c:'Klaar: twee regels in één cel', p:{ edit:null, act:'A3', sel:['A3'] } }
+    ] },
+
+  { cat:'invoer', keys:'Ctrl+;', t:'Datum of tijd van nu',
+    d:'Ctrl met ; zet de datum van vandaag in de cel, Ctrl met Shift en ; de huidige tijd. Het is een vaste waarde: morgen staat er nog steeds dezelfde datum.',
+    tip:'Een datum die elke dag meeloopt? Gebruik dan de formule =VANDAAG().',
+    demo:{ cols:'ABC', w:[84,74,52], rows:[1,2,3], act:'B2', sel:['B2'], c0:'B2 is nog leeg',
+      cells:{ A1:'Taak|hd', B1:'Datum|hd', C1:'Tijd|hd', A2:'Kas geteld' } },
+    steps:[
+      { k:'Ctrl+;', c:'De datum van vandaag', p:{ edit:'B2', cells:{ B2:DATUM } } },
+      { k:'Tab › Ctrl+Shift+;', c:'Naar C2 en de tijd van nu', p:{ edit:'C2', act:'C2', sel:['C2'], cells:{ B2:DATUM + '|r', C2:TIJD } } },
+      { k:'Enter', c:'Vastgelegd. Enter na Tab brengt je terug naar de kolom waar je begon', p:{ edit:null, cells:{ C2:TIJD + '|r' }, act:'B3', sel:['B3'] } }
+    ] },
+
+  { cat:'invoer', keys:'Ctrl+Alt+V', t:'Plakken als waarden',
+    d:'Opent Plakken speciaal. Kies Waarden en je plakt alleen de uitkomsten: geen formules en geen opmaak.',
+    tip:'Handig voordat je een bestand deelt, of als een lijst niet meer mag meerekenen.',
+    demo:{ cols:'ABCD', w:W4, cells:BEST, act:'D2', sel:['D2:D5'], fx:'=B2*C2', c0:'D2 tot en met D5 bevatten formules' },
+    steps:[
+      { k:'Ctrl+C', c:'Kopiëren: de stippellijn loopt', p:{ ants:'D2:D5' } },
+      { k:'Ctrl+Alt+V', c:'Kies Waarden', p:{ pop:{ t:'Plakken speciaal', o:['Alles','Formules','Waarden'], on:2 } } },
+      { k:'Enter', c:'De formules zijn weg, alleen de getallen staan er nog', p:{ pop:null, ants:null, fx:'8,4', cells:{ D2:'8,40|r new', D3:'12,00|r new', D4:'8,50|r new', D5:'26,00|r new' } } }
+    ] },
+
+  { cat:'invoer', keys:'Ctrl+-', t:'Rij verwijderen of invoegen',
+    d:'Selecteer een rij met Shift en spatie, druk Ctrl met min en hij is weg. ⟨Ctrl+Shift+=⟩ voegt er juist een in.',
+    tip:'Zonder hele rij geselecteerd vraagt Excel eerst wat er weg moet.',
+    demo:{ cols:'ABCD', w:W4, cells:BEST, act:'B3', sel:['B3'], c0:'Thee moet eruit' },
+    steps:[
+      { k:'Shift+Spatie', c:'Rij 3 is geselecteerd', p:{ sel:['A3:D3'] } },
+      { k:'Ctrl+-', c:'Rij weg: de rest schuift omhoog en het totaal rekent mee', p:{ C:{
+        A1:'Product|hd', B1:'Aantal|hd r', C1:'Prijs|hd r', D1:'Totaal|hd r',
+        A2:'Koffie', B2:'3|r', C2:'2,80|r', D2:'8,40|r',
+        A3:'Taart|new', B3:'2|r new', C3:'4,25|r new', D3:'8,50|r new',
+        A4:'Soep', B4:'4|r', C4:'6,50|r', D4:'26,00|r',
+        A5:'Totaal|b', D5:'42,90|b r new' } } }
+    ] },
+
+  /* ---------- lijsten opschonen ---------- */
+  { cat:'data', keys:'Ctrl+E', t:'Snel aanvullen',
+    d:'Geef één voorbeeld en Excel herkent het patroon: voornamen apart zetten, initialen maken, codes samenvoegen.',
+    tip:'Typ het eerste voorbeeld, ga een cel omlaag en druk ⟨Ctrl+E⟩. Kijk daarna even of het patroon overal klopt.',
+    demo:{ cols:'AB', w:[104,70], act:'B3', sel:['B3'], c0:'Eén voorbeeld getypt in B2',
+      cells:{ A1:'Naam|hd', B1:'Voornaam|hd', A2:'Jan Jansen', A3:'Fatima el Amrani', A4:'Piet de Vries', A5:'Sanne Bakker', B2:'Jan' } },
+    steps:[
+      { k:'Ctrl+E', c:'Excel vult de rest zelf in', p:{ cells:{ B3:'Fatima|new', B4:'Piet|new', B5:'Sanne|new' } } }
+    ] },
+
+  { cat:'data', keys:'F5 › [Speciaal…] › [Lege cellen]', t:'Gaten vullen met de waarde erboven',
+    d:'Laat Excel alleen de lege cellen selecteren en vul ze allemaal tegelijk met een verwijzing naar de cel erboven.',
+    tip:'Zet het resultaat daarna om naar waarden (⟨Ctrl+C⟩, ⟨Ctrl+Alt+V⟩, Waarden), anders klopt het niet meer na sorteren. F5 is hetzelfde als ⟨Ctrl+G⟩.',
+    demo:{ cols:'AB', w:[70,60], act:'A2', sel:['A2:A8'], c0:'De regio staat alleen bij de eerste regel',
+      cells:{ A1:'Regio|hd', B1:'Omzet|hd r', A2:'Noord', B2:'120|r', B3:'95|r', B4:'80|r', A5:'Zuid', B5:'140|r', B6:'60|r', A7:'Oost', B7:'110|r', B8:'75|r' } },
+    steps:[
+      { k:'F5 › [Speciaal…]', c:'Kies Lege cellen', p:{ pop:{ t:'Ga naar speciaal', o:['Constanten','Formules','Lege cellen'], on:2 } } },
+      { k:'Enter', c:'Alleen de lege cellen zijn nu geselecteerd', p:{ pop:null, sel:['A3:A4','A6','A8'], act:'A3' } },
+      { k:'"=" › ↑', c:'Typ = en druk pijl omhoog: A3 verwijst naar A2', p:{ edit:'A3', fxh:'=<i class="r1">A2</i>', mk:{ A2:'r1' }, cells:{ A3:'=A2' } } },
+      { k:'Ctrl+Enter', c:'Alle gaten in één keer gevuld', p:{ edit:null, fxh:null, mk:null, fx:'=A2', cells:{ A3:'Noord|new', A4:'Noord|new', A6:'Zuid|new', A8:'Oost|new' } } }
+    ] },
+
+  { cat:'data', keys:'Ctrl+T', t:'Lijst omzetten naar een tabel',
+    d:'Maakt van je lijst een echte Excel-tabel: om en om gekleurde rijen, filterknoppen en formules die vanzelf meegroeien.',
+    tip:'Typ je direct onder de tabel verder, dan groeit hij mee. Grafieken en draaitabellen die erop gebaseerd zijn ook.',
+    demo:{ cols:'ABC', w:[72,62,58], act:'A1', sel:['A1'], c0:'Gewone lijst zonder opmaak',
+      cells:{ A1:'Product', B1:'Aantal|r', C1:'Prijs|r', A2:'Koffie', B2:'3|r', C2:'2,80|r', A3:'Thee', B3:'5|r', C3:'2,40|r', A4:'Taart', B4:'2|r', C4:'4,25|r', A5:'Soep', B5:'4|r', C5:'6,50|r' } },
+    steps:[
+      { k:'Ctrl+T', c:'Excel stelt het bereik voor', p:{ ants:'A1:C5', pop:{ t:'Tabel maken', f:[['Gegevens:', '=$A$1:$C$5']], chk:'Mijn tabel heeft kopteksten' } } },
+      { k:'Enter', c:'Klaar: om en om gekleurd, met filterknoppen', p:{ ants:null, pop:null, fmt:[['A1:C1', 'th flt'], ['A3:C3', 'tb'], ['A5:C5', 'tb']] } }
+    ] },
+
+  { cat:'data', keys:'Ctrl+Shift+L', t:'Filterknoppen aan of uit',
+    d:'Zet filterpijltjes op je kopregel. Nog een keer drukken haalt ze weg en zet meteen alle filters uit.',
+    tip:'Met ⟨Alt+↓⟩ open je het filter van de kopcel waar je op staat.',
+    demo:{ cols:'ABCD', w:[68,64,58,64], rows:[1,2,3,4,5], cells:zonder(BEST, ['A6','D6']), act:'A1', sel:['A1'], c0:'Kopregel zonder filters' },
+    steps:[
+      { k:'Ctrl+Shift+L', c:'Filterpijltjes op elke kolom', p:{ fmt:[['A1:D1', 'flt']] } },
+      { k:'Ctrl+Shift+L', c:'Nog een keer: filters weg', p:{ fmt:[] } }
+    ] }
+];
+
+/* ===== VBA met demo ===== */
+const RAPPORT = { A1:'Resultaat Q3|t ov', A3:'Omzet', B3:'38.150|r', C3:'+6%|r mut', A4:'Kosten', B4:'24.550|r', C4:'+2%|r mut', A5:'Resultaat|b', B5:'13.600|b r', C5:'+14%|b r' };
+const SMAL = { A1:'Omschrijving|hd', B1:'Bedrag|hd r', C1:'Status|hd', A2:'Licentiekosten', B2:'####|r', C2:'Betaald', A3:'Advieskosten', B3:'####|r', C3:'Open', A4:'Reiskosten', B4:'####|r', C4:'Betaald' };
+const MAANDEN = { A1:'Maand|hd', B1:'Omzet|hd r', C1:'Kosten|hd r', A2:'Januari', B2:'12.400|r', C2:'8.150|r', A3:'Februari', B3:'11.900|r', C3:'7.980|r', A4:'Maart', B4:'13.250|r', C4:'8.420|r', A5:'April', B5:'12.870|r', C5:'8.300|r' };
+
+const VBA = [
+  { naam:'KolommenPassend', t:'Alle kolommen passend',
+    d:'Elke kolom op het actieve blad wordt precies zo breed als zijn langste inhoud. Hetzelfde als ⟨Ctrl+A⟩ en ⟨Alt › H › O › I⟩, maar met één knop.',
+    code:`Sub KolommenPassend()
+    Cells.EntireColumn.AutoFit
+End Sub`,
+    note:'Alleen de geselecteerde kolommen? Gebruik Selection.EntireColumn.AutoFit. Voor rijen: Cells.EntireRow.AutoFit.',
+    demo:{ cols:'ABC', w:[46,42,52], act:'A1', sel:['A1'], cells:SMAL, c0:'Te smalle kolommen: tekst valt weg, bedragen worden ####' },
+    steps:[
+      { k:'[Macro uitvoeren]', c:'Alle kolommen in één keer passend', p:{ w:[100,64,58], cells:{ B2:'1.250,00|r', B3:'3.480,00|r', B4:'386,50|r' } } }
+    ] },
+
+  { naam:'RijenGelijk', t:'Alle rijen even hoog',
+    d:'Zet elke rij op het actieve blad op 15 punten. Hetzelfde als ⟨Ctrl+A⟩ en ⟨Alt › H › O › H⟩ met 15.',
+    code:`Sub RijenGelijk()
+    Cells.RowHeight = 15    '15 punten = 20 pixels
+End Sub`,
+    note:'Een ander getal mag ook. Tekst met Terugloop wordt dan wel afgekapt.',
+    demo:{ cols:'ABC', w:[76,62,62], h:[20,36,14,28,20], act:'A1', sel:['A1'], cells:MAANDEN, c0:'Rijen met allemaal een andere hoogte' },
+    steps:[
+      { k:'[Macro uitvoeren]', c:'Elke rij is nu 15 punten hoog', p:{ h:20 } }
+    ] },
+
+  { naam:'RasterlijnenAanUit', t:'Rasterlijnen aan of uit',
+    d:'Schakelt de rasterlijnen van het actieve blad om: aan wordt uit, uit wordt aan.',
+    code:`Sub RasterlijnenAanUit()
+    ActiveWindow.DisplayGridlines = Not ActiveWindow.DisplayGridlines
+End Sub`,
+    note:'Wil je ze altijd uit? Vervang de regel door ActiveWindow.DisplayGridlines = False.',
+    demo:{ cols:'ABC', w:[84,64,52], act:'A1', sel:['A1'], cells:RAPPORT, fmt:[['A5:C5', 'bt']], c0:'Rapport met rasterlijnen' },
+    steps:[
+      { k:'[Macro uitvoeren]', c:'Rasterlijnen weg', p:{ grid:false } },
+      { k:'[Macro uitvoeren]', c:'Nog een keer: ze zijn terug', p:{ grid:true } }
+    ] },
+
+  { naam:'NaarWaarden', t:'Formules omzetten naar waarden',
+    d:'Vervangt de formules in je selectie door hun uitkomst. Hetzelfde als kopiëren en plakken als waarden, maar in één keer.',
+    code:`Sub NaarWaarden()
+    Dim gebied As Range
+    If TypeName(Selection) <> "Range" Then Exit Sub
+    For Each gebied In Selection.Areas
+        gebied.Value = gebied.Value
+    Next gebied
+End Sub`,
+    warn:true, note:'Dit kun je niet terugdraaien met Ctrl+Z. Sla eerst op.',
+    demo:{ cols:'ABCD', w:W4, cells:BEST, act:'D2', sel:['D2:D5'], fx:'=B2*C2', c0:'D2 tot en met D5 bevatten formules' },
+    steps:[
+      { k:'[Macro uitvoeren]', c:'In de formulebalk staat nu 8,4 in plaats van =B2*C2', p:{ fx:'8,4', cells:{ D2:'8,40|r new', D3:'12,00|r new', D4:'8,50|r new', D5:'26,00|r new' } } }
+    ] },
+
+  { naam:'LaatsteRij', t:'Laatste gevulde rij vinden',
+    d:'De regel die je in bijna elke macro nodig hebt. Excel begint helemaal onderaan kolom A en zoekt omhoog naar de eerste gevulde cel.',
+    code:`Sub LaatsteRij()
+    Dim laatste As Long
+    laatste = Cells(Rows.Count, "A").End(xlUp).Row
+    MsgBox "Laatste gevulde rij in kolom A: " & laatste
+End Sub`,
+    note:'Gebruik het getal daarna in je bereik, bijvoorbeeld Range("A2:A" & laatste).',
+    demo:{ cols:'AB', w:[86,72], rows:[1,2,3,4,5,6,7,8,'⋮',1048576], h:[20,20,20,20,20,20,20,20,16,20], act:'A1048576', sel:['A1048576'], c0:'Start op de allerlaatste rij van het blad: 1.048.576',
+      cells:{ A1:'Factuur|hd', B1:'Bedrag|hd r', A2:'F-2026-101', B2:'1.250,00|r', A3:'F-2026-102', B3:'890,00|r', A4:'F-2026-103', B4:'2.140,00|r', A5:'F-2026-104', B5:'460,00|r', A6:'F-2026-105', B6:'1.975,00|r', A7:'F-2026-106', B7:'730,00|r' } },
+    steps:[
+      { k:'[.End(xlUp)]', c:'Omhoog tot de eerste gevulde cel: A7', p:{ act:'A7', sel:['A7'], arr:{ from:'A1048576', to:'A7' } } },
+      { k:'[.Row]', c:'Het rijnummer is 7', p:{ arr:null, pop:{ t:'Microsoft Excel', msg:'Laatste gevulde rij in kolom A: 7' } } }
+    ] },
+
+  { naam:'LegeRijenWeg', t:'Lege rijen verwijderen',
+    d:'Verwijdert in één keer elke rij waarvan de cel in kolom A leeg is. Ideaal na het plakken van een export vol lege regels.',
+    code:`Sub LegeRijenWeg()
+    On Error Resume Next    'geen lege cellen? dan gebeurt er niets
+    Columns("A").SpecialCells(xlCellTypeBlanks).EntireRow.Delete
+    On Error GoTo 0
+End Sub`,
+    warn:true, note:'Kijkt alleen naar kolom A. Kies een kolom die bij echte data altijd gevuld is, en sla eerst op.',
+    demo:{ cols:'ABC', w:[68,92,62], rows:[1,2,3,4,5,6,7], act:'A1', sel:['A1'], c0:'Een export met lege regels ertussen',
+      cells:{ A1:'Datum|hd', B1:'Omschrijving|hd', C1:'Bedrag|hd r', A2:'2-10-2026|r', B2:'Huur kantoor', C2:'1.450,00|r', A4:'5-10-2026|r', B4:'Telefoon', C4:'42,50|r', A5:'9-10-2026|r', B5:'Software', C5:'119,00|r', A7:'14-10-2026|r', B7:'Lunch klant', C7:'86,40|r' } },
+    steps:[
+      { k:'[SpecialCells(xlCellTypeBlanks)]', c:'Excel zoekt de lege cellen in kolom A', p:{ sel:['A3','A6'], act:'A3' } },
+      { k:'[.EntireRow]', c:'en breidt die uit naar de hele rij', p:{ sel:['A3:C3','A6:C6'] } },
+      { k:'[.Delete]', c:'Weg ermee: de data sluit weer aaneen', p:{ sel:['A3'], act:'A3', C:{
+        A1:'Datum|hd', B1:'Omschrijving|hd', C1:'Bedrag|hd r',
+        A2:'2-10-2026|r', B2:'Huur kantoor', C2:'1.450,00|r',
+        A3:'5-10-2026|r new', B3:'Telefoon|new', C3:'42,50|r new',
+        A4:'9-10-2026|r new', B4:'Software|new', C4:'119,00|r new',
+        A5:'14-10-2026|r new', B5:'Lunch klant|new', C5:'86,40|r new' } } }
+    ] },
+
+  { naam:'SpatiesWeg', t:'Overbodige spaties weghalen',
+    d:'Haalt spaties aan het begin en eind weg en maakt van dubbele spaties enkele. Ook de harde spaties die in webdata en exports zitten.',
+    code:`Sub SpatiesWeg()
+    Dim bereik As Range, cel As Range
+    If TypeName(Selection) <> "Range" Then Exit Sub
+    Set bereik = Intersect(Selection, ActiveSheet.UsedRange)
+    If bereik Is Nothing Then Exit Sub
+    For Each cel In bereik.Cells
+        If Not cel.HasFormula And VarType(cel.Value) = vbString Then
+            cel.Value = Application.WorksheetFunction.Trim(Replace(cel.Value, Chr(160), " "))
+        End If
+    Next cel
+End Sub`,
+    note:'Formules blijven ongemoeid. Tekst die op een getal lijkt, zet Excel daarna om naar een getal.',
+    demo:{ cols:'AB', w:[120,52], act:'A2', sel:['A2:A4'], fx:'~~Jan~~~Jansen~', c0:'Rode puntjes zijn spaties. Kolom B telt de tekens met =LENGTE()',
+      cells:{ A1:'Naam|hd', B1:'Tekens|hd r', A2:'~~Jan~~~Jansen~', B2:'15|r', A3:'Fatima~el~Amrani~~', B3:'18|r', A4:'~Piet~de~~Vries', B4:'15|r' } },
+    steps:[
+      { k:'[Macro uitvoeren]', c:'Schone namen: zie het aantal tekens dalen', p:{ fx:'Jan Jansen', cells:{ A2:'Jan Jansen|new', A3:'Fatima el Amrani|new', A4:'Piet de Vries|new', B2:'10|r new', B3:'16|r new', B4:'13|r new' } } }
+    ] },
+
+  { naam:'AllesZichtbaar', t:'Alles zichtbaar maken',
+    d:'Maakt alle verborgen tabbladen weer zichtbaar, en daarna alle verborgen rijen en kolommen op het actieve blad.',
+    code:`Sub AllesZichtbaar()
+    Dim blad As Worksheet
+    For Each blad In ActiveWorkbook.Worksheets
+        blad.Visible = xlSheetVisible
+    Next blad
+    ActiveSheet.Cells.EntireRow.Hidden = False
+    ActiveSheet.Cells.EntireColumn.Hidden = False
+End Sub`,
+    note:'Werkt niet als de werkmapstructuur met een wachtwoord is beveiligd.',
+    demo:{ cols:'ABCD', w:[50,60,60,50], rows:[1,2,3,4], hc:['C'], hr:['3'], tabs:['Overzicht'], tab:0, act:'A1', sel:['A1'], c0:'Kolom C, rij 3 en twee tabbladen zijn verborgen',
+      cells:{ A1:'Maand|hd', B1:'Omzet|hd r', C1:'Kosten|hd r', D1:'Marge|hd r', A2:'Jan', B2:'12.400|r', C2:'8.150|r', D2:'34%|r', A3:'Feb', B3:'11.900|r', C3:'7.980|r', D3:'33%|r', A4:'Mrt', B4:'13.250|r', C4:'8.420|r', D4:'36%|r' } },
+    steps:[
+      { k:'[blad.Visible]', c:'De verborgen tabbladen komen terug', p:{ tabs:['Overzicht','Data','Hulpblad'] } },
+      { k:'[.Hidden = False]', c:'En kolom C en rij 3 ook', p:{ hc:[], hr:[] } }
+    ] },
+
+  { naam:'BovensteRijVast', t:'Kopregel vastzetten',
+    d:'Zet de bovenste rij vast, zodat je kolomnamen blijven staan als je naar beneden scrolt. Werkt ook als het blad al gescrold is.',
+    code:`Sub BovensteRijVast()
+    With ActiveWindow
+        .FreezePanes = False
+        .ScrollRow = 1
+        .ScrollColumn = 1
+        .SplitColumn = 0
+        .SplitRow = 1
+        .FreezePanes = True
+    End With
+End Sub`,
+    note:'Eerste kolom ook vast? Zet .SplitColumn op 1.',
+    demo:{ cols:'ABCD', w:W4, rows:[5,6,7,8,9], act:'A7', sel:['A7'], c0:'Naar beneden gescrold: welke kolom was ook alweer wat?',
+      cells:Object.assign({}, LIJST, { A9:'Koek', B9:'10|r', C9:'1,25|r', D9:'12,50|r' }) },
+    steps:[
+      { k:'[Macro uitvoeren]', c:'Rij 1 staat vast; de donkere lijn is de grens', p:{ rows:[1,2,3,4,5], frz:1 } },
+      { k:'[naar beneden scrollen]', c:'De kopregel blijft gewoon staan', p:{ rows:[1,6,7,8,9] } }
+    ] },
+
+  { naam:'CentrerenOverSelectie', t:'Titel centreren zonder samenvoegen',
+    d:'Zet een titel in het midden boven je kolommen zonder cellen samen te voegen. Sorteren, kopiëren en kolommen selecteren blijven gewoon werken.',
+    code:`Sub CentrerenOverSelectie()
+    If TypeName(Selection) <> "Range" Then Exit Sub
+    Selection.UnMerge
+    Selection.HorizontalAlignment = xlCenterAcrossSelection
+End Sub`,
+    note:'Selecteer eerst de titelcel plus de lege cellen ernaast waarover hij moet centreren.',
+    demo:{ cols:'ABCD', w:[56,56,56,56], rows:[1,2,3], act:'A1', sel:['A1:D1'], c0:'De titel staat links in A1; A1 tot en met D1 zijn geselecteerd',
+      cells:{ A1:'Omzet 2026|t ov', A2:'Q1|hd r', B2:'Q2|hd r', C2:'Q3|hd r', D2:'Q4|hd r', A3:'38.150|r', B3:'41.020|r', C3:'39.870|r', D3:'44.300|r' } },
+    steps:[
+      { k:'[Macro uitvoeren]', c:'Mooi in het midden, en elke cel is nog los te selecteren', p:{ cells:{ A1:null }, spn:{ r:'A1:D1', v:'Omzet 2026', s:'t' }, fx:'Omzet 2026' } }
+    ] },
+
+  { naam:'NetjesOpleveren', t:'Werkmap netjes opleveren',
+    d:'Zet elk zichtbaar tabblad op cel A1 en zoom 100%, en opent daarna het eerste blad. Zo ziet de ontvanger je bestand meteen netjes.',
+    code:`Sub NetjesOpleveren()
+    Dim blad As Worksheet
+    For Each blad In ActiveWorkbook.Worksheets
+        If blad.Visible = xlSheetVisible Then
+            Application.Goto blad.Range("A1"), True
+            ActiveWindow.Zoom = 100
+        End If
+    Next blad
+    For Each blad In ActiveWorkbook.Worksheets
+        If blad.Visible = xlSheetVisible Then
+            blad.Activate
+            Exit For
+        End If
+    Next blad
+End Sub`,
+    note:'Draai hem vlak voordat je opslaat en het bestand verstuurt.',
+    demo:{ cols:'ABCD', w:[60,56,58,56], rows:[12,13,14,15,16], tabs:['Overzicht','Data','Grafiek'], tab:1, zoom:'85%', act:'C15', sel:['C14:D16'], c0:'Je eindigde midden in het tabblad Data, op 85%',
+      cells:{ A12:'R-0412', B12:'14-10|r', C12:'Noord', D12:'1.240|r', A13:'R-0413', B13:'14-10|r', C13:'Zuid', D13:'860|r', A14:'R-0414', B14:'15-10|r', C14:'Oost', D14:'2.115|r', A15:'R-0415', B15:'15-10|r', C15:'Noord', D15:'735|r', A16:'R-0416', B16:'16-10|r', C16:'West', D16:'1.480|r' } },
+    steps:[
+      { k:'[Macro uitvoeren]', c:'Eerste blad open, cel A1, zoom 100%', p:{ rows:[1,2,3,4,5], tab:0, zoom:'100%', act:'A1', sel:['A1'], C:{ A1:'Overzicht oktober|t ov', A3:'Omzet', B3:'38.150|r', A4:'Kosten', B4:'24.550|r', A5:'Resultaat|b bt', B5:'13.600|b r bt' } } }
+    ] }
+];
+
+const SJABLOON = `Sub MijnMacro()
+    On Error GoTo Klaar
+    Application.ScreenUpdating = False
+    Application.Calculation = xlCalculationManual
+
+    ' ... jouw code ...
+
+Klaar:
+    Application.Calculation = xlCalculationAutomatic
+    Application.ScreenUpdating = True
+    If Err.Number <> 0 Then MsgBox Err.Description
+End Sub`;
+
+
+/* ===== sneltoetsen zonder demo: toetsen | taak | toelichting | onderdeel | zoekwoorden =====
+   Volgorde en toetsen per categorie gelijk aan V1, zodat de links (id's) hetzelfde blijven. */
+const LIJST_V2 = `
+#opmaak
+Ctrl+1 | Celeigenschappen openen | Alle notaties, randen en uitlijning op één plek | Getallen en datums | cellen opmaken dialoog notatie getalnotatie
+Ctrl+B | Vet aan of uit | Ook met ⟨Ctrl+2⟩ | Tekst | bold vet dikgedrukt
+Ctrl+I | Cursief aan of uit | Ook met ⟨Ctrl+3⟩ | Tekst | italic cursief schuin
+Ctrl+U | Onderstrepen aan of uit | Ook met ⟨Ctrl+4⟩ | Tekst | underline onderstreept
+Ctrl+5 | Doorhalen aan of uit | Een streep door de tekst | Tekst | doorhalen doorstrepen strikethrough
+Ctrl+Shift+F | Lettertype kiezen | Opent het tabblad Lettertype van Celeigenschappen | Tekst | lettertype font tekengrootte
+Ctrl+Shift+~ | Getalnotatie terug naar Standaard | Haalt alle getalopmaak weg | Getallen en datums | standaard algemeen notatie wissen
+Ctrl+Shift+$ | Valuta | Met twee decimalen | Getallen en datums | valuta euro geld bedrag
+Ctrl+Shift+# | Datumnotatie | Dag, maand en jaar | Getallen en datums | datum notatie
+Ctrl+Shift+@ | Tijdnotatie | Uren en minuten | Getallen en datums | tijd notatie uur
+Alt › H › 0 | Eén decimaal meer tonen | Een cijfer extra achter de komma | Getallen en datums | decimalen decimaal meer komma
+Alt › H › 9 | Eén decimaal minder tonen | De waarde zelf blijft gelijk | Getallen en datums | decimalen decimaal minder afronden
+Alt › H › W | Terugloop aan of uit | Lange tekst loopt door over meerdere regels in de cel | Tekst | terugloop wrap meerdere regels
+Alt › H › A › C | Centreren | Inhoud horizontaal in het midden van de cel | Tekst | centreren midden uitlijnen
+Alt › H › H | Opvulkleur kiezen | De achtergrondkleur van de cel | Kleur en stijl | kleur opvulkleur achtergrond
+Alt › H › B › A | Alle randen | Om en tussen alle geselecteerde cellen | Rasterlijnen en randen | randen rand lijnen border
+Ctrl+Shift+& | Kader om de selectie | Alleen de buitenrand | Rasterlijnen en randen | kader rand buitenrand
+Ctrl+Shift+_ | Randen weghalen | Alle randen van de selectie eraf | Rasterlijnen en randen | randen weg verwijderen
+Alt › H › L | Voorwaardelijke opmaak | Cellen kleuren op basis van hun waarde | Kleur en stijl | voorwaardelijke opmaak markeren regels kleur
+Alt › H › F › P | Opmaak kopiëren met de kwast | Klik daarna op de cellen die dezelfde opmaak moeten krijgen | Kleur en stijl | kwast opmaak kopieren format painter
+Alt › H › E › F | Opmaak wissen | De inhoud blijft staan | Kleur en stijl | opmaak wissen weghalen
+Alt+' | Celstijlen | Kies een opmaakprofiel | Kleur en stijl | celstijl opmaakprofiel stijl
+Ctrl+9 | Rij verbergen | Terughalen: selecteer de rijen eromheen en druk ⟨Ctrl+Shift+9⟩ | Rijen en kolommen | verbergen rij zichtbaar maken
+Ctrl+0 | Kolom verbergen | Terughalen: selecteer de kolommen ernaast en kies Zichtbaar maken | Rijen en kolommen | verbergen kolom zichtbaar maken
+#formules
+Ctrl+Shift+{ | Alle bronnen selecteren | Ook de bronnen van de bronnen | Formules nalopen | bronnen broncellen precedents alle niveaus
+Ctrl+Shift+} | Alle afhankelijke cellen selecteren | Ook de indirecte | Formules nalopen | afhankelijk doelcellen dependents
+Alt › M › P | Pijlen naar de broncellen | Tekent pijlen vanaf de cellen waar de formule mee rekent | Formules nalopen | broncellen pijlen traceren
+Alt › M › D | Pijlen naar de doelcellen | Tekent pijlen naar de formules die deze cel gebruiken | Formules nalopen | doelcellen pijlen afhankelijk traceren
+Alt › M › A › A | Alle pijlen weghalen | Haalt de controlepijlen weer weg | Formules nalopen | pijlen weg verwijderen
+Alt › M › V | Formule stap voor stap uitrekenen | Opent Formule evalueren | Formules nalopen | evalueren uitrekenen fout zoeken
+Shift+F3 | Functie invoegen | Zoek een functie op naam of omschrijving | Formules schrijven | functie invoegen zoeken
+Ctrl+A | Functieargumenten tonen | Typ eerst een functienaam, bijvoorbeeld =VERT.ZOEKEN | Formules schrijven | argumenten functie hulp
+Ctrl+Shift+A | Argumentnamen invullen | Typ eerst een functienaam; Excel zet de argumenten erachter | Formules schrijven | argumenten namen
+Tab | Functienaam aanvullen | Terwijl je typt: =VERT wordt VERT.ZOEKEN( | Formules schrijven | aanvullen autocomplete functie
+F3 | Bereiknaam plakken | Zet een benoemd bereik in je formule | Namen | naam bereiknaam plakken
+Ctrl+F3 | Namen beheren | Alle benoemde bereiken bekijken en aanpassen | Namen | naambeheer namen
+Ctrl+Shift+F3 | Namen maken uit de selectie | Gebruikt de kop- of rijlabels als naam | Namen | namen maken labels
+F9 | Alles herberekenen | In de formulebalk rekent F9 het geselecteerde stuk uit; druk daarna Esc | Herberekenen | herberekenen berekenen
+Shift+F9 | Alleen dit blad herberekenen |  | Herberekenen | herberekenen blad
+Ctrl+Alt+F9 | Alles volledig herberekenen | Ook formules die niet gewijzigd zijn | Herberekenen | volledig herberekenen
+Ctrl+' | Formule van de cel erboven overnemen | Exact gelijk, zonder dat verwijzingen verschuiven | Formules schrijven | kopieren formule erboven
+Ctrl+Shift+" | Waarde van de cel erboven overnemen |  | Formules schrijven | kopieren waarde erboven
+Ctrl+Shift+U | Formulebalk groter of kleiner | Handig bij lange formules | Formules schrijven | formulebalk uitvouwen
+#navigeren
+Ctrl+End | Naar de laatst gebruikte cel | Rechtsonder in je data | Springen | laatste cel einde
+Ctrl+Shift+End | Selecteren tot de laatst gebruikte cel |  | Selecteren | selecteren einde
+Ctrl+Shift+Home | Selecteren tot het begin van het blad |  | Selecteren | selecteren begin a1
+Shift+→ | Selectie met één cel uitbreiden | Werkt met alle pijltjes | Selecteren | selectie uitbreiden pijl
+Ctrl+Shift+* | Het hele blok selecteren | Alle aaneengesloten cellen rond de actieve cel | Selecteren | blok huidig gebied
+Alt+; | Alleen zichtbare cellen selecteren | Handig als je uit een gefilterde lijst kopieert | Selecteren | zichtbare cellen gefilterd verborgen kopieren
+F8 | Uitbreidmodus | Selecteren met alleen de pijltjes; nog een keer F8 zet hem uit | Selecteren | uitbreiden modus
+Shift+F8 | Losse bereiken toevoegen | Breid je selectie uit zonder Ctrl vast te houden | Selecteren | toevoegen selectie losse
+Shift+Backspace | Selectie terug naar één cel | Alleen de actieve cel blijft geselecteerd | Selecteren | selectie opheffen
+Ctrl+Backspace | Terug naar de actieve cel | Scrolt tot je de actieve cel weer ziet | Springen | terug scrollen actieve cel
+Ctrl+. | Naar de volgende hoek van de selectie |  | Springen | hoek selectie
+F5 | Ga naar | Spring naar een cel, bereik of naam; ook met ⟨Ctrl+G⟩ | Zoeken en Ga naar | ga naar goto cel
+Ctrl+F | Zoeken | ⟨Ctrl+H⟩ opent Vervangen | Zoeken en Ga naar | zoeken vervangen vinden
+Alt+PgDn | Eén scherm naar rechts | ⟨Alt+PgUp⟩ gaat een scherm naar links | Springen | scherm rechts links
+Shift+Enter | Bevestigen en omhoog | Invoer bevestigen en naar de cel erboven | Springen | enter omhoog
+#invoer
+F4 | Laatste actie herhalen | Bijvoorbeeld dezelfde opvulkleur op een andere cel. Werkt als je niet aan het typen bent | Plakken en ongedaan maken | herhalen opnieuw
+Ctrl+Y | Opnieuw uitvoeren | Wat je net ongedaan maakte | Plakken en ongedaan maken | opnieuw redo
+Ctrl+R | Naar rechts kopiëren | De linkercel naar rechts in je selectie | Snel invullen | rechts doorvoeren kopieren
+Alt › H › V › V | Plakken als waarden via het lint | Kopieer eerst met ⟨Ctrl+C⟩ | Plakken en ongedaan maken | plakken waarden
+Ctrl+Shift+= | Cellen, rijen of kolommen invoegen | Met een hele rij geselecteerd meteen een nieuwe rij | Rijen en cellen | invoegen rij kolom
+Shift+F2 | Notitie toevoegen of bewerken |  | Notities en meer | notitie opmerking
+Ctrl+Shift+F2 | Opmerking plaatsen | Een discussie waarin collega's kunnen reageren | Notities en meer | opmerking discussie comment
+Ctrl+K | Hyperlink invoegen |  | Notities en meer | link hyperlink
+F7 | Spelling controleren |  | Notities en meer | spelling
+Shift+F10 | Rechtermuisknopmenu openen | Met het toetsenbord | Notities en meer | rechtermuisknop snelmenu contextmenu
+Ctrl+Z | Ongedaan maken | Knippen, kopiëren en plakken: ⟨Ctrl+X⟩, ⟨Ctrl+C⟩, ⟨Ctrl+V⟩ | Plakken en ongedaan maken | ongedaan undo knippen kopieren plakken
+#data
+Alt+↓ | Filter of keuzelijst openen | In de cel waar je staat | Tabellen, sorteren en filteren | filter openen keuzelijst dropdown
+Ctrl+Q | Snelle analyse | Grafiek, totalen of opmaak voor je selectie | Grafieken en analyse | snelle analyse
+Alt+F1 | Grafiek invoegen | Op dit blad, van de geselecteerde data | Grafieken en analyse | grafiek chart
+F11 | Grafiek op een nieuw blad |  | Grafieken en analyse | grafiek grafiekblad
+Alt+Shift+→ | Groeperen | Geselecteerde rijen of kolommen | Groeperen | groeperen overzicht
+Alt+Shift+← | Groep opheffen |  | Groeperen | groep opheffen
+Ctrl+8 | Plusjes en minnetjes tonen of verbergen | De overzichtssymbolen van groepen | Groeperen | overzichtssymbolen
+Alt › A › S › S | Sorteren | Opent het venster Sorteren | Tabellen, sorteren en filteren | sorteren volgorde
+Alt › A › M | Duplicaten verwijderen |  | Opschonen en controleren | dubbele duplicaten verwijderen
+Alt › A › E | Tekst naar kolommen | Splitst tekst op een scheidingsteken | Opschonen en controleren | splitsen tekst kolommen
+Alt › A › V › V | Gegevensvalidatie | Bijvoorbeeld een keuzelijst in een cel | Opschonen en controleren | validatie keuzelijst dropdown
+Alt+F5 | Draaitabel of query vernieuwen |  | Vernieuwen | vernieuwen draaitabel refresh
+Ctrl+Alt+F5 | Alles vernieuwen |  | Vernieuwen | alles vernieuwen refresh
+Alt+F12 | Power Query-editor openen |  | Vernieuwen | power query
+#bladen
+Ctrl+PgDn | Naar het volgende tabblad | ⟨Ctrl+PgUp⟩ gaat naar het vorige | Tabbladen | tabblad volgende vorige blad wisselen
+Ctrl+Shift+PgDn | Meerdere tabbladen selecteren | Om bladen tegelijk te bewerken | Tabbladen | tabbladen groeperen selecteren
+Shift+F11 | Nieuw werkblad | Komt links van het huidige tabblad | Tabbladen | nieuw blad werkblad invoegen
+Alt › H › O › R | Tabblad hernoemen |  | Tabbladen | naam tabblad wijzigen hernoemen
+Alt › H › O › M | Blad verplaatsen of kopiëren | Ook naar een andere werkmap | Tabbladen | blad kopieren verplaatsen
+Alt › H › D › S | Blad verwijderen |  | Tabbladen | blad verwijderen
+Alt › W › F › F | Titels blokkeren | Alles boven en links van de actieve cel blijft staan | Weergave | blokkeren bevriezen titels vastzetten
+Alt › W › F › R | Bovenste rij blokkeren | Je kopregel blijft staan als je scrolt | Weergave | blokkeren bovenste rij kopregel vastzetten
+Ctrl+Alt+= | Inzoomen | ⟨Ctrl+Alt+-⟩ zoomt uit | Weergave | zoom inzoomen uitzoomen
+Alt › W › J | Zoom terug naar 100% |  | Weergave | zoom 100
+Alt › W › G | Inzoomen op je selectie |  | Weergave | zoom selectie
+Ctrl+F1 | Lint in- of uitklappen | Meer ruimte voor je blad | Weergave | lint ribbon verbergen
+Ctrl+Shift+F1 | Volledig scherm |  | Weergave | volledig scherm
+Ctrl+S | Opslaan | ⟨F12⟩ opent Opslaan als | Bestanden | opslaan bewaren
+Ctrl+N | Nieuwe werkmap | ⟨Ctrl+O⟩ opent een bestand | Bestanden | nieuw openen
+Ctrl+W | Werkmap sluiten |  | Bestanden | sluiten
+Ctrl+P | Afdrukken |  | Bestanden | afdrukken printen
+Ctrl+F6 | Wisselen tussen Excel-vensters |  | Bestanden | vensters wisselen
+Ctrl+Shift+G | Werkmapstatistieken | Aantal bladen, formules en cellen | Bestanden | statistieken
+#vba
+Alt+F11 | VBA-editor openen | En weer terug naar Excel | Starten en stoppen | editor openen visual basic
+Alt+F8 | Macro kiezen en uitvoeren | Vanuit Excel | Starten en stoppen | macro uitvoeren lijst
+F5 | Macro uitvoeren | In de editor: de macro waar je cursor in staat | Starten en stoppen | uitvoeren run
+F8 | Regel voor regel door je macro | Zie wat elke regel doet | Stap voor stap testen | stap debug stappen
+Shift+F8 | Over een aanroep heen stappen | Voert een aangeroepen macro in één keer uit | Stap voor stap testen | step over
+Ctrl+Shift+F8 | Huidige procedure afmaken | Ook wel step out | Stap voor stap testen | step out
+Ctrl+F8 | Uitvoeren tot aan je cursor |  | Stap voor stap testen | uitvoeren tot cursor
+F9 | Onderbrekingspunt aan of uit | Op de regel waar je cursor staat | Stap voor stap testen | breakpoint onderbrekingspunt
+Ctrl+Shift+F9 | Alle onderbrekingspunten weghalen |  | Stap voor stap testen | breakpoints wissen
+Ctrl+Break | Een lopende macro stoppen | Handig als een macro blijft hangen | Starten en stoppen | stoppen onderbreken hangt
+Ctrl+G | Direct-venster openen | Om snel iets te testen, bijvoorbeeld ?ActiveCell.Address | Vensters | immediate direct venster
+Ctrl+R | Projectverkenner tonen |  | Vensters | project verkenner
+F4 | Eigenschappenvenster tonen |  | Vensters | eigenschappen
+Ctrl+Spatie | Woord aanvullen | Terwijl je typt | Typen | aanvullen autocomplete
+Ctrl+J | Lijst met eigenschappen en methoden |  | Typen | intellisense lijst
+Shift+F2 | Naar de definitie springen | Van een procedure of variabele | Typen | definitie
+`;
+const LIJSTJE = (function(){
+  const out = [];
+  let cat = '';
+  LIJST_V2.split('\n').forEach(line => {
+    line = line.trim();
+    if (!line) return;
+    if (line[0] === '#') { cat = line.slice(1).trim(); return; }
+    const f = line.split(' | ').map(x => x.trim());
+    out.push({ cat, k:f[0], t:f[1] || '', s:f[2] || '', g:f[3] || '', tags:f[4] || '' });
+  });
+  return out;
+})();
+
+
+/* ===== indeling, onderdelen, zoekwoorden ===== */
+const NAV = [
+  { id:'opmaak', name:'Opmaak', color:'opmaak', p:'Rijen en kolommen, rasterlijnen en randen, getallen, tekst en kleur.', groups:['Rijen en kolommen','Rasterlijnen en randen','Getallen en datums','Tekst','Kleur en stijl'] },
+  { id:'formules', name:'Formules', color:'formules', p:'Zien waar een getal vandaan komt, formules sneller schrijven en herberekenen.', groups:['Formules nalopen','Formules schrijven','Namen','Herberekenen'] },
+  { id:'navigeren', name:'Springen en selecteren', color:'navigeren', p:'Snel door grote bladen, zonder scrollen of slepen.', groups:['Springen','Selecteren','Zoeken en Ga naar'] },
+  { id:'invoer', name:'Invoeren en bewerken', color:'invoer', p:'Minder typen, minder kopiëren en plakken.', groups:['Snel invullen','Plakken en ongedaan maken','Rijen en cellen','Notities en meer'] },
+  { id:'data', name:'Lijsten en tabellen', color:'data', p:'Lijsten opschonen, tabellen, sorteren en filteren, grafieken en groeperen.', groups:['Opschonen en controleren','Tabellen, sorteren en filteren','Grafieken en analyse','Groeperen','Vernieuwen'] },
+  { id:'bladen', name:'Bladen en weergave', color:'bladen', p:'Tabbladen, blokkeren, zoomen, opslaan en afdrukken.', groups:['Tabbladen','Weergave','Bestanden'] },
+  { id:'vba', name:"Macro's", color:'vba', vba:true, p:'Kopieer een macro, plak hem in je persoonlijke macrowerkmap en gebruik hem in elk bestand.', groups:['Opmaak en weergave','Data opschonen','Werkmap','Bouwstenen'] },
+  { id:'vba-editor', name:'VBA-editor', color:'editor', vba:true, p:"Sneltoetsen om macro's te starten, stap voor stap te testen en te stoppen.", groups:['Starten en stoppen','Stap voor stap testen','Vensters','Typen'] }
+];
+
+const META = {
+  'alt-h-o-h':{ g:'Rijen en kolommen', tags:'rijhoogte hoogte gelijk even hoog' },
+  'alt-w-v-g':{ g:'Rasterlijnen en randen', tags:'rasterlijnen raster gridlines hulplijnen verbergen tonen' },
+  'alt-h-o-i':{ g:'Rijen en kolommen', tags:'kolombreedte autofit passend breedte smal ####' },
+  'ctrl-shift-uitroep':{ g:'Getallen en datums', tags:'getalnotatie duizendtallen decimalen procent procenten notatie' },
+  'ctrl-haakopen':{ g:'Formules nalopen', tags:'broncellen bronnen precedents herkomst vandaan nalopen traceren' },
+  'ctrl-haaksluit':{ g:'Formules nalopen', tags:'afhankelijke cellen dependents doelcellen gebruikt nalopen' },
+  'ctrl-accent':{ g:'Formules nalopen', tags:'formules tonen weergeven uitkomsten backtick accent grave' },
+  'f2':{ g:'Formules schrijven', tags:'bewerken bewerkmodus kleuren verwijzingen kaders' },
+  'f4':{ g:'Formules schrijven', tags:'dollar absoluut relatief vastzetten verwijzing $' },
+  'alt-is':{ g:'Formules schrijven', tags:'autosom som optellen totaal' },
+  'ctrl-omlaag':{ g:'Springen', tags:'einde laatste rij springen beneden onderaan' },
+  'ctrl-shift-omlaag':{ g:'Selecteren', tags:'selecteren tot einde kolom' },
+  'shift-spatie':{ g:'Selecteren', tags:'hele rij kolom selecteren ctrl spatie' },
+  'ctrl-enter':{ g:'Snel invullen', tags:'alle cellen tegelijk invullen dezelfde waarde', tip:'Samen met F5 › Speciaal › Lege cellen vul je zo alleen de gaten in een lijst. Die staat bij Lijsten en tabellen.' },
+  'ctrl-d':{ g:'Snel invullen', tags:'omlaag doorvoeren kopieren formule beneden' },
+  'alt-enter':{ g:'Snel invullen', tags:'nieuwe regel enter in cel terugloop' },
+  'ctrl-puntkomma':{ g:'Snel invullen', tags:'datum vandaag tijd nu' },
+  'ctrl-alt-v':{ g:'Plakken en ongedaan maken', tags:'plakken speciaal waarden zonder formules' },
+  'ctrl-min':{ g:'Rijen en cellen', tags:'rij verwijderen invoegen kolom' },
+  'ctrl-e':{ g:'Opschonen en controleren', tags:'snel aanvullen flash fill patroon splitsen voornaam' },
+  'f5-speciaal-lege-cellen':{ g:'Opschonen en controleren', tags:'lege cellen vullen gaten ga naar speciaal' },
+  'ctrl-t':{ g:'Tabellen, sorteren en filteren', tags:'tabel opmaken als tabel' },
+  'ctrl-shift-l':{ g:'Tabellen, sorteren en filteren', tags:'filter autofilter filterknoppen' },
+  'vba-kolommenpassend':{ g:'Opmaak en weergave', tags:'autofit kolombreedte passend cells.entirecolumn.autofit' },
+  'vba-rijengelijk':{ g:'Opmaak en weergave', tags:'rijhoogte rowheight even hoog' },
+  'vba-rasterlijnenaanuit':{ g:'Opmaak en weergave', tags:'displaygridlines rasterlijnen' },
+  'vba-bovensterijvast':{ g:'Opmaak en weergave', tags:'freezepanes blokkeren titels vastzetten kopregel' },
+  'vba-centrerenoverselectie':{ g:'Opmaak en weergave', tags:'centreren samenvoegen merge titel' },
+  'vba-naarwaarden':{ g:'Data opschonen', tags:'waarden formules weg plakken als waarden' },
+  'vba-legerijenweg':{ g:'Data opschonen', tags:'lege rijen verwijderen export' },
+  'vba-spatiesweg':{ g:'Data opschonen', tags:'spaties trim opschonen' },
+  'vba-alleszichtbaar':{ g:'Werkmap', tags:'zichtbaar verborgen tabbladen rijen kolommen' },
+  'vba-netjesopleveren':{ g:'Werkmap', tags:'a1 zoom opleveren versturen delen' },
+  'vba-laatsterij':{ g:'Bouwstenen', tags:'laatste rij end xlup' }
+};
+
+/* extra demo's voor sneltoetsen die in V1 alleen in de lijst stonden */
+const DATA_TAB = { A1:'Regio|hd', B1:'Omzet|hd r', A2:'Noord', B2:'12.400|r', A3:'Zuid', B3:'11.900|r', A4:'Oost', B4:'13.850|r' };
+const EXTRA = {
+  'ctrl-9':{ demo:{ cols:'ABC', w:[76,62,62], cells:MAANDEN, act:'A3', sel:['A3:C3'], c0:'Rij 3 (februari) is geselecteerd' },
+    steps:[
+      { k:'Ctrl+9', c:'Rij 3 is verborgen: na rij 2 komt meteen rij 4', p:{ hr:['3'], act:'A2', sel:['A2'] } },
+      { k:'[rij 2 t/m 4 selecteren] › Ctrl+Shift+9', c:'Selecteer eromheen en de rij is terug', p:{ hr:[], act:'A2', sel:['A2:C4'] } }
+    ] },
+  'alt-w-f-r':{ demo:{ cols:'ABCD', w:W4, rows:[5,6,7,8,9], act:'A7', sel:['A7'], c0:'Naar beneden gescrold: welke kolom was ook alweer wat?',
+      cells:Object.assign({}, LIJST, { A9:'Koek', B9:'10|r', C9:'1,25|r', D9:'12,50|r' }) },
+    steps:[
+      { k:'Alt › W › F › R', c:'Rij 1 staat vast; de donkere lijn is de grens', p:{ rows:[1,2,3,4,5], frz:1 } },
+      { k:'[naar beneden scrollen]', c:'De kopregel blijft gewoon staan', p:{ rows:[1,6,7,8,9] } }
+    ] },
+  'ctrl-pgdn':{ demo:{ cols:'ABC', w:[74,64,56], rows:[1,2,3,4], tabs:['Overzicht','Data','Grafiek'], tab:0, act:'A1', sel:['A1'], c0:'Je staat op het tabblad Overzicht',
+      cells:{ A1:'Overzicht oktober|t ov', A3:'Omzet', B3:'38.150|r', A4:'Kosten', B4:'24.550|r' } },
+    steps:[
+      { k:'Ctrl+PgDn', c:'Volgend tabblad: Data', p:{ tab:1, C:DATA_TAB } },
+      { k:'Ctrl+PgDn', c:'En nog een: Grafiek', p:{ tab:2, C:{ A1:'Omzet per regio|t ov', A3:'Noord', B3:'▮▮▮▮▮▮|mut', A4:'Zuid', B4:'▮▮▮▮▮|mut' } } },
+      { k:'Ctrl+PgUp', c:'Met PgUp ga je weer terug', p:{ tab:1, C:DATA_TAB } }
+    ] },
+  'shift-f11':{ demo:{ cols:'ABC', w:[74,64,56], rows:[1,2,3,4], tabs:['Overzicht','Data'], tab:1, act:'B2', sel:['B2'], c0:'Je staat op het tabblad Data', cells:DATA_TAB },
+    steps:[
+      { k:'Shift+F11', c:'Een nieuw, leeg werkblad, links van het blad waar je was', p:{ tabs:['Overzicht','Blad3','Data'], tab:1, act:'A1', sel:['A1'], C:{} } }
+    ] }
+};
+
+/* begin hier: de lijst van de gebruiker plus de meest gevraagde */
+const POPULAR = ['alt-h-o-h','alt-w-v-g','alt-h-o-i','ctrl-haakopen','ctrl-haaksluit','ctrl-accent','vba-kolommenpassend','f4','ctrl-shift-l','ctrl-e','ctrl-alt-v','alt-is'];
+const TRY = ['rijen even hoog','plakken als waarden','formule nalopen','filter','Ctrl D','lege rijen'];
+
+/* woorden die hetzelfde bedoelen, zonder accenten */
+const SYN = [
+  ['rasterlijnen','raster','gridlines','hulplijnen'],
+  ['kolombreedte','breedte','passend','autofit','smal'],
+  ['rijhoogte','hoogte','even hoog','gelijk'],
+  ['plakken','paste','plak'],
+  ['waarden','waarde','values'],
+  ['kopieren','kopie','copy','dupliceren','doorvoeren','overnemen'],
+  ['filter','filteren','autofilter','filterknoppen'],
+  ['sorteren','sort','volgorde'],
+  ['zoeken','vinden','find'],
+  ['vervangen','replace'],
+  ['verbergen','hide','verborgen','zichtbaar','tonen','weergeven'],
+  ['blokkeren','bevriezen','vastzetten','freeze','vast'],
+  ['dollar','absoluut','$','vaste verwijzing'],
+  ['formule','formules','functie','berekening'],
+  ['bron','bronnen','broncellen','precedents','herkomst','vandaan'],
+  ['afhankelijk','afhankelijke','doelcellen','dependents'],
+  ['nalopen','traceren','controleren','checken'],
+  ['som','optellen','totaal','autosom','sum'],
+  ['datum','vandaag','today'],
+  ['tijd','nu','uur'],
+  ['tabel','table','tabellen'],
+  ['grafiek','chart','diagram'],
+  ['spatie','spaties','trim'],
+  ['opschonen','schoonmaken','netjes','opruimen'],
+  ['leeg','lege','blanco','blank','gaten'],
+  ['verwijderen','delete','weghalen','wissen','weg'],
+  ['invoegen','insert','toevoegen'],
+  ['tabblad','tabbladen','blad','bladen','sheet','werkblad'],
+  ['notitie','opmerking','comment'],
+  ['opslaan','save','bewaren'],
+  ['afdrukken','print','printen'],
+  ['zoom','inzoomen','uitzoomen','vergroten'],
+  ['macro','macros','vba','code'],
+  ['selecteren','selectie','markeren','select'],
+  ['springen','ga naar','goto','navigeren'],
+  ['ongedaan','undo','terugdraaien'],
+  ['herhalen','redo','opnieuw'],
+  ['vet','bold'],
+  ['cursief','italic','schuin'],
+  ['onderstrepen','underline'],
+  ['procent','procenten','percentage','%'],
+  ['valuta','euro','geld','bedrag'],
+  ['decimaal','decimalen','komma'],
+  ['rand','randen','kader','border'],
+  ['kleur','opvulkleur','achtergrond'],
+  ['centreren','midden','uitlijnen'],
+  ['terugloop','wrap','meerdere regels','nieuwe regel'],
+  ['groeperen','groep','outline'],
+  ['duplicaten','dubbele','dubbel'],
+  ['vernieuwen','refresh','bijwerken'],
+  ['herberekenen','berekenen','calculate'],
+  ['rij','rijen','regel','regels'],
+  ['kolom','kolommen'],
+  ['cel','cellen'],
+  ['lint','ribbon','menu']
+];
+
+/* ===== motor: mini-werkblad en toetsen ===== */
+(function(){
+'use strict';
+let RM = false;
+try { RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
+const wait = ms => new Promise(r => setTimeout(r, ms));
+const fold = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+function mk(tag, cls, html){ const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+
+/* ---------- toetsen ---------- */
+const KEYLABEL = { Plus:'+' };
+function keysHTML(str){
+  return String(str).split(' › ').map(part => {
+    part = part.trim();
+    let inner;
+    if (part[0] === '"') inner = '<span class="k-typed">' + esc(part) + '</span>';
+    else if (part[0] === '[') inner = '<span class="k-ui">' + esc(part.slice(1, -1)) + '</span>';
+    else inner = part.split('+').map(k => '<kbd class="k">' + esc(KEYLABEL[k] || k) + '</kbd>').join('<span class="plus">+</span>');
+    return '<span class="cb">' + inner + '</span>';
+  }).join('<span class="then" aria-label="dan">›</span>');
+}
+function rich(s){ return s.replace(/⟨([^⟩]+)⟩/g, (m, k) => '<span class="ik">' + keysHTML(k) + '</span>'); }
+
+/* ---------- cellen en indeling ---------- */
+function parseCell(raw){
+  if (raw == null) return null;
+  const s = String(raw), i = s.indexOf('|');
+  return i < 0 ? { v:s, c:'' } : { v:s.slice(0, i), c:s.slice(i + 1) };
+}
+const cellText = v => esc(v).replace(/~/g, '<span class="spc">·</span>');
+function splitAddr(a){ const m = /^([A-Z]+)(.+)$/.exec(String(a)); return m ? { c:m[1], r:m[2] } : null; }
+function nextCol(c){
+  const s = c.split(''); let i = s.length - 1;
+  while (i >= 0) { if (s[i] !== 'Z') { s[i] = String.fromCharCode(s[i].charCodeAt(0) + 1); return s.join(''); } s[i] = 'A'; i--; }
+  return 'A' + s.join('');
+}
+function defaultRows(cells){
+  let max = 3;
+  Object.keys(cells).forEach(a => { const p = splitAddr(a); const n = p ? parseInt(p.r, 10) : 0; if (n > max) max = n; });
+  const r = []; for (let i = 1; i <= max; i++) r.push(i);
+  return r;
+}
+function norm(s){
+  const st = Object.assign({}, s);
+  st.cols = typeof st.cols === 'string' ? st.cols.split('') : (st.cols || ['A', 'B', 'C']);
+  st.cells = Object.assign({}, st.cells || {});
+  if (!st.rows) st.rows = defaultRows(st.cells);
+  return st;
+}
+function patch(prev, p){
+  const n = Object.assign({}, prev, p);
+  if (p.C) { n.cells = Object.assign({}, p.C); delete n.C; }
+  else if (p.cells) n.cells = Object.assign({}, prev.cells, p.cells);
+  if (typeof n.cols === 'string') n.cols = n.cols.split('');
+  Object.keys(n.cells).forEach(k => { if (n.cells[k] == null) delete n.cells[k]; });
+  return n;
+}
+const CH = 18;
+function layout(st){
+  const cols = st.cols, rows = st.rows.map(String);
+  const hc = new Set(st.hc || []), hr = new Set((st.hr || []).map(String));
+  const W = cols.map((c, i) => hc.has(c) ? 0 : (Array.isArray(st.w) ? (st.w[i] != null ? st.w[i] : 64) : (st.w || 64)));
+  const H = rows.map((r, i) => hr.has(r) ? 0 : (Array.isArray(st.h) ? (st.h[i] != null ? st.h[i] : 20) : (st.h || 20)));
+  const maxLen = Math.max.apply(null, rows.map(r => r.length));
+  const RH = Math.round(Math.max(26, maxLen * 6.6 + 10));
+  const X = [RH], Y = [CH];
+  W.forEach((w, i) => X.push(X[i] + w));
+  H.forEach((h, i) => Y.push(Y[i] + h));
+  const ci = {}, ri = {};
+  cols.forEach((c, i) => { ci[c] = i; });
+  rows.forEach((r, i) => { ri[r] = i; });
+  return { cols, rows, W, H, X, Y, RH, ci, ri, width:X[X.length - 1], height:Y[Y.length - 1] };
+}
+function bounds(L, range){
+  const parts = String(range).split(':');
+  const p = splitAddr(parts[0]), q = splitAddr(parts[1] || parts[0]);
+  if (!p || !q) return null;
+  let c1 = L.ci[p.c], c2 = L.ci[q.c], r1 = L.ri[p.r], r2 = L.ri[q.r];
+  if (c1 == null || c2 == null || r1 == null || r2 == null) return null;
+  if (c1 > c2) { const t = c1; c1 = c2; c2 = t; }
+  if (r1 > r2) { const t = r1; r1 = r2; r2 = t; }
+  return { c1, c2, r1, r2, x:L.X[c1], y:L.Y[r1], w:L.X[c2 + 1] - L.X[c1], h:L.Y[r2 + 1] - L.Y[r1] };
+}
+
+/* ---------- tekenen ---------- */
+function render(D, st, animate){
+  const cw = D.gw.clientWidth || D.maxW;
+  const s = Math.min(D.maxScale || 1.2, cw / D.maxW);
+  const visW = cw / s, visH = D.maxH;
+  const base = layout(st);
+  const cols = st.cols.slice(), rows = st.rows.slice();
+  const w = Array.isArray(st.w) ? st.w.slice() : cols.map(() => st.w || 64);
+  const h = Array.isArray(st.h) ? st.h.slice() : rows.map(() => st.h || 20);
+  while (w.length < cols.length) w.push(64);
+  while (h.length < rows.length) h.push(20);
+  let extraW = visW - base.width;
+  while (extraW > 0.5) { cols.push(nextCol(cols[cols.length - 1])); w.push(64); extraW -= 64; }
+  let extraH = visH - base.height;
+  const last = rows[rows.length - 1], lastN = parseInt(last, 10);
+  if (String(lastN) === String(last)) {
+    let n = lastN;
+    while (extraH > 0.5 && n < 1048576) { n++; rows.push(n); h.push(20); extraH -= 20; }
+  }
+  const L = layout(Object.assign({}, st, { cols, rows, w, h }));
+
+  const want = new Map();
+  const put = (id, cls, x, y, ww, hh, html) => { want.set(id, { cls, x, y, w:ww, h:hh, html:html || '' }); };
+
+  const sels = (st.sel || []).map(r => bounds(L, r)).filter(Boolean);
+  const act = st.act ? bounds(L, st.act) : null;
+  const multiCell = sels.length === 1 && (sels[0].c1 !== sels[0].c2 || sels[0].r1 !== sels[0].r2);
+  const tinted = sels.length > 1 || multiCell;
+  const inSel = (ci, ri) => sels.some(b => ci >= b.c1 && ci <= b.c2 && ri >= b.r1 && ri <= b.r2);
+  const colOn = ci => sels.some(b => ci >= b.c1 && ci <= b.c2) || (act && act.c1 === ci);
+  const rowOn = ri => sels.some(b => ri >= b.r1 && ri <= b.r2) || (act && act.r1 === ri);
+
+  put('corner', 'ge corner', 0, 0, L.RH, CH);
+  L.cols.forEach((c, i) => {
+    const hid = L.W[i] === 0, nextHid = i + 1 < L.cols.length && L.W[i + 1] === 0;
+    put('ch' + c, 'ge hdrc col' + (colOn(i) && !hid ? ' on' : '') + (nextHid ? ' hidnext' : '') + (hid ? ' hz' : ''), L.X[i], 0, L.W[i], CH, hid ? '' : esc(c));
+  });
+  L.rows.forEach((r, i) => {
+    const hid = L.H[i] === 0, nextHid = i + 1 < L.rows.length && L.H[i + 1] === 0;
+    put('rh' + r, 'ge hdrc row' + (rowOn(i) && !hid ? ' on' : '') + (nextHid ? ' hidnext' : '') + (hid ? ' hz' : ''), 0, L.Y[i], L.RH, L.H[i], hid ? '' : esc(r));
+  });
+
+  const fmt = {};
+  (st.fmt || []).forEach(f => {
+    const b = bounds(L, f[0]); if (!b) return;
+    for (let ci = b.c1; ci <= b.c2; ci++) for (let ri = b.r1; ri <= b.r2; ri++) { const k = L.cols[ci] + L.rows[ri]; fmt[k] = (fmt[k] || '') + ' ' + f[1]; }
+  });
+  L.cols.forEach((c, ci) => L.rows.forEach((r, ri) => {
+    const addr = c + r;
+    const pc = parseCell(st.cells[addr]) || { v:'', c:'' };
+    const editing = st.edit === addr;
+    let html = editing && st.fxh ? st.fxh : cellText(pc.v);
+    if (editing) html += '<i class="caret"></i>';
+    const isAct = act && act.c1 === ci && act.r1 === ri;
+    let cls = 'ge cell ' + pc.c + (fmt[addr] || '');
+    if (tinted && inSel(ci, ri) && !isAct) cls += ' ins';
+    if (editing) cls += ' edit';
+    if (L.W[ci] === 0 || L.H[ri] === 0) cls += ' hz';
+    put('c' + addr, cls, L.X[ci], L.Y[ri], L.W[ci], L.H[ri], '<span class="v">' + html + '</span>');
+  }));
+
+  if (multiCell) { const b = sels[0]; put('selb', 'ge selb fill', b.x - 1, b.y - 1, b.w + 1, b.h + 1); }
+  else if (sels.length > 1) sels.forEach((b, i) => put('sel' + i, 'ge selb multi', b.x - 1, b.y - 1, b.w + 1, b.h + 1));
+  if (act && L.W[act.c1] > 0 && L.H[act.r1] > 0) put('act', 'ge actb' + (tinted ? '' : ' fill'), act.x - 1, act.y - 1, act.w + 1, act.h + 1);
+  Object.keys(st.mk || {}).forEach(a => { const b = bounds(L, a); if (b) put('mk' + a, 'ge mk ' + st.mk[a], b.x - 1, b.y - 1, b.w + 1, b.h + 1); });
+  if (st.ants) { const b = bounds(L, st.ants); if (b) put('ants', 'ge ants', b.x - 1, b.y - 1, b.w + 1, b.h + 1); }
+  if (st.frz) put('frz', 'ge frz', 0, L.Y[st.frz] - 1, L.width, 2);
+  if (st.spn) { const b = bounds(L, st.spn.r); if (b) put('spn', 'ge spn ' + (st.spn.s || ''), b.x, b.y, b.w, b.h, esc(st.spn.v)); }
+  if (st.arr) {
+    const f = bounds(L, st.arr.from), t = bounds(L, st.arr.to);
+    if (f && t) { const y1 = t.y + t.h / 2 + 5, y2 = f.y + f.h / 2; put('arr', 'ge arr', t.x + 16, y1, 2, Math.max(0, y2 - y1)); }
+  }
+
+  const map = D.els;
+  const fade = animate && !RM;
+  want.forEach((d, id) => {
+    let e = map.get(id);
+    const isNew = !e;
+    if (isNew) { e = document.createElement('div'); map.set(id, e); D.gi.appendChild(e); if (fade) e.style.opacity = '0'; }
+    if (e.className !== d.cls) e.className = d.cls;
+    e.style.left = d.x + 'px'; e.style.top = d.y + 'px'; e.style.width = d.w + 'px'; e.style.height = d.h + 'px';
+    if (e._h !== d.html) { e.innerHTML = d.html; e._h = d.html; }
+    if (isNew && fade) requestAnimationFrame(() => requestAnimationFrame(() => { e.style.opacity = ''; }));
+  });
+  map.forEach((e, id) => {
+    if (want.has(id)) return;
+    map.delete(id);
+    if (fade) { e.style.opacity = '0'; setTimeout(() => e.remove(), 320); } else e.remove();
+  });
+
+  D.gi.classList.toggle('nogrid', st.grid === false);
+  D.gi.style.width = L.width + 'px';
+  D.gi.style.height = L.height + 'px';
+  D.gi.style.transform = 'scale(' + s + ')';
+  D.gw.style.height = Math.ceil(D.maxH * s) + 'px';
+  D.lastW = D.gw.clientWidth;
+}
+
+function renderFx(D, st, animate){
+  D.nm.textContent = st.nm || st.act || '';
+  let h;
+  if (st.fxh) h = st.fxh;
+  else if (st.fx != null) h = cellText(st.fx);
+  else { const pc = parseCell(st.cells[st.act]); h = pc ? cellText(pc.v.replace(/\n/g, ' ')) : ''; }
+  if (D.fxv._h !== h) {
+    D.fxv.innerHTML = h || '&nbsp;';
+    D.fxv._h = h;
+    if (animate && !RM) { D.fxv.classList.remove('flash'); void D.fxv.offsetWidth; D.fxv.classList.add('flash'); }
+  }
+}
+function renderTabs(D, st, animate){
+  if (!D.tabsEl) return;
+  const prev = D.prevTabs || [], tabs = st.tabs || [];
+  let html = tabs.map((t, i) => '<span class="tab' + (i === (st.tab || 0) ? ' on' : '') + (animate && !RM && prev.indexOf(t) < 0 ? ' new' : '') + '">' + esc(t) + '</span>').join('');
+  if (st.zoom) html += '<span class="zoom' + (animate && !RM && D.prevZoom && D.prevZoom !== st.zoom ? ' flash' : '') + '">Zoom ' + esc(st.zoom) + '</span>';
+  D.tabsEl.innerHTML = html;
+  D.prevTabs = tabs.slice(); D.prevZoom = st.zoom;
+}
+function popHTML(p){
+  let b = '';
+  if (p.msg) b += '<div class="pop-m">' + esc(p.msg) + '</div>';
+  (p.f || []).forEach(f => { b += '<div class="pop-f"><span>' + esc(f[0]) + '</span><span class="pop-in">' + esc(f[1]) + '</span></div>'; });
+  (p.o || []).forEach((o, i) => { b += '<div class="pop-o' + (i === p.on ? ' on' : '') + '">' + esc(o) + '</div>'; });
+  if (p.chk) b += '<div class="pop-c"><span class="box"></span>' + esc(p.chk) + '</div>';
+  b += '<span class="pop-ok">OK</span>';
+  return '<div class="pop-t">' + esc(p.t) + '</div><div class="pop-b">' + b + '</div>';
+}
+function renderPop(D, st){
+  const key = st.pop ? JSON.stringify(st.pop) : '';
+  if (D.popKey === key) return;
+  D.popKey = key;
+  if (!st.pop) { D.pop.hidden = true; D.pop.innerHTML = ''; return; }
+  D.pop.innerHTML = popHTML(st.pop);
+  D.pop.hidden = false;
+}
+
+
+/* ---------- code ---------- */
+const KW = new Set('Sub End Dim As For Each In Next If Then Else ElseIf Exit With Not And Or On Error Resume GoTo Set Is Nothing Long Integer String Boolean Variant True False Function Call Private Public Const Do Loop While Until Step To'.split(' '));
+function hlVBA(code){
+  return code.split('\n').map(line => {
+    let inStr = false, ci = -1;
+    for (let j = 0; j < line.length; j++) {
+      const ch = line[j];
+      if (ch === '"') inStr = !inStr;
+      else if (ch === "'" && !inStr) { ci = j; break; }
+    }
+    const part = ci >= 0 ? line.slice(0, ci) : line;
+    const cm = ci >= 0 ? line.slice(ci) : '';
+    let out = part.replace(/("[^"]*")|([A-Za-z_][A-Za-z0-9_]*)|([^"A-Za-z_]+)/g, (m, s, w, o, off) => {
+      if (s) return '<span class="st">' + esc(s) + '</span>';
+      if (w) return (KW.has(w) && part[off - 1] !== '.') ? '<span class="kw">' + w + '</span>' : esc(w);
+      return esc(o);
+    });
+    if (cm) out += '<span class="cm">' + esc(cm) + '</span>';
+    return out;
+  }).join('\n');
+}
+
+
+/* ---------- afspelen ---------- */
+const DI = {
+  play:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13L18.5 12z" fill="currentColor" stroke="none"/></svg>',
+  pause:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="5.5" width="3.6" height="13" rx="1.2" fill="currentColor" stroke="none"/><rect x="13.9" y="5.5" width="3.6" height="13" rx="1.2" fill="currentColor" stroke="none"/></svg>',
+  again:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3"/><path d="M4.5 4.8v4.4h4.4"/></svg>',
+  prev:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6l-6 6 6 6"/></svg>',
+  next:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 6l6 6-6 6"/></svg>',
+  copy:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11" height="11" rx="2.5"/><path d="M15.5 8.5v-2a2 2 0 0 0-2-2h-7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h2"/></svg>',
+  check:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'
+};
+function setCap(D, i){
+  const n = D.steps.length, step = i > 0 ? D.steps[i - 1] : null;
+  D.capL.textContent = i === 0 ? 'Beginsituatie' : (n > 1 ? 'Stap ' + i + ' van ' + n : 'Resultaat');
+  D.capK.innerHTML = step ? keysHTML(step.k) : '';
+  D.capT.textContent = step ? step.c : (D.c0 || '');
+}
+function setBtn(D){
+  const end = D.i === D.states.length - 1;
+  D.btn.innerHTML = D.playing ? DI.pause : (end ? DI.again : DI.play);
+  D.btn.setAttribute('aria-label', D.playing ? 'Pauzeer de demo' : (end ? 'Speel de demo opnieuw af' : 'Speel de demo af'));
+  D.prevB.disabled = D.i === 0;
+  D.nextB.disabled = end;
+}
+function go(D, i, animate, keepCap){
+  D.i = i;
+  const st = D.states[i];
+  render(D, st, animate);
+  renderFx(D, st, animate);
+  renderTabs(D, st, animate);
+  renderPop(D, st);
+  if (!keepCap) setCap(D, i);
+  D.segs.forEach((s, j) => {
+    s.classList.toggle('on', j <= i);
+    if (j === i) s.setAttribute('aria-current', 'step'); else s.removeAttribute('aria-current');
+  });
+  setBtn(D);
+}
+async function press(D, token){
+  const groups = Array.from(D.capK.querySelectorAll('.cb'));
+  for (const g of groups) {
+    if (token !== D.token) return;
+    g.classList.add('down');
+    await wait(RM ? 80 : 240);
+    g.classList.remove('down');
+    await wait(RM ? 30 : 110);
+  }
+}
+async function playAll(D){
+  const token = ++D.token;
+  D.playing = true;
+  go(D, 0, true);
+  await wait(RM ? 300 : 650);
+  for (let i = 1; i < D.states.length; i++) {
+    if (token !== D.token) return;
+    setCap(D, i);
+    await press(D, token);
+    if (token !== D.token) return;
+    go(D, i, true, true);
+    if (i < D.states.length - 1) await wait(RM ? 1100 : 1800);
+  }
+  if (token === D.token) { D.playing = false; setBtn(D); }
+}
+function stop(D){ D.token++; D.playing = false; setBtn(D); }
+async function nextStep(D){
+  const token = ++D.token;
+  D.playing = false;
+  if (D.i >= D.states.length - 1) { go(D, 0, true); return; }
+  const i = D.i + 1;
+  setCap(D, i);
+  setBtn(D);
+  await press(D, token);
+  if (token !== D.token) return;
+  go(D, i, true, true);
+}
+function prevStep(D){ D.token++; D.playing = false; go(D, Math.max(0, D.i - 1), true); }
+
+const demos = new Set();
+function pruneDemos(){ demos.forEach(D => { if (!D.sheet.isConnected) { D.token++; demos.delete(D); } }); }
+function refit(){ demos.forEach(D => { const cw = D.gw.clientWidth; if (cw && cw !== D.lastW) render(D, D.states[D.i], false); }); }
+function autoplay(D, delay){
+  if (RM || !D) return;
+  const t0 = D.token;
+  setTimeout(() => { if (D.token === t0 && D.sheet.isConnected && !D.playing) playAll(D); }, delay || 450);
+}
+
+function buildDemo(def, steps, title, opts){
+  opts = opts || {};
+  const D = { c0:def.c0, steps:steps || [], i:0, token:0, playing:false, els:new Map(), maxScale:opts.maxScale || 1.25 };
+  D.states = [norm(def)];
+  D.steps.forEach(st => D.states.push(patch(D.states[D.states.length - 1], st.p || {})));
+  const Ls = D.states.map(layout);
+  D.maxW = Math.max.apply(null, Ls.map(l => l.width));
+  D.maxH = Math.max.apply(null, Ls.map(l => l.height));
+
+  const wrap = mk('div', 'demo');
+  const sheet = mk('div', 'sheet');
+  sheet.tabIndex = 0;
+  sheet.setAttribute('role', 'button');
+  sheet.setAttribute('aria-label', 'Voorbeeldwerkblad: ' + title + '. Druk op Enter voor de volgende stap.');
+  const fx = mk('div', 'fx', '<span class="nm"></span><span class="fxl">fx</span><span class="fxv"></span>');
+  D.nm = fx.querySelector('.nm');
+  D.fxv = fx.querySelector('.fxv');
+  D.gw = mk('div', 'gw');
+  D.gi = mk('div', 'gi');
+  D.pop = mk('div', 'pop');
+  D.pop.hidden = true;
+  D.gw.append(D.gi, D.pop);
+  sheet.append(fx, D.gw);
+  if (D.states.some(x => x.tabs || x.zoom)) { D.tabsEl = mk('div', 'tabs'); sheet.appendChild(D.tabsEl); }
+
+  const prog = mk('div', 'prog');
+  prog.setAttribute('role', 'group');
+  prog.setAttribute('aria-label', 'Stappen van de demo');
+  D.segs = D.states.map((x, j) => {
+    const b = mk('button', 'seg');
+    b.type = 'button';
+    b.setAttribute('aria-label', j === 0 ? 'Beginsituatie' : 'Stap ' + j);
+    b.addEventListener('click', ev => { ev.stopPropagation(); D.token++; D.playing = false; go(D, j, true); });
+    prog.appendChild(b);
+    return b;
+  });
+  const row = mk('div', 'demo-row');
+  D.btn = mk('button', 'play');
+  D.btn.type = 'button';
+  const cap = mk('div', 'cap', '<div class="cap-l"></div><div class="cap-k"></div><div class="cap-t"></div>');
+  cap.setAttribute('aria-live', 'polite');
+  D.capL = cap.querySelector('.cap-l');
+  D.capK = cap.querySelector('.cap-k');
+  D.capT = cap.querySelector('.cap-t');
+  const sb = mk('div', 'stepb');
+  D.prevB = mk('button', 'ibtn filled', DI.prev);
+  D.prevB.type = 'button';
+  D.prevB.setAttribute('aria-label', 'Vorige stap');
+  D.nextB = mk('button', 'ibtn filled', DI.next);
+  D.nextB.type = 'button';
+  D.nextB.setAttribute('aria-label', 'Volgende stap');
+  sb.append(D.prevB, D.nextB);
+  row.append(D.btn, cap, sb);
+  wrap.append(sheet, prog, row);
+
+  D.btn.addEventListener('click', () => { if (D.playing) stop(D); else playAll(D); });
+  D.prevB.addEventListener('click', () => prevStep(D));
+  D.nextB.addEventListener('click', () => nextStep(D));
+  sheet.addEventListener('click', () => nextStep(D));
+  sheet.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); nextStep(D); } });
+  D.sheet = sheet;
+  sheet._demo = D;
+  wrap._demo = D;
+  demos.add(D);
+  go(D, 0, false);
+  return wrap;
+}
+
+function codeBlock(code, label){
+  const box = mk('div', 'code');
+  const head = mk('div', 'code-h', '<span>' + esc(label) + '</span>');
+  const idle = DI.copy + '<span>Kopieer code</span>';
+  const btn = mk('button', 'btn btn-tint sm', idle);
+  btn.type = 'button';
+  head.appendChild(btn);
+  const pre = mk('pre', null, hlVBA(code));
+  pre.tabIndex = 0;
+  pre.setAttribute('aria-label', 'VBA-code');
+  box.append(head, pre);
+  btn.addEventListener('click', () => {
+    const reset = () => setTimeout(() => { btn.innerHTML = idle; }, 1900);
+    const ok = () => { btn.innerHTML = DI.check + '<span>Gekopieerd</span>'; reset(); };
+    const fallback = () => {
+      try {
+        const r = document.createRange(); r.selectNodeContents(pre);
+        const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+        btn.innerHTML = '<span>Geselecteerd, druk Ctrl+C</span>';
+        reset();
+      } catch (e) {}
+    };
+    try { navigator.clipboard.writeText(code).then(ok, fallback); } catch (e) { fallback(); }
+  });
+  return box;
+}
+
+
+/* ===== app: pictogrammen, gegevens, opslag ===== */
+const SHARE_BASE = location.href.split('#')[0];
+const FAV_KEY = 'excel-spiekbrief-favorieten';
+const REC_KEY = 'excel-spiekbrief-recent';
+const $ = s => document.querySelector(s);
+
+const ICON = {
+  search:'<circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5l5 5"/>',
+  star:'<path d="M12 3.6l2.55 5.3 5.8.75-4.25 4 1.08 5.77L12 16.6l-5.18 2.82 1.08-5.77-4.25-4 5.8-.75z"/>',
+  link:'<path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2"/>',
+  home:'<path d="M4 10.8L12 4l8 6.8"/><path d="M6 9.5V20h4.5v-5.5h3V20H18V9.5"/>',
+  chevR:'<path d="M9 5.5l6.5 6.5L9 18.5"/>',
+  chevL:'<path d="M15 5.5L8.5 12l6.5 6.5"/>',
+  x:'<path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/>',
+  check:'<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+  opmaak:'<path d="M5.5 19L12 5l6.5 14"/><path d="M8.2 13.5h7.6"/>',
+  formules:'<path d="M14.5 4.5c-1.8 0-2.8.9-3.1 2.8l-1.8 10.4c-.3 1.8-1.2 2.8-3.1 2.8"/><path d="M7.5 9.5h6.5"/><path d="M15 13.5l4.5 5.5M19.5 13.5L15 19"/>',
+  navigeren:'<path d="M6 4l12.5 7.2-5.6 1.5-2.6 5.3z"/><path d="M13.2 12.9l4.3 4.6"/>',
+  invoer:'<path d="M15.5 4.5l4 4L9 19l-5 1 1-5z"/><path d="M13.5 6.5l4 4"/>',
+  data:'<rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 9.5v10"/>',
+  bladen:'<rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="M3.5 9h17"/><path d="M7 15.5h4"/>',
+  vba:'<path d="M8.5 7.5L4 12l4.5 4.5M15.5 7.5L20 12l-4.5 4.5M13.5 5l-3 14"/>',
+  editor:'<rect x="2.5" y="6" width="19" height="12" rx="2.5"/><path d="M6.5 10h.01M10 10h.01M13.5 10h.01M17 10h.01M8 14h8"/>',
+  guide:'<path d="M4 5.5c2.6-1.4 5.4-1.4 8 .6 2.6-2 5.4-2 8-.6V19c-2.6-1.4-5.4-1.4-8 .6-2.6-2-5.4-2-8-.6z"/><path d="M12 6.1v13.5"/>',
+  recent:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
+  bulb:'<path d="M9.5 18h5M10.5 21h3"/><path d="M12 3.5a6 6 0 0 0-3.6 10.8c.6.5 1.1 1.2 1.1 2v.2h5v-.2c0-.8.5-1.5 1.1-2A6 6 0 0 0 12 3.5z"/>',
+  warn:'<path d="M12 4.5l8.5 15h-17z"/><path d="M12 10v4M12 17v.01"/>',
+  sparkle:'<path d="M12 3.5l1.9 5.1 5.1 1.9-5.1 1.9L12 17.5l-1.9-5.1-5.1-1.9 5.1-1.9z"/><path d="M18.5 15.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/>',
+  keys:'<rect x="3" y="7" width="18" height="11" rx="2.5"/><path d="M7 11h.01M11 11h.01M15 11h.01M8.5 14.5h7"/>',
+  play:'<path d="M8 5.5v13L18.5 12z" fill="currentColor" stroke="none"/>',
+  grid:'<rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="M4 10h16M4 15h16M10 10v10"/>',
+  trash:'<path d="M5 7h14M10 7V5h4v2M7 7l1 12h8l1-12"/>',
+  info:'<circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8v.01"/>',
+  hand:'<path d="M8 13V6.5a1.5 1.5 0 0 1 3 0V12M11 11V5a1.5 1.5 0 0 1 3 0v6M14 11V6.5a1.5 1.5 0 0 1 3 0V14c0 3.5-2.5 6-6 6-2.5 0-4-1.2-5.3-3.2L4 13.6a1.5 1.5 0 0 1 2.5-1.6L8 14"/>'
+};
+function svg(name, cls){ return '<svg class="i' + (cls ? ' ' + cls : '') + '" viewBox="0 0 24 24" aria-hidden="true">' + ICON[name] + '</svg>'; }
+function icTile(color, icon, size){ return '<span class="ic' + (size ? ' ' + size : '') + '" style="--c:var(--c-' + color + ')">' + svg(icon) + '</span>'; }const uniq = a => Array.from(new Set(a));
+function debounce(fn, ms){ let t = 0; return function(){ const a = arguments; clearTimeout(t); t = setTimeout(() => fn.apply(null, a), ms); }; }
+const plain = s => String(s || '').replace(/[⟨⟩]/g, '');
+/* tekst met ⟨toetsen⟩ veilig omzetten */
+function rt(s){ return String(s || '').split(/(⟨[^⟩]+⟩)/).map(p => p[0] === '⟨' ? '<span class="ik">' + keysHTML(p.slice(1, -1)) + '</span>' : esc(p)).join(''); }
+
+/* ---------- id's zoals in V1, zodat links blijven werken ---------- */
+const SLUGMAP = { '[':'haakopen', ']':'haaksluit', '{':'accolade-open', '}':'accolade-sluit', '`':'accent', ';':'puntkomma', ':':'dubbelepunt', '=':'is', '-':'min', '+':'plus', '↓':'omlaag', '↑':'omhoog', '→':'rechts', '←':'links', '!':'uitroep', '%':'procent', '$':'dollar', '&':'en', '_':'liggend-streepje', ',':'komma', '.':'punt', "'":'apostrof', '"':'aanhaling', '#':'hekje', '@':'apenstaart', '~':'tilde', '*':'ster', '^':'dakje' };
+function slug(keys){
+  return keys.split(' › ').map(part => {
+    part = part.trim();
+    if (part[0] === '"' || part[0] === '[') part = part.slice(1, -1);
+    return part.split('+').map(t => (t.length === 1 && SLUGMAP[t]) ? SLUGMAP[t] : fold(t).replace(/[^a-z0-9]+/g, '-')).join('-');
+  }).join('-').replace(/-+/g, '-').replace(/^-|-$/g, '') || 'sneltoets';
+}
+const usedIds = new Set(['opmaak','formules','navigeren','invoer','data','bladen','vba','bij-de-hand','favorieten','secties','leeg','zoek','chips','sjabloon','toast','favlist','start','vba-editor','klaarzetten','zoeken']);
+function makeId(base, cat){
+  let id = base;
+  if (usedIds.has(id)) id = base + '-' + cat;
+  let n = 2;
+  while (usedIds.has(id)) id = base + '-' + cat + '-' + (n++);
+  usedIds.add(id);
+  return id;
+}
+
+/* ---------- alle onderdelen ---------- */
+const ITEMS = [], BYID = new Map();
+const NAVBY = new Map(NAV.map(n => [n.id, n]));
+(function(){
+  const add = o => { ITEMS.push(o); BYID.set(o.id, o); };
+  CATS.forEach(cat => {
+    if (cat.id === 'vba') {
+      VBA.forEach(v => add({ id:makeId('vba-' + v.naam.toLowerCase(), 'vba'), nav:'vba', vba:true, keys:'Macro ' + v.naam, naam:v.naam, title:v.t, desc:v.d, tip:v.note || '', warn:!!v.warn, code:v.code, demo:v.demo, steps:v.steps }));
+      LIJSTJE.filter(q => q.cat === 'vba').forEach(q => add({ id:makeId(slug(q.k), 'vba'), nav:'vba-editor', keys:q.k, title:q.t, desc:q.s, g:q.g, tags:q.tags }));
+      return;
+    }
+    SNEL.filter(c => c.cat === cat.id).forEach(c => add({ id:makeId(c.id || slug(c.keys), c.cat), nav:c.cat, keys:c.keys, alt:c.alt || '', title:c.t, desc:c.d, tip:c.tip || '', demo:c.demo, steps:c.steps }));
+    LIJSTJE.filter(q => q.cat === cat.id).forEach(q => add({ id:makeId(slug(q.k), q.cat), nav:q.cat, keys:q.k, title:q.t, desc:q.s, g:q.g, tags:q.tags }));
+  });
+  ITEMS.forEach((it, n) => {
+    Object.assign(it, META[it.id] || {}, EXTRA[it.id] || {});
+    it.n = n;
+    if (!it.g) it.g = 'Overig';
+    it.hasDemo = !!(it.demo && it.steps && it.steps.length);
+  });
+})();
+const COUNT_SC = ITEMS.filter(it => !it.vba).length;
+const COUNT_VBA = ITEMS.filter(it => it.vba).length;
+const COUNT_DEMO = ITEMS.filter(it => it.hasDemo).length;
+const VIEWS = new Set(['start','favorieten','klaarzetten','zoeken'].concat(NAV.map(n => n.id)));
+const LISTVIEWS = new Set(['favorieten','zoeken'].concat(NAV.map(n => n.id)));
+
+/* ---------- hulpjes per onderdeel ---------- */
+const navOf = it => NAVBY.get(it.nav);
+const colorOf = it => navOf(it).color;
+const countText = (n, nav) => n + (nav && nav.id === 'vba' ? " macro's" : (n === 1 ? ' sneltoets' : ' sneltoetsen'));
+function keysFor(it, size){
+  if (it.vba) return '<span class="subname"><b>Sub</b> ' + esc(it.naam) + '</span>';
+  return '<span class="keys' + (size ? ' ' + size : '') + '">' + keysHTML(it.keys) + '</span>';
+}
+function plainKeys(k){
+  return String(k).split(' › ').map(p => { p = p.trim(); if (p.length > 1 && p[0] === '[' && p.slice(-1) === ']') p = p.slice(1, -1); return p.split('+').join(' + '); }).join(' › ');
+}
+function groupedIds(navId){
+  const nav = NAVBY.get(navId), map = new Map(nav.groups.map(g => [g, []]));
+  ITEMS.filter(it => it.nav === navId).forEach(it => { if (!map.has(it.g)) map.set(it.g, []); map.get(it.g).push(it); });
+  return Array.from(map).filter(e => e[1].length);
+}
+
+/* ---------- opslag (alleen in deze browser) ---------- */
+function load(key){ try { const raw = localStorage.getItem(key); const a = raw ? JSON.parse(raw) : []; return Array.isArray(a) ? a.map(String) : []; } catch (e) { return []; } }
+function save(key, arr){ try { localStorage.setItem(key, JSON.stringify(arr)); } catch (e) {} }
+const FAV = new Set(load(FAV_KEY));
+let RECENT = load(REC_KEY).filter(id => BYID.has(id)).slice(0, 12);
+const favCount = () => Array.from(FAV).filter(id => BYID.has(id)).length;
+function addRecent(id){ RECENT = [id].concat(RECENT.filter(x => x !== id)).slice(0, 12); save(REC_KEY, RECENT); }
+
+/* ---------- melding ---------- */
+let toastT = 0;
+function toast(msg, icon, url){
+  const t = $('#toast');
+  t.classList.toggle('wide', !!url);
+  t.innerHTML = (icon ? svg(icon) : '') + '<span>' + esc(msg) + '</span>' + (url ? '<input readonly aria-label="Link" value="' + esc(url) + '">' : '');
+  t.hidden = false;
+  t.classList.remove('show'); void t.offsetWidth; t.classList.add('show');
+  if (url) { const inp = t.querySelector('input'); try { inp.focus(); inp.select(); } catch (e) {} }
+  clearTimeout(toastT);
+  toastT = setTimeout(() => { t.hidden = true; }, url ? 9000 : 2100);
+}
+function copyLink(token){
+  const url = SHARE_BASE + '#' + token;
+  const fail = () => toast('Kopieer deze link:', 'link', url);
+  try { navigator.clipboard.writeText(url).then(() => toast('Link gekopieerd', 'check'), fail); } catch (e) { fail(); }
+}
+
+/* ---------- rijen en knoppen ---------- */
+function favBtn(id, label, cls, text){
+  const on = FAV.has(id);
+  return '<button type="button" class="' + (cls || 'ibtn') + ' fav" data-fav="' + id + '" aria-pressed="' + on + '" aria-label="Favoriet: ' + esc(label) + '" title="' + (on ? 'Uit favorieten halen' : 'Bewaar als favoriet') + '">' + svg('star') + (text ? '<span>' + text + '</span>' : '') + '</button>';
+}
+/* markeer zoekwoorden zonder de tekst te breken */
+function hl(text, toks){
+  text = String(text || '');
+  if (!toks || !toks.length) return esc(text);
+  const f = Array.from(text).map(c => (fold(c)[0] || c)).join('');
+  const marks = new Array(f.length).fill(false);
+  toks.filter(t => t.length >= 2).forEach(t => { let i = f.indexOf(t); while (i >= 0) { for (let j = i; j < i + t.length; j++) marks[j] = true; i = f.indexOf(t, i + t.length); } });
+  const chars = Array.from(text);
+  if (chars.length !== f.length) return esc(text);
+  let out = '', on = false;
+  chars.forEach((c, i) => { if (marks[i] && !on) { out += '<mark>'; on = true; } if (!marks[i] && on) { out += '</mark>'; on = false; } out += esc(c); });
+  return out + (on ? '</mark>' : '');
+}
+function rowHTML(it, o){
+  o = o || {};
+  const title = o.toks ? hl(it.title, o.toks) : esc(it.title);
+  const sub = it.desc ? (o.toks ? hl(plain(it.desc), o.toks) : rt(it.desc)) : '';
+  return '<li class="row' + (S.layout === 'wide' && S.sel === it.id ? ' sel' : '') + '" data-row="' + it.id + '">' +
+    '<button type="button" class="row-open" data-open="' + it.id + '"><span class="row-main"><span class="row-t">' + title +
+    (it.hasDemo ? '<span class="badge">' + svg('play') + 'Demo</span>' : '') + (it.warn ? '<span class="badge warn">Let op</span>' : '') + '</span>' +
+    (sub ? '<span class="row-s">' + sub + '</span>' : '') + '</span><span class="row-keys">' + keysFor(it) + '</span>' + svg('chevR', 'chev') + '</button>' +
+    favBtn(it.id, it.title) + '</li>';
+}
+function note(kind, html){ return '<div class="note' + (kind === 'warn' ? ' warn' : '') + '">' + svg(kind === 'warn' ? 'warn' : 'bulb') + '<div>' + html + '</div></div>'; }
+
+
+/* ===== staat en weergaven ===== */
+const S = { view:'start', back:'start', q:'', sel:null, layout:'compact', sheet:null, ctx:[] };
+const iconOf = nav => nav.color;
+
+function sidebarHTML(){
+  const n = id => ITEMS.filter(it => it.nav === id).length;
+  const item = (view, label, color, icon, count, cid) => '<button type="button" class="nav-i" data-nav="' + view + '">' + icTile(color, icon, 'sm') +
+    '<span class="lbl">' + esc(label) + '</span>' + (count != null ? '<span class="n"' + (cid ? ' id="' + cid + '"' : '') + '>' + count + '</span>' : '') + '</button>';
+  return '<button type="button" class="brand" data-nav="start" aria-label="Excel Shortcuts, naar start"><span class="brand-t"><b>Excel Shortcuts</b><span>' + COUNT_SC + ' sneltoetsen · ' + COUNT_VBA + " macro's</span></span></button>" +
+    item('start', 'Start', 'start', 'home') +
+    item('favorieten', 'Favorieten', 'fav', 'star', favCount() || '', 'favn') +
+    '<div class="nav-h">Onderwerpen</div>' + NAV.filter(x => !x.vba).map(x => item(x.id, x.name, x.color, iconOf(x), n(x.id))).join('') +
+    '<div class="nav-h">VBA</div>' + NAV.filter(x => x.vba).map(x => item(x.id, x.name, x.color, iconOf(x), n(x.id))).join('') +
+    item('klaarzetten', "Macro's klaarzetten", 'guide', 'guide') +
+    '<p class="side-foot">Zoeken kan ook met <span class="ik">' + keysHTML('/') + '</span> of <span class="ik">' + keysHTML('Ctrl+K') + '</span></p>';
+}
+function tabbarHTML(){
+  return '<button type="button" class="tbi" data-tab="start" data-nav="start">' + svg('home') + '<span>Start</span></button>' +
+    '<button type="button" class="tbi" data-tab="zoeken" data-focus-search>' + svg('search') + '<span>Zoeken</span></button>' +
+    '<button type="button" class="tbi" data-tab="favorieten" data-nav="favorieten">' + svg('star') + '<span>Favorieten</span></button>' +
+    '<button type="button" class="tbi" data-tab="vba" data-nav="vba">' + svg('vba') + '<span>VBA</span></button>';
+}
+
+function sec(title, sub, body, action){
+  return '<section class="sec"><div class="sec-t"><div><h2>' + esc(title) + '</h2>' + (sub ? '<p>' + esc(sub) + '</p>' : '') + '</div>' + (action || '') + '</div>' + body + '</section>';
+}
+function viewHead(color, icon, title, p, meta, actions){
+  return '<header class="vh">' + icTile(color, icon, 'lg') + '<div class="vh-t"><h1>' + esc(title) + '</h1>' + (p ? '<p>' + esc(p) + '</p>' : '') + (meta ? '<span class="meta">' + esc(meta) + '</span>' : '') + '</div>' + (actions ? '<div class="vh-act">' + actions + '</div>' : '') + '</header>';
+}
+function linkBtn(token, label){ return '<button type="button" class="ibtn filled" data-link="' + token + '" aria-label="Kopieer link naar ' + esc(label) + '" title="Kopieer link">' + svg('link') + '</button>'; }
+function empty(icon, title, text, extra){ return '<div class="empty">' + svg(icon) + '<h3>' + esc(title) + '</h3><p>' + esc(text) + '</p>' + (extra || '') + '</div>'; }
+function tryPills(){ return '<div class="try"><span>Probeer:</span>' + TRY.map(t => '<button type="button" class="pill" data-q="' + esc(t) + '">' + svg('search') + esc(t) + '</button>').join('') + '</div>'; }
+function vbaSeg(cur){
+  return '<nav class="seg-c" aria-label="VBA-onderdelen">' + [['vba', "Macro's"], ['vba-editor', 'VBA-editor'], ['klaarzetten', 'Klaarzetten']].map(v =>
+    '<button type="button" data-nav="' + v[0] + '"' + (v[0] === cur ? ' aria-current="page"' : '') + '>' + v[1] + '</button>').join('') + '</nav>';
+}
+
+/* ---------- start ---------- */
+function dayItem(){
+  const pool = ITEMS.filter(it => it.hasDemo && !it.vba);
+  const d = new Date();
+  const day = Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 864e5);
+  return pool[day % pool.length];
+}
+function tileHTML(id){
+  const it = BYID.get(id);
+  if (!it) return '';
+  return '<button type="button" class="tile" data-open="' + id + '" style="--c:var(--c-' + colorOf(it) + ')">' + keysFor(it) + '<span class="tile-t">' + esc(it.title) + '</span>' +
+    '<span class="tile-c"><span class="cdot"></span>' + esc(navOf(it).name) + (it.hasDemo ? ' · demo' : '') + '</span></button>';
+}
+function catHTML(nav){
+  const list = ITEMS.filter(it => it.nav === nav.id), dem = list.filter(it => it.hasDemo);
+  const ex = dem.concat(list.filter(it => !it.hasDemo)).slice(0, 3).map(it => it.title).join(' · ');
+  return '<button type="button" class="cat" data-nav="' + nav.id + '">' + icTile(nav.color, iconOf(nav), 'md') + '<span class="cat-n">' + esc(nav.name) + '</span>' +
+    '<span class="cat-m">' + countText(list.length, nav) + (dem.length ? ' · ' + dem.length + ' met demo' : '') + '</span>' + svg('chevR', 'chev') + '<span class="cat-ex">' + esc(ex) + '</span></button>';
+}
+function legendHTML(){
+  const lg = (k, t) => '<div class="lgd"><span class="keys lg">' + keysHTML(k) + '</span><p>' + t + '</p></div>';
+  return '<div class="legend">' + lg('Ctrl+C', '<b>Tegelijk.</b> Houd Ctrl vast en druk dan op C.') + lg('Alt › H › O', '<b>Na elkaar.</b> Druk Alt, laat los en tik de letters een voor een.') +
+    lg('"Ja"', '<b>Typen.</b> Typ de tekst tussen de aanhalingstekens.') + lg('[Speciaal…]', '<b>Klikken.</b> Een knop of keuze in een venster.') + '</div>';
+}
+function viewStart(){
+  const t = dayItem();
+  let h = '<section class="hero"><p class="eyebrow">Excel voor Windows · Microsoft 365</p><h1>Excel Shortcuts</h1>' +
+    '<p>Zoek op wat je wilt doen. ' + COUNT_SC + ' sneltoetsen en ' + COUNT_VBA + " macro's met uitleg, waarvan " + COUNT_DEMO + ' met een korte demo.</p>' + tryPills() + '</section>';
+  const rec = RECENT.map(id => BYID.get(id)).filter(Boolean).slice(0, 4);
+  if (rec.length) h += sec('Verder waar je was', '', '<ul class="list">' + rec.map(it => rowHTML(it)).join('') + '</ul>', '<button type="button" class="lnk" data-nav="favorieten">Favorieten en recent</button>');
+  h += '<section class="sec"><div class="today"><div><p class="eyebrow">' + svg('sparkle') + 'Sneltoets van de dag</p>' + keysFor(t, 'lg') +
+    '<h2>' + esc(t.title) + '</h2><p>' + rt(t.desc) + '</p><div class="acts"><button type="button" class="btn btn-fill" data-open="' + t.id + '">Bekijk uitleg</button>' +
+    favBtn(t.id, t.title, 'btn btn-gray', 'Favoriet') + '</div></div><div data-demo-slot="' + t.id + '"></div></div></section>';
+  h += sec('Begin hier', 'De sneltoetsen die je het vaakst nodig hebt.', '<div class="tiles">' + POPULAR.map(tileHTML).join('') + '</div>');
+  h += sec('Onderwerpen', '', '<div class="cats">' + NAV.filter(x => !x.vba).map(catHTML).join('') + '</div>');
+  h += sec('VBA', '', '<div class="cats three">' + NAV.filter(x => x.vba).map(catHTML).join('') +
+    '<button type="button" class="cat" data-nav="klaarzetten">' + icTile('guide', 'guide', 'md') + "<span class=\"cat-n\">Macro's klaarzetten</span><span class=\"cat-m\">In 5 stappen</span>" + svg('chevR', 'chev') +
+    '<span class="cat-ex">Persoonlijke macrowerkmap, eigen knop of sneltoets, sjabloon</span></button></div>');
+  h += sec('Zo lees je de toetsen', '', legendHTML());
+  return h;
+}
+
+/* ---------- onderwerp ---------- */
+function viewCat(id){
+  const nav = NAVBY.get(id), groups = groupedIds(id);
+  const list = ITEMS.filter(it => it.nav === id), dem = list.filter(it => it.hasDemo).length;
+  let h = viewHead(nav.color, iconOf(nav), nav.name, nav.p, countText(list.length, nav) + (dem ? ' · ' + dem + ' met demo' : ''), linkBtn(id, nav.name));
+  if (nav.vba) h += vbaSeg(id);
+  if (groups.length > 2) h += '<nav class="jump" aria-label="Onderdelen">' + groups.map((g, i) => '<button type="button" class="pill" data-jump="g-' + i + '">' + esc(g[0]) + ' <span class="n">' + g[1].length + '</span></button>').join('') + '</nav>';
+  groups.forEach((g, i) => {
+    h += '<section class="grp" id="g-' + i + '"><h2 class="grp-h">' + esc(g[0]) + '<span class="n">' + g[1].length + '</span></h2><ul class="list">' + g[1].map(it => rowHTML(it)).join('') + '</ul></section>';
+  });
+  return h;
+}
+
+/* ---------- favorieten ---------- */
+function viewFav(){
+  const favs = Array.from(FAV).map(id => BYID.get(id)).filter(Boolean);
+  let h = viewHead('fav', 'star', 'Favorieten', 'Jouw eigen selectie. Ze blijven bewaard in deze browser, op dit apparaat.', favs.length ? favs.length + ' bewaard' : '');
+  if (!favs.length) {
+    h += empty('star', 'Nog geen favorieten', 'Tik op de ster bij een sneltoets, dan staat hij hier. Handig voor de toetsen die je elke dag gebruikt.', '<div class="try"><button type="button" class="btn btn-tint" data-nav="start">Bekijk de populairste</button></div>');
+  } else {
+    NAV.forEach(nav => {
+      const list = favs.filter(it => it.nav === nav.id).sort((a, b) => a.n - b.n);
+      if (!list.length) return;
+      h += '<section class="grp"><h2 class="grp-h">' + icTile(nav.color, iconOf(nav), 'sm') + esc(nav.name) + '<span class="n">' + list.length + '</span></h2><ul class="list">' + list.map(it => rowHTML(it)).join('') + '</ul></section>';
+    });
+    h += '<div class="confirm" id="favclear" style="margin:16px 4px 0"><button type="button" class="btn btn-gray sm" data-clearfav="ask">' + svg('trash') + 'Alle favorieten wissen</button></div>';
+  }
+  const rec = RECENT.map(id => BYID.get(id)).filter(Boolean).slice(0, 8);
+  if (rec.length) h += '<section class="grp" style="margin-top:30px"><h2 class="grp-h">' + icTile('recent', 'recent', 'sm') + 'Recent bekeken<span class="n">' + rec.length + '</span></h2><ul class="list">' + rec.map(it => rowHTML(it)).join('') + '</ul></section>';
+  return h;
+}
+
+/* ---------- zoeken ---------- */
+function viewSearch(){
+  const q = S.q.trim(), res = runSearch(q), toks = queryTokens(q);
+  let h = '<header class="vh"><div class="vh-t"><h1>Zoekresultaten</h1><p>' + (res.length ? res.length + (res.length === 1 ? ' resultaat' : ' resultaten') + ' voor ‘' + esc(q) + '’' : 'Niets gevonden voor ‘' + esc(q) + '’') + '</p></div></header>';
+  if (!res.length) return h + empty('search', 'Geen resultaten', 'Probeer een ander woord, of zoek op een toets zoals ‘F4’ of ‘Ctrl D’.', tryPills());
+  const groups = new Map();
+  res.forEach(r => { const k = r.it.nav; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(r.it); });
+  groups.forEach((list, navId) => {
+    const nav = NAVBY.get(navId);
+    h += '<section class="grp"><h2 class="grp-h">' + icTile(nav.color, iconOf(nav), 'sm') + esc(nav.name) + '<span class="n">' + list.length + '</span></h2><ul class="list">' + list.map(it => rowHTML(it, { toks })).join('') + '</ul></section>';
+  });
+  return h;
+}
+
+/* ---------- macro's klaarzetten ---------- */
+function viewGuide(){
+  const st = [
+    "<b>Maak de persoonlijke macrowerkmap aan.</b> Ga naar <span class=\"path\">Beeld › Macro's › Macro opnemen</span>, kies bij <i>Macro opslaan in</i> voor <span class=\"path\">Persoonlijke macrowerkmap</span>, klik OK en stop meteen weer met opnemen. Excel maakt nu het bestand PERSONAL.XLSB.",
+    "<b>Plak je code.</b> Druk ⟨Alt+F11⟩, klik links op <span class=\"path\">VBAProject (PERSONAL.XLSB)</span> en kies <span class=\"path\">Invoegen › Module</span>. Plak de macro's uit deze spiekbrief in dat lege venster.",
+    "<b>Geef ze een knop.</b> <span class=\"path\">Bestand › Opties › Werkbalk Snelle toegang</span>, kies bij <i>Kies opdrachten uit</i> voor Macro's en klik Toevoegen. Elke knop op die werkbalk start je daarna met ⟨Alt › 1⟩, ⟨Alt › 2⟩, enzovoort. Druk op Alt om te zien welk nummer bij welke knop hoort.",
+    "<b>Of kies een eigen sneltoets.</b> ⟨Alt+F8⟩, selecteer de macro, klik Opties en vul een letter in. Typ je een hoofdletter, dan wordt het Ctrl + Shift + letter. Die combinaties zijn minder vaak al bezet dan Ctrl + letter.",
+    "<b>Opslaan bij afsluiten.</b> Vraagt Excel of je de wijzigingen in PERSONAL.XLSB wilt bewaren? Kies Opslaan, anders ben je je macro's kwijt."
+  ];
+  return viewHead('guide', 'guide', "Macro's klaarzetten", 'Zet je macro’s één keer in je persoonlijke macrowerkmap. Die opent Excel onzichtbaar bij elke start, dus ze werken in elk bestand.', 'In 5 stappen', linkBtn('klaarzetten', "Macro's klaarzetten")) +
+    vbaSeg('klaarzetten') + '<div class="guide"><ol class="steps">' + st.map(s => '<li><div>' + rich(s) + '</div></li>').join('') + '</ol><div class="side">' +
+    note('warn', '<b>Let op</b> Wat een macro doet, kun je niet terugdraaien met Ctrl + Z. Sla je werk op voordat je een macro uitvoert.') +
+    '<h3>Sjabloon voor snellere macro\'s</h3><p>Zet je eigen code tussen deze regels. Het scherm ververst niet tussendoor en Excel rekent pas aan het eind, ook als er onderweg iets misgaat.</p><div data-code="sjabloon"></div>' +
+    note('tip', '<b>Tip</b> In de VBA-editor start ' + rt('⟨F5⟩') + ' de macro waar je cursor in staat. Met ' + rt('⟨F8⟩') + ' loop je er regel voor regel doorheen.') + '</div></div>';
+}
+
+
+/* ===== detail, sheet, inspector en navigatie ===== */
+function hintFor(it){
+  if (it.vba) return 'Plak de code in een module en start hem met F5, of kies hem via Alt+F8.';
+  const k = it.keys, seq = k.indexOf(' › ') >= 0, combo = k.indexOf('+') >= 0;
+  if (seq && !combo && /^Alt › /.test(k)) return 'Na elkaar: druk Alt, laat los en tik dan de letters een voor een.';
+  if (seq) return 'Voer de stappen na elkaar uit.';
+  if (combo) { const p = k.split('+'); return 'Tegelijk: houd ' + p.slice(0, -1).join(' en ') + ' vast en druk dan op ' + p[p.length - 1] + '.'; }
+  return 'Eén toets.';
+}
+function related(it){
+  return ITEMS.filter(x => x.nav === it.nav && x.g === it.g && x.id !== it.id).sort((a, b) => (b.hasDemo - a.hasDemo) || a.n - b.n).slice(0, 4);
+}
+function ctxFor(it){
+  if (S.ctx.indexOf(it.id) >= 0) return S.ctx;
+  return groupedIds(it.nav).reduce((a, g) => a.concat(g[1].map(x => x.id)), []);
+}
+function pnBtn(it, dir){
+  if (!it) return '<button type="button" disabled tabindex="-1" aria-hidden="true"></button>';
+  return '<button type="button" class="' + (dir === 'next' ? 'nx' : 'pv') + '" data-open="' + it.id + '"><small>' + (dir === 'next' ? 'Volgende' + svg('chevR') : svg('chevL') + 'Vorige') + '</small><span>' + esc(it.title) + '</span></button>';
+}
+function detailHTML(it, mode){
+  const nav = navOf(it), ctx = ctxFor(it), i = ctx.indexOf(it.id);
+  const prev = i > 0 ? BYID.get(ctx[i - 1]) : null, next = i >= 0 && i < ctx.length - 1 ? BYID.get(ctx[i + 1]) : null;
+  let x = '<article class="det">' + (mode === 'sheet' ? '<div class="grab" aria-hidden="true"></div>' : '');
+  x += '<div class="det-top"><button type="button" class="crumb" data-nav="' + nav.id + '" title="Naar ' + esc(nav.name) + '">' + icTile(nav.color, iconOf(nav), 'sm') + '<span class="lbl">' + esc(nav.name) + ' · ' + esc(it.g) + '</span></button>' +
+    favBtn(it.id, it.title) + '<button type="button" class="ibtn" data-link="' + it.id + '" aria-label="Kopieer link naar deze sneltoets" title="Kopieer link">' + svg('link') + '</button>' +
+    (mode === 'sheet' ? '<button type="button" class="ibtn filled" data-close aria-label="Sluiten">' + svg('x') + '</button>' : '') + '</div>';
+  x += '<div class="det-keys">' + (it.vba ? keysFor(it) : keysFor(it, 'xl')) + '<span class="det-hint">' + svg(it.vba ? 'info' : 'hand') + esc(hintFor(it)) + '</span></div>';
+  x += '<h2 id="det-title">' + esc(it.title) + '</h2>';
+  if (it.desc) x += '<p class="lead">' + rt(it.desc) + '</p>';
+  if (it.alt) x += '<div class="alt"><span>Werkt dit niet in jouw Excel? Probeer</span><span class="keys">' + keysHTML(it.alt) + '</span></div>';
+  if (it.code) x += '<div data-code-slot></div>';
+  if (it.hasDemo) {
+    x += '<div class="blk-h">Zo ziet het eruit</div><div data-demo-slot></div>';
+    x += '<div class="blk-h">Stap voor stap</div><ol class="howto">' + it.steps.map(st => '<li><div><span class="keys">' + keysHTML(st.k) + '</span><div>' + esc(st.c) + '</div></div></li>').join('') + '</ol>';
+  }
+  if (it.tip) x += note(it.warn ? 'warn' : 'tip', '<b>' + (it.warn ? 'Let op' : 'Tip') + '</b> ' + rt(it.tip));
+  const rel = related(it);
+  if (rel.length) x += '<div class="blk-h">Hoort hierbij</div><ul class="list">' + rel.map(r => rowHTML(r)).join('') + '</ul>';
+  if (prev || next) x += '<div class="pn">' + pnBtn(prev, 'prev') + pnBtn(next, 'next') + '</div>';
+  return x + '</article>';
+}
+function mountDetail(host, it, mode, play){
+  host.innerHTML = detailHTML(it, mode);
+  pruneDemos();
+  const cs = host.querySelector('[data-code-slot]');
+  if (cs) cs.replaceWith(codeBlock(it.code, 'VBA · Module'));
+  const ds = host.querySelector('[data-demo-slot]');
+  if (ds) {
+    const w = buildDemo(it.demo, it.steps, it.title, { maxScale:1.3 });
+    ds.replaceWith(w);
+    requestAnimationFrame(() => { refit(); if (play) autoplay(w._demo, 520); });
+  }
+}
+
+/* ---------- sheet ---------- */
+let lastFocus = null;
+function openSheet(id, play){
+  const it = BYID.get(id);
+  if (!it) return;
+  const wrap = $('#sheet'), p = $('#sheetp'), wasOpen = !wrap.hidden;
+  if (!wasOpen) lastFocus = document.activeElement;
+  S.sheet = id;
+  if (!wasOpen) { wrap.hidden = false; document.documentElement.style.overflow = 'hidden'; }
+  mountDetail(p, it, 'sheet', play);
+  p.scrollTop = 0;
+  try { p.focus({ preventScroll:true }); } catch (e) { p.focus(); }
+  setHash(id);
+}
+function closeSheet(){
+  const wrap = $('#sheet');
+  if (wrap.hidden) return;
+  wrap.hidden = true;
+  $('#sheetp').innerHTML = '';
+  pruneDemos();
+  S.sheet = null;
+  document.documentElement.style.overflow = '';
+  setHash(S.view === 'zoeken' ? 'start' : S.view);
+  if (lastFocus && lastFocus.isConnected) { try { lastFocus.focus({ preventScroll:true }); } catch (e) {} }
+}
+
+/* ---------- inspector ---------- */
+function inspectorOn(){ return S.layout === 'wide' && LISTVIEWS.has(S.view); }
+function markSel(){ document.querySelectorAll('#view .row').forEach(r => r.classList.toggle('sel', S.layout === 'wide' && r.dataset.row === S.sel)); }
+function renderInspector(play){
+  const host = $('#inspector');
+  $('#app').classList.toggle('with-inspector', inspectorOn());
+  if (!inspectorOn()) { if (host.innerHTML) { host.innerHTML = ''; pruneDemos(); } return; }
+  if (!S.sel || !BYID.has(S.sel)) S.sel = S.ctx[0] || null;
+  if (!S.sel) { host.innerHTML = '<div class="insp-empty">' + svg('keys') + '<p>Kies een sneltoets om te zien hoe hij werkt.</p></div>'; pruneDemos(); return; }
+  mountDetail(host, BYID.get(S.sel), 'inspector', play);
+  host.scrollTop = 0;
+  markSel();
+}
+function scrollRowIntoView(id){
+  const r = document.querySelector('#view [data-row="' + id + '"]');
+  if (!r) return;
+  const b = r.getBoundingClientRect();
+  if (b.top < 80 || b.bottom > window.innerHeight - 20) r.scrollIntoView({ block:'center', behavior: RM ? 'auto' : 'smooth' });
+}
+
+/* ---------- openen en navigeren ---------- */
+function openItem(id, o){
+  o = o || {};
+  const it = BYID.get(id);
+  if (!it) return;
+  if (!o.quiet) addRecent(id);
+  if (S.layout === 'wide') {
+    closeSheet();
+    if (!(LISTVIEWS.has(S.view) && S.ctx.indexOf(id) >= 0)) setView(it.nav, { sel:id, noHash:true });
+    else { S.sel = id; renderInspector(false); }
+    if (o.play !== false && !o.quiet) { const d = document.querySelector('#inspector .demo'); if (d) autoplay(d._demo, 520); }
+    setTimeout(() => scrollRowIntoView(id), 30);
+    setHash(id);
+    return;
+  }
+  openSheet(id, o.play !== false && !o.quiet);
+}
+function setHash(t){ try { history.replaceState(null, '', '#' + t); } catch (e) {} }
+function setView(v, o){
+  o = o || {};
+  if (!VIEWS.has(v)) v = 'start';
+  if (v !== 'zoeken' && S.q) { S.q = ''; $('#q').value = ''; syncSearchUI(); }
+  S.view = v;
+  S.sel = o.sel || null;
+  renderView();
+  if (!o.keepScroll) window.scrollTo(0, 0);
+  if (!o.noHash) setHash(v === 'zoeken' ? 'start' : v);
+}
+function renderView(){
+  const host = $('#view');
+  let html;
+  if (S.view === 'start') html = viewStart();
+  else if (S.view === 'favorieten') html = viewFav();
+  else if (S.view === 'zoeken') html = viewSearch();
+  else if (S.view === 'klaarzetten') html = viewGuide();
+  else html = viewCat(S.view);
+  host.innerHTML = html;
+  S.ctx = uniq(Array.from(host.querySelectorAll('[data-row]')).map(r => r.dataset.row));
+  const cs = host.querySelector('[data-code="sjabloon"]');
+  if (cs) cs.replaceWith(codeBlock(SJABLOON, 'VBA · Sjabloon'));
+  const ds = host.querySelector('[data-demo-slot]');
+  if (ds) {
+    const it = BYID.get(ds.dataset.demoSlot);
+    const w = buildDemo(it.demo, it.steps, it.title, { maxScale:1.45 });
+    ds.replaceWith(w);
+    requestAnimationFrame(refit);
+    if (!RM && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { io.disconnect(); autoplay(w._demo, 250); } }), { threshold:0.6 });
+      io.observe(w.querySelector('.sheet'));
+    }
+  }
+  renderInspector(false);
+  pruneDemos();
+  syncNav();
+}
+function syncNav(){
+  document.querySelectorAll('#sidebar [data-nav]').forEach(b => { if (b.dataset.nav === S.view) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
+  const tab = S.view === 'zoeken' ? 'zoeken' : S.view === 'favorieten' ? 'favorieten' : (S.view === 'vba' || S.view === 'vba-editor' || S.view === 'klaarzetten') ? 'vba' : 'start';
+  document.querySelectorAll('#tabbar .tbi').forEach(b => { if (b.dataset.tab === tab) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
+  const back = $('#back');
+  back.hidden = S.view === 'start';
+  back.setAttribute('aria-label', S.view === 'zoeken' ? 'Zoeken sluiten' : 'Terug naar start');
+  const n = favCount(), fn = $('#favn');
+  if (fn) fn.textContent = n || '';
+}
+function goBack(){
+  if (S.view === 'zoeken') { clearSearch(); return; }
+  setView('start');
+}
+
+/* ---------- favorieten ---------- */
+function toggleFav(id){
+  if (FAV.has(id)) FAV.delete(id); else FAV.add(id);
+  save(FAV_KEY, Array.from(FAV));
+  const on = FAV.has(id);
+  document.querySelectorAll('[data-fav="' + id + '"]').forEach(b => { b.setAttribute('aria-pressed', on); b.title = on ? 'Uit favorieten halen' : 'Bewaar als favoriet'; });
+  syncNav();
+  toast(on ? 'Bewaard bij je favorieten' : 'Uit je favorieten gehaald', on ? 'star' : null);
+  if (S.view === 'favorieten') { const y = window.scrollY; renderView(); window.scrollTo(0, y); }
+}
+function clearFav(step){
+  const box = $('#favclear');
+  if (!box) return;
+  if (step === 'ask') {
+    box.innerHTML = '<span>Alle favorieten wissen?</span><button type="button" class="btn btn-fill sm" data-clearfav="yes">Wissen</button><button type="button" class="btn btn-gray sm" data-clearfav="no">Annuleren</button>';
+    const yes = box.querySelector('[data-clearfav="yes"]'); if (yes) yes.focus();
+  } else if (step === 'yes') {
+    FAV.clear(); save(FAV_KEY, []); renderView(); toast('Favorieten gewist', 'check');
+  } else {
+    box.innerHTML = '<button type="button" class="btn btn-gray sm" data-clearfav="ask">' + svg('trash') + 'Alle favorieten wissen</button>';
+  }
+}
+
+
+/* ===== zoeken ===== */
+const KEYALT = { control:'ctrl', ctl:'ctrl', strg:'ctrl', option:'alt', spatiebalk:'spatie', space:'spatie', pagedown:'pgdn', pageup:'pgup', omlaag:'↓', omhoog:'↑', backtick:'`', puntkomma:';', min:'-', is:'=', escape:'esc', del:'delete' };
+const KEYISH = /^(ctrl|alt|shift|tab|enter|esc|spatie|end|home|pgdn|pgup|backspace|break|f\d{1,2}|[^a-z0-9]|[a-z0-9])$/;
+const SYNF = SYN.map(g => g.map(w => fold(w)));
+function keyTokens(it){
+  if (it.vba) return ['macro', fold(it.naam)];
+  const out = [];
+  [it.keys, it.alt || ''].forEach(k => String(k).split(' › ').forEach(p => {
+    p = p.trim();
+    if (!p) return;
+    if (p[0] === '[' || p[0] === '"') { fold(p.replace(/^[\["]|[\]"]$/g, '')).split(/\s+/).forEach(w => { if (w) out.push(w); }); return; }
+    p.split('+').forEach(t => { if (t) out.push(fold(t)); });
+  }));
+  return out;
+}
+function prepSearch(){
+  ITEMS.forEach(it => {
+    it._t = fold(it.title);
+    it._k = keyTokens(it);
+    it._x = fold([it.tags || '', it.g, navOf(it).name, it.naam || ''].join(' '));
+    it._d = fold(plain(it.desc) + ' ' + plain(it.tip));
+    it._c = it.code ? fold(it.code) : '';
+  });
+}
+function queryTokens(q){
+  const s = fold(String(q || '')).replace(/\s*\+\s*/g, ' ').replace(/[‘’"“”]/g, ' ').trim();
+  return s ? s.split(/\s+/).filter(Boolean) : [];
+}
+function alts(t){
+  const set = new Set([t]);
+  if (KEYALT[t]) set.add(KEYALT[t]);
+  if (t.length >= 3) SYNF.forEach(g => { if (g.some(w => w === t || (t.length >= 4 && w.startsWith(t)) || (w.length >= 4 && t.startsWith(w)))) g.forEach(w => set.add(w)); });
+  return Array.from(set);
+}
+const wordStart = (s, a) => s.startsWith(a) || s.indexOf(' ' + a) >= 0 || s.indexOf('(' + a) >= 0;
+function scoreItem(it, toks){
+  let total = 0;
+  for (const t of toks) {
+    let best = 0;
+    if (KEYISH.test(t) && (it._k.indexOf(t) >= 0 || it._k.indexOf(KEYALT[t]) >= 0)) best = 9;
+    if (t.length >= 2) {
+      for (const a of alts(t)) {
+        const w = a === t ? 1 : 0.6;
+        let s = 0;
+        if (it._k.indexOf(a) >= 0) s = 9;
+        else if (wordStart(it._t, a)) s = 8;
+        else if (it._t.indexOf(a) >= 0) s = 6;
+        else if (it._x.indexOf(a) >= 0) s = 4;
+        else if (it._d.indexOf(a) >= 0) s = 3;
+        else if (it._c && a.length >= 4 && it._c.indexOf(a) >= 0) s = 2;
+        if (s * w > best) best = s * w;
+      }
+    }
+    if (!best) return 0;
+    total += best;
+  }
+  return total + (it.hasDemo ? 0.4 : 0) + (POPULAR.indexOf(it.id) >= 0 ? 0.4 : 0);
+}
+function runSearch(q){
+  const toks = queryTokens(q);
+  if (!toks.length) return [];
+  return ITEMS.map(it => ({ it, s:scoreItem(it, toks) })).filter(r => r.s > 0).sort((a, b) => b.s - a.s || a.it.n - b.it.n);
+}
+
+/* ---------- zoekveld ---------- */
+function syncSearchUI(){
+  const has = !!$('#q').value;
+  $('#qclear').hidden = !has;
+  $('#qhint').hidden = has;
+}
+function onSearchInput(){
+  const v = $('#q').value;
+  syncSearchUI();
+  S.q = v;
+  if (v.trim()) {
+    if (S.view !== 'zoeken') { S.back = S.view; S.view = 'zoeken'; }
+    S.sel = null;
+    closeSheet();
+    renderView();
+    window.scrollTo(0, 0);
+  } else if (S.view === 'zoeken') {
+    S.view = S.back || 'start';
+    S.sel = null;
+    renderView();
+    window.scrollTo(0, 0);
+  }
+}
+const onSearchInputSoon = debounce(onSearchInput, 70);
+function clearSearch(){
+  $('#q').value = '';
+  onSearchInput();
+}
+function focusSearch(){
+  closeSheet();
+  const q = $('#q');
+  try { q.focus({ preventScroll:true }); } catch (e) { q.focus(); }
+  q.select();
+  if (S.layout === 'compact' && S.view !== 'zoeken') window.scrollTo(0, 0);
+  syncNav();
+}
+function setPlaceholder(){
+  $('#q').placeholder = S.layout === 'compact' ? 'Zoek een taak of toets' : 'Zoek op taak of toets, bijvoorbeeld ‘rijen even hoog’ of ‘Ctrl D’';
+  let mac = false;
+  try { mac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent); } catch (e) {}
+  $('#qhint').textContent = mac ? '⌘ K' : 'Ctrl K';
+}
+
+
+/* ===== bediening en opstarten ===== */
+document.addEventListener('click', e => {
+  const el = e.target.closest('[data-fav],[data-link],[data-open],[data-nav],[data-q],[data-close],[data-jump],[data-clearfav],[data-focus-search]');
+  if (!el) return;
+  const d = el.dataset;
+  if (d.fav) { e.preventDefault(); toggleFav(d.fav); return; }
+  if (d.link) { copyLink(d.link); return; }
+  if (d.open) { openItem(d.open); return; }
+  if (d.nav) { closeSheet(); setView(d.nav); return; }
+  if (d.q) { const q = $('#q'); q.value = d.q; onSearchInput(); try { q.focus({ preventScroll:true }); } catch (x) {} return; }
+  if (el.hasAttribute('data-close')) { closeSheet(); return; }
+  if (d.jump) { const g = document.getElementById(d.jump); if (g) g.scrollIntoView({ behavior: RM ? 'auto' : 'smooth', block:'start' }); return; }
+  if (d.clearfav) { clearFav(d.clearfav); return; }
+  if (el.hasAttribute('data-focus-search')) { focusSearch(); return; }
+});
+
+$('#q').addEventListener('input', onSearchInputSoon);
+$('#q').addEventListener('keydown', e => {
+  if (e.key === 'Escape') { e.preventDefault(); if ($('#q').value) clearSearch(); else $('#q').blur(); return; }
+  if (e.key === 'Enter') { e.preventDefault(); onSearchInput(); if (S.view === 'zoeken' && S.ctx[0]) openItem(S.ctx[0]); return; }
+  if (e.key === 'ArrowDown') { const f = document.querySelector('#view .row-open'); if (f) { e.preventDefault(); f.focus(); if (S.layout === 'wide') selectQuiet(f.dataset.open); } }
+});
+$('#qclear').addEventListener('click', () => { clearSearch(); $('#q').focus(); });
+$('#back').addEventListener('click', goBack);
+
+function selectQuiet(id){ S.sel = id; renderInspector(false); setHash(id); }
+function moveRow(cur, dir){
+  const rows = Array.from(document.querySelectorAll('#view .row-open'));
+  const nx = rows[rows.indexOf(cur) + dir];
+  if (!nx) { if (dir < 0) $('#q').focus(); return; }
+  nx.focus();
+  if (S.layout === 'wide') selectQuiet(nx.dataset.open);
+}
+function trapFocus(e){
+  const p = $('#sheetp');
+  const f = Array.from(p.querySelectorAll('button:not([disabled]),[tabindex="0"],input')).filter(x => x.offsetParent !== null);
+  if (!f.length) return;
+  const first = f[0], last = f[f.length - 1], a = document.activeElement;
+  if (e.shiftKey && (a === first || a === p)) { e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && a === last) { e.preventDefault(); first.focus(); }
+}
+document.addEventListener('keydown', e => {
+  const t = e.target, tag = (t.tagName || '').toLowerCase();
+  const typing = tag === 'input' || tag === 'textarea' || t.isContentEditable;
+  if ((e.key === 'k' || e.key === 'K') && (e.ctrlKey || e.metaKey) && !e.altKey) { e.preventDefault(); focusSearch(); return; }
+  if (!$('#sheet').hidden) {
+    if (e.key === 'Escape') { e.preventDefault(); closeSheet(); return; }
+    if (e.key === 'Tab') { trapFocus(e); return; }
+    if (!typing && (e.key === 'ArrowLeft' || e.key === 'ArrowRight') && !(t.closest && t.closest('pre'))) {
+      const b = document.querySelector('#sheetp .pn ' + (e.key === 'ArrowLeft' ? '.pv' : '.nx'));
+      if (b) { e.preventDefault(); b.click(); }
+    }
+    return;
+  }
+  if (typing) return;
+  if (e.key === '/') { e.preventDefault(); focusSearch(); return; }
+  if ((e.key === 'ArrowDown' || e.key === 'ArrowUp') && t.classList && t.classList.contains('row-open') && t.closest('#view')) {
+    e.preventDefault();
+    moveRow(t, e.key === 'ArrowDown' ? 1 : -1);
+  }
+});
+
+/* ---------- schermbreedte ---------- */
+const mqW = matchMedia('(min-width: 1200px)'), mqR = matchMedia('(min-width: 760px)');
+const layoutNow = () => mqW.matches ? 'wide' : mqR.matches ? 'regular' : 'compact';
+function onLayout(){
+  const L = layoutNow();
+  if (L === S.layout) { refit(); return; }
+  S.layout = L;
+  setPlaceholder();
+  if (L === 'wide' && S.sheet) { const id = S.sheet; closeSheet(); openItem(id, { quiet:true }); return; }
+  renderInspector(false);
+  markSel();
+  syncNav();
+  requestAnimationFrame(refit);
+}
+[mqW, mqR].forEach(m => { if (m.addEventListener) m.addEventListener('change', onLayout); else if (m.addListener) m.addListener(onLayout); });
+window.addEventListener('resize', debounce(refit, 120));
+
+/* ---------- adres (#) ---------- */
+function fromHash(){
+  let h = '';
+  try { h = decodeURIComponent((location.hash || '').slice(1)); } catch (e) {}
+  if (h === 'bij-de-hand') h = 'klaarzetten';
+  if (BYID.has(h)) { setView(BYID.get(h).nav, { noHash:true }); openItem(h); return; }
+  setView(VIEWS.has(h) && h !== 'zoeken' ? h : 'start', { noHash:true });
+}
+window.addEventListener('hashchange', fromHash);
+
+/* ---------- start ---------- */
+S.layout = layoutNow();
+prepSearch();
+$('#sidebar').innerHTML = sidebarHTML();
+$('#tabbar').innerHTML = tabbarHTML();
+$('#back').innerHTML = svg('chevL');
+setPlaceholder();
+syncSearchUI();
+fromHash();
+window.__spiekbrief = { S, ITEMS, BYID, NAV, setView, openItem, closeSheet, runSearch, demos, buildDemo, go, keysHTML, rt, esc, mk, codeBlock, plainKeys, groupedIds, SHARE_BASE };
+})();
+
+</script>
+</body>
+</html>
